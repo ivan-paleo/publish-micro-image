@@ -16,6 +16,7 @@ This document is by no means exhaustive and is limited in scope on purpose.
     - [Propose changes](#propose-changes)
     - [Send me an email](#send-me-an-email)
 - [License](#license)
+- [References](#references)
 
 <!-- /TOC -->
 
@@ -48,4 +49,20 @@ By participating in this project, you agree to abide by our [code of conduct](CO
 
 
 ## License
-[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
+
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
+
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
+
+
+---
+
+
+## References
+License badge and text from Santiago Soler ([cc-licenses](https://github.com/santisoler/cc-licenses)).
