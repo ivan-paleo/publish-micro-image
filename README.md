@@ -68,7 +68,7 @@ Things get more complicated in the digital world. It all comes down to one singl
 
 Let us first have a look at how the digital magnification is calculated. The problem with a digital image (as opposed to an analog image) is that many component come into play to magnify the sample: both the optical (objective, optical zoom and camera adaptor) and digital (camera sensor, viewing medium and digital zoom) components must be considered.  
 This is how to calculate the digital magnification:  
-$\frac{objective \,magnification \times optical \,zoom \times camera \,adaptor \times viewing \,medium \,diagonal \times digital \,zoom}{camera \,sensor \,diagonal}$ 
+$\frac{objective magnification \times optical \,zoom \times camera \,adaptor \times viewing \,medium \,diagonal \times digital \,zoom}{camera \,sensor \,diagonal}$ 
 
 
 ### 3.3. Scale bar
