@@ -75,11 +75,11 @@ Things get more complicated in the digital world. It all comes down to one singl
 Let us see how the digital magnification is calculated. The problem with a digital image (as opposed to an analog image) is that many component come into play to magnify the sample: both the optical (objective, optical zoom and camera adaptor) and digital (camera sensor, viewing medium and digital zoom) components must be considered. Note that the oculars are not relevant anymore because the light goes to the camera without passing through the oculars. 
 This is how to calculate the digital magnification:  
 
-$\frac{objective~magnification \times optical~zoom \times camera~adaptor \times viewing~medium~diagonal \times digital~zoom}{camera~sensor~diagonal}$  (2)
+$\frac{objective \ magnification \times optical \ zoom \times camera \ adaptor \times viewing \ medium \ diagonal \times digital \ zoom}{camera \ sensor \ diagonal}$  (2)
 
 For example, using a 20x objective, 2x optical zoom, 1x camera adaptor, 381 mm screen diagonal (= 15"), 1x digital zoom, and 11 mm camera sensor diagonal, the total on-screen magnification is:  
 
-$\frac{20 \times 2 \times 1 \times 381 \times 1}{11} \approx 1385 \times $ 
+$\frac{20 \times 2 \times 1 \times 381 \times 1}{11} \approx 1385 \times$ 
 
 As you can see, with the same optical components (except oculars) as in the example calculation of the optical magnification above (see formula (1)), the resulting digital magnification is about 3 $\times$ larger than the optical magnification. **So digital and optical magnifications *are* different!**  
 
@@ -98,7 +98,7 @@ As a side note, the field-of-view of a digital image is usually smaller (to avoi
 There is another reason for avoiding the digital magnification. When I was tasked to compare different digital microscopes (*i.e.* microscopes without oculars and where the image is directly and only viewed on a screen), I noticed that there were very large variations in the magnification ranges advertised by the different manufacturers. Looking at the small print, I realized that one manufacturer reported the magnification as seen on a 15" screen diagonal, while another one as seen on a 17.5" screen diagonal. This made sense because this was the size of the image as seen in the respective acquisition software packages. But this is very confusing to the buyer/user.  
 Just for the comparison, let us simply change the screen from 15" to 17.5" (444.5 mm) in the example above:
 
-$\frac{20 \times 2 \times 1 \times 444.5 \times 1}{11} \approx 1616 \times $
+$\frac{20 \times 2 \times 1 \times 444.5 \times 1}{11} \approx 1616 \times$
 
 So this makes a significant difference!
 
