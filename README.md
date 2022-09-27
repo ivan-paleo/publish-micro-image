@@ -64,7 +64,7 @@ Magnification is simply: the size of the magnified area divided by the real size
 But let us first have a look at the optical magnification.  
 The optical magnification of a microscopic image when observed through the oculars is also straightforward to calculate:   
 
-$objective~magnification \times ocular~magnification \times optical~zoom$ (1)
+$objective \ magnification \times ocular \ magnification \times optical \ zoom$ (1)
 
 For example, using a 20x objective with 10x oculars and 2x optical zoom, the total optical magnification will be 400x.
 
