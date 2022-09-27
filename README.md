@@ -193,14 +193,16 @@ Here again, **the smaller $\delta_A$, the better the resolution is.**
 ## What should we report?
 Observation/analysis through oculars or on the digital image?  
 Manufacturer + model  
-Software version  
-Objective type + magnification + NA  
+Imaging technique / contrasts (BF, DF, polarisation, DIC, confocal...) 
+Objective designation + magnification (FDS§2.2.4) + NA (FDS§2.2.5&2.2.6). WD could be informative too (FDS§2.2.2)  
 Optical + digital zoom if applicable  
 Oculars magnification if used  
 Scale bar  
 Pixel size + field of view + number of pixels  
 Wavelength of the light source  
 For confocal: pinhole diameter, step size  
+Software version  
+T+H during measurements
 
 
 ---
