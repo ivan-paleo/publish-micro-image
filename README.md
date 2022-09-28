@@ -141,7 +141,7 @@ The NOTE 3 of the FDS §2.2.8 states that "the optical [lateral] resolution can 
 
 
 ### Digital lateral resolution
-The digital lateral resolution, or *measuring point spacing*, is the "sampling interval of measuring points in the measuring volume, both in X and in Y direction" (FDS §2.2.7). This is also referred to as the *pixel size* or *spatial sampling*.
+The digital lateral resolution, or *measuring point spacing*, is the "sampling interval of measuring points in the measuring volume, both in X and in Y direction" (FDS §2.2.7). This is also referred to as the *pixel size* (pixel size can also refer to the size of the photodiodes on the detector/camera, which is a fixed value independent of the field of view) or *spatial sampling*.
 
 The measuring point spacing is calculated by dividing the *measuring area* (FDS §2.2.1, also called *field of view*) by the *maximum number of measuring points in a single measurement* (FDS §2.1.2, also called *frame size* or *number of pixels*):
 
@@ -207,10 +207,10 @@ So here is a list of what **I** think is necessary for pre-producible microscopi
 7|Optics|Oculars magnification, if applicable (see #1)|To calculate the optical magnification|“10x oculars”
 8|Optics|Optical zoom, if applicable  |To calculate magnifications|“2x optical zoom”
 9|Camera|Digital zoom, if applicable  |To calculate the digital magnification|“2x digital zoom”
-10|Camera|Pixel size / field of view / number of pixels (at least two of them)  |To calculate the digital lateral resolution|“100 x 100 µm for 1000 x 1000 pixels” or “1000 x 1000 pixels, pixel size = o.1 µm”
+10|Camera|Measuring point spacing / field of view / number of pixels (at least two of them)  |To calculate the digital lateral resolution|“100 x 100 µm for 1000 x 1000 pixels” or “1000 x 1000 pixels, measuring point spacing = 0.1 µm”
 11|Camera|Scale bar  |To visualize the size of the imaged region|“Scale bar = 100 µm”
 12|Confocal|Pinhole diameter, if applicable  |To calculate the optical resolutions|“PH = 54 µm (1 AU)”
-13|Confocal|Step size, if applicable|To calculate the vertical resolution|“Step size = 0.2 µm”
+13|Confocal|Step size / z-range, if applicable|To ...?|“40-50 µm with 0.2 µm steps”
 14|Confocal|Temperature + humidity during topography scanning|T & H can influence the fine-scale measurements of topography|“Scans were acquired at 20 < T < 22 °C and 50 < rH < 70 %”
 15|Confocal|Location of the equipment|An environment without vibrations is necessary for fine-scale measurements of topography|“The confocal microscope is located in the basement and placed on a passive anti-vibration table, itself placed on a concrete based decoupled from the rest of the floor”
 16|Software|Versions of acquisition and analysis software packages|Different versions might produce different results|“ZEN blue 3.5 Hotfix 7 (Carl Zeiss Microscopy GmbH) with module Shuttle-and-Find” or “ConfoMap 9.2.10042 with module Scale-sensitive Analysis”
