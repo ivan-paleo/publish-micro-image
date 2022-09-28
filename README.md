@@ -85,7 +85,7 @@ $\frac{20 \times 2 \times 1 \times 381 \times 1}{11} \approx 1385 \times$
 
 As you can see, with the same optical components (except oculars) as in the example calculation of the optical magnification above (see formula (1)), the resulting digital magnification is about 3.5 $\times$ larger than the optical magnification. **So digital and optical magnifications *are* different!**  
 
-An example I like to show is the figure 8a of Pedergnana (2020) (the paper can be read [here](https://rdcu.be/cWpDH)). According to the legend, the original magnification of the optical light microscopy image on the left is 10x and that of the SEM image on the right is 200x (actually 260x according to the data zone on the image itself). So different magnifications but same field of view and roughly same size on the PDF...?! Here I do not mean that Antonella Pedergnana was wrong, but rather that the concept of digital magnification is useless!
+An example I like to show is the figure 8a of [Pedergnana (2020)](#references) (the paper can be read [here](https://rdcu.be/cWpDH)). According to the legend, the original magnification of the optical light microscopy image on the left is 10x and that of the SEM image on the right is 200x (actually 260x according to the data zone on the image itself). So different magnifications but same field of view and roughly same size on the PDF...?! Here I do not mean that Antonella Pedergnana was wrong, but rather that the concept of digital magnification is useless!
 
 Also, the formula (2) shows that calculating the total digital magnification is not so easy in practice: the camera sensor diagonal and the viewing medium diagonal are not always known. 
 
@@ -133,7 +133,7 @@ The calculated optical lateral resolution ($\delta_L$) depends on the numerical 
 
 $\delta_L = \frac{K.\lambda}{NA}$ (3)
 
-The value of $K$ is 0.61 for bright field microscopy (= "classical" light microscopes). For laser-scanning confocal microscopy, $K$ depends on the diameter of the pinhole and varies between 0.37 and 0.61 (Artigas 2011).
+The value of $K$ is 0.61 for bright field microscopy (= "classical" light microscopes). For laser-scanning confocal microscopy, $K$ depends on the diameter of the pinhole and varies between 0.37 and 0.61 ([Artigas 2011](#references)).
 
 From formula (3) and the definition of the optical lateral resolution, it becomes apparent that **the smaller $\delta_L$ is, the better the resolving power of the microscope is** (*i.e.* closer points will be distinguishable). This is what we usually refer to as "*higher* resolution", even though the value for $\delta_L$ is *smaller*. Confusing, right? This is why I prefer to talk about "better/worse" resolution rather than "smaller/larger".
 
@@ -178,7 +178,7 @@ $\delta_A(BF) = depth \ of \ field = \frac{n.\lambda}{NA^2}$ (5)
 
 with $n$ the refractive index of the medium ($n_{air} = 1$). 
 
-For a confocal microscope, the axial resolution is calculated by the optical slice thickness, which also depends on the pinhole diameter (Artigas 2011):
+For a confocal microscope, the axial resolution is calculated by the optical slice thickness, which also depends on the pinhole diameter ([Artigas 2011](#references)):
 
 $\delta_A(conf) = \frac{0.64 \lambda}{n- \sqrt{n^2-NA^2}}$ (6) with a pinhole diameter $PH < 0.25 AU$ ([Airy Unit](https://en.wikipedia.org/wiki/Airy_disk))
 
@@ -191,18 +191,29 @@ Here again, **the smaller $\delta_A$, the better the resolution is.**
 
 
 ## What should we report?
-Observation/analysis through oculars or on the digital image?  
-Manufacturer + model  
-Imaging technique / contrasts (BF, DF, polarisation, DIC, confocal...) 
-Objective designation + magnification (FDS§2.2.4) + NA (FDS§2.2.5&2.2.6). WD could be informative too (FDS§2.2.2)  
-Optical + digital zoom if applicable  
-Oculars magnification if used  
-Scale bar  
-Pixel size + field of view + number of pixels  
-Wavelength of the light source  
-For confocal: pinhole diameter, step size  
-Software version  
-T+H during measurements
+All the background information of the previous section aims at providing the required knowledge to use a microscope to reach the desired scale of observation. While it is important for the analyst to see what he/she/they want to see on the sample, it is equally important that the reader/audience that will be presented - or even will assess - the work is able to know what can be observed in terms of scale on the reported/published/shared images. This is also important for repeatability and reproducibilty (and pre-producibility *sensu* [Stark 2018](#references)).
+
+So here is a list of what **I** think is necessary for pre-producible microscopic images:
+
+
+**Number**|**Category**|**What?**|**Why?**|**How? (examples)**  
+-----|-----|-----|-----|-----  
+1|Observation/analysis method|Observation/analysis through oculars or directly on the digital image? |To know how the analyst performed the analysis|“The features were observed and analyzed through the oculars. The images reported are therefore not equivalent to what has been observed during analysis.”  
+2|Microscope|Manufacturer and model of the microscope  |To account for all (unknown) settings that are part of the microscope’s design|“AxioScope.A1 (Carl Zeiss Microscopy GmbH)”  
+3|Technique|Imaging technique / contrast|To interpret the image according to the technique(s) used|“Confocal microscopy” or “bright field” or “DIC”  
+4|Light|Illumination|To interpret the image according to the illumination(s) used|“Ringlight illumination” or “Coaxial illumination”  
+5|Light|Type + wavelength of the light source  |To calculate the optical resolutions|“Violet LED 405 nm”  
+6|Optics|Objective specifications|To calculate magnifications and resolutions|“Objective Zeiss C Epiplan-Apochromat Mag. = 50x / NA = 0.95 / WD = 0.22 mm”  
+7|Optics|Oculars magnification, if applicable (see #1)|To calculate the optical magnification|“10x oculars”
+8|Optics|Optical zoom, if applicable  |To calculate magnifications|“2x optical zoom”
+9|Camera|Digital zoom, if applicable  |To calculate the digital magnification|“2x digital zoom”
+10|Camera|Pixel size / field of view / number of pixels (at least two of them)  |To calculate the digital lateral resolution|“100 x 100 µm for 1000 x 1000 pixels” or “1000 x 1000 pixels, pixel size = o.1 µm”
+11|Camera|Scale bar  |To visualize the size of the imaged region|“Scale bar = 100 µm”
+12|Confocal|Pinhole diameter, if applicable  |To calculate the optical resolutions|“PH = 54 µm (1 AU)”
+13|Confocal|Step size, if applicable|To calculate the vertical resolution|“Step size = 0.2 µm”
+14|Confocal|Temperature + humidity during topography scanning|T & H can influence the fine-scale measurements of topography|“Scans were acquired at 20 < T < 22 °C and 50 < rH < 70 %”
+15|Confocal|Location of the equipment|An environment without vibrations is necessary for fine-scale measurements of topography|“The confocal microscope is located in the basement and placed on a passive anti-vibration table, itself placed on a concrete based decoupled from the rest of the floor”
+16|Software|Versions of acquisition and analysis software packages|Different versions might produce different results|“ZEN blue 3.5 Hotfix 7 (Carl Zeiss Microscopy GmbH) with module Shuttle-and-Find” or “ConfoMap 9.2.10042 with module Scale-sensitive Analysis”
 
 
 ---
@@ -243,8 +254,10 @@ This work is licensed under a
 
 
 ## References
-Artigas, R. (2011). Imaging Confocal Microscopy, in: R. Leach (Ed.), Optical Measurement of Surface Topography, Springer Berlin Heidelberg, pp. 237–286. https://doi.org/10.1007/978-3-642-12012-1_11.
+Artigas R. 2011. Imaging Confocal Microscopy. In: Leach R ed. Optical Measurement of Surface Topography. Berlin, Heidelberg: Springer Berlin Heidelberg, 237–286. https://doi.org/10.1007/978-3-642-12012-1_11.
 
-Pedergnana, A. (2020). *"All that glitters is not gold"*: Evaluating the Nature of the Relationship Between Archeological Residues and Stone Tool Function. Journal of Paleolithic Archaeology 3: 225–254. https://doi.org/10.1007/s41982-019-00039-z
+Pedergnana A. 2019. *“All that glitters is not gold”*: Evaluating the Nature of the Relationship Between Archeological Residues and Stone Tool Function. Journal of Paleolithic Archaeology. https://doi.org/10.1007/s41982-019-00039-z.
 
-Soler, S. cc-licenses: Creative Commons Licenses for GitHub Projects. Accessed on 2022-09-27. https://github.com/santisoler/cc-licenses
+Soler S. 2022.cc-licenses: Creative Commons Licenses for GitHub Projects. Available at https://github.com/santisoler/cc-licenses (accessed September 27, 2022).
+
+Stark PB. 2018. Before reproducibility must come preproducibility. Nature 557:613–613. https://doi.org/10.1038/d41586-018-05256-0.
