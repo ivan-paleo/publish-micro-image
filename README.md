@@ -203,6 +203,7 @@ So here is a list of what **I** think is necessary for pre-producible microscopi
 3|Technique|Imaging technique / contrast|To interpret the image according to the technique(s) used|“Confocal microscopy” or “bright field” or “DIC”  
 4|Light|Illumination|To interpret the image according to the illumination(s) used|“Ringlight illumination” or “Coaxial illumination”  
 5|Light|Type + wavelength of the light source  |To calculate the optical resolutions|“Violet LED 405 nm”  
+6|Light|Light source intensity, exposure, gain...||
 6|Optics|Objective specifications|To calculate magnifications and resolutions|“Objective Zeiss C Epiplan-Apochromat Mag. = 50 $\times$ / NA = 0.95 / WD = 0.22 mm”  
 7|Optics|Oculars magnification, if applicable (see #1)|To calculate the optical magnification|“10 $\times$ oculars”
 8|Optics|Optical zoom, if applicable  |To calculate magnifications|“2 $\times$ optical zoom”
