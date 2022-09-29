@@ -74,18 +74,18 @@ For example, using a 20x objective with 10x oculars and 2x optical zoom, the tot
 ### Digital magnification
 Things get more complicated in the digital world. It all comes down to one single question: **what is THE size of the magnified area when stored on a digital image?** Is it the size of the screen when you acquire the image? Is it the size of the screen when you view the image? Is it the size printed on paper, or projected to a screen? There is no single size for a digital image because it depends on the viewing medium: increase the size of the viewing medium and the magnification will increase as well, even though the image is the same. Does that mean that increasing the size of the viewing medium will improve the resolution? Unfortunately, no.  
 
-Let us see how the digital magnification is calculated. The problem with a digital image (as opposed to an analog image) is that many component come into play to magnify the sample: both the optical (objective, optical zoom and camera adaptor) and digital (camera sensor, viewing medium and digital zoom) components must be considered. Note that the oculars are not relevant anymore because the light goes to the camera without passing through the oculars.  
+Let us see how the digital magnification is calculated. The problem with a digital image (as opposed to an analog image) is that many components come into play to magnify the sample: both the optical (objective, optical zoom and camera adaptor) and digital (camera sensor, viewing medium and digital zoom) components must be considered. Note that the oculars are not relevant anymore because the light goes to the camera without passing through the oculars.  
 This is how to calculate the digital magnification:  
 
 $digital \ mag. = \frac{objective \ magnification \times optical \ zoom \times camera \ adaptor \times viewing \ medium \ diagonal \times digital \ zoom}{camera \ sensor \ diagonal}$  (2)
 
-For example, using a 20x objective, 2x optical zoom, 1x camera adaptor, 381 mm screen diagonal (= 15"), 1x digital zoom, and 11 mm camera sensor diagonal, the total on-screen magnification is:  
+For example, using a 20x objective, 2x optical zoom, 1x camera adaptor, 381 mm or 15" screen diagonal (to be precise, what matters is **the diagonal of the part of the screen where the image is displayed**), 1x digital zoom, and 11 mm camera sensor diagonal, the total on-screen magnification is:  
 
 $\frac{20 \times 2 \times 1 \times 381 \times 1}{11} \approx 1385 \times$ 
 
 As you can see, with the same optical components (except oculars) as in the example calculation of the optical magnification above (see formula (1)), the resulting digital magnification is about 3.5 $\times$ larger than the optical magnification. **So digital and optical magnifications *are* different!**  
 
-An example I like to show is the figure 8a of [Pedergnana (2020)](#references) (the paper can be read [here](https://rdcu.be/cWpDH)). According to the legend, the original magnification of the optical light microscopy image on the left is 10x and that of the SEM image on the right is 200x (actually 260x according to the data zone on the image itself). So different magnifications but same field of view and roughly same size on the PDF...?! Here I do not mean that Antonella Pedergnana was wrong, but rather that the concept of digital magnification is useless!
+An example I like to show is the figure 8a of [Pedergnana (2020)](#references) (the paper can be read [here](https://rdcu.be/cWpDH)). According to the legend, the original magnification of the optical light microscopy image on the left is 10x and that of the SEM image on the right is 200x (actually 260x according to the data zone on the image itself). So different magnifications but same field of view and roughly same size on the PDF...?! Here I do not mean that Antonella Pedergnana was wrong; she actually did correctly report the microscopes' settings, which are misleading for the reader. This example shows that the concept of digital magnification is troublesome!
 
 Also, the formula (2) shows that calculating the total digital magnification is not so easy in practice: the camera sensor diagonal and the viewing medium diagonal are not always known. 
 
@@ -104,7 +104,7 @@ $\frac{20 \times 2 \times 1 \times 444.5 \times 1}{11} \approx 1616 \times$
 
 So this makes a significant difference!
 
-There might be one case where the digital magnification might be useful, namely in SEM imaging. In this case, the digital magnification is given relative to a *reference*. For example, in the case of our Zeiss EVO 25, the magnification is given relative to the Polaroid 545 format (other formats can be selected), *i.e.* as if printed on 4 $\times$ 5" polaroid paper. This used to be the printing format for analog images in the days before digital SEMs. Note that other manufacturers might use difference references so the magnifications might not be comparable, once again.
+There might be one case where the digital magnification might be useful, namely in SEM imaging. In this case, the digital magnification is given relative to a *reference*. For example, in the case of our Zeiss EVO 25, the magnification is given relative to the Polaroid 545 format (other formats can be selected), *i.e.* as if printed on 4 $\times$ 5" polaroid paper. This used to be the printing format for analog images in the days before digital SEMs. Note that other manufacturers might use different references so the magnifications might not be comparable, once again.
 
 
 ### Scale bar
@@ -119,7 +119,7 @@ In summary, in my opinion, talking about *resolution* is much more useful and re
 ## Resolution
 There is not one single resolution but many different, complementary definitions of resolution. First, it is important, once again, to differentiate between optical and digital resolutions. And second, there are lateral (XY) and vertical (Z) resolutions. 
 
-The optical resolution is influenced by the optics (objective + optical zoom), while the digital resolution is influenced by the field of view (itself dependent on the objective) and the camera.
+The optical resolution is influenced by the optics (objective + optical zoom), while the digital resolution is influenced by the field of view (itself dependent on the objective) and the camera/detector.
 
 Most terms and definitions here refer to the [Fair Data Sheet Initiative, v1.2α](http://www.optassyst.de/fairesdatenblatt/) (the website is only in German, but the Fair Data Sheet itself has an English version). I will abbreviate it "FDS".
 
@@ -151,7 +151,7 @@ $measuring \ point \ spacing = \frac{measuring \ area}{number \ of \ pixels}$ (4
 ### Relationship between optical and digital lateral resolutions
 So far, so good, and not too complicated. The problem is that we now have two different values for the lateral resolution. Which one should we care about? Both, of course! But **what should the relationship between optical and digital lateral resolutions be?** 
 
-The Nyquist criterion (based on [Nyquist–Shannon sampling theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem)) states that [the digital lateral resolution should be 2-3 times smaller than the optical lateral resolution](https://zeiss-campus.magnet.fsu.edu/articles/basics/digitalimaging.html).  
+The Nyquist criterion (based on [Nyquist–Shannon sampling theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem)) states that [the digital lateral resolution should be 2-3 times smaller than the optical lateral resolution](https://zeiss-campus.magnet.fsu.edu/articles/basics/digitalimaging.html). This is necessary to digitally image with sufficient details the transition between features that are optically visible.  
 For example, if $\delta_L = 0.6 \ \mu m$, then the measuring point spacing should be 0.2-0.3 µm.  
 
 If the digital lateral resolution is more than 3 times smaller than the optical lateral resolution, this will result in oversampling: adjacent pixels will have the same values, so the digital image will not contain more meaningful information but simply more information. This results in larger files than necessary and generally does not improve the quality of the image.  
@@ -203,17 +203,20 @@ So here is a list of what **I** think is necessary for pre-producible microscopi
 3|Technique|Imaging technique / contrast|To interpret the image according to the technique(s) used|“Confocal microscopy” or “bright field” or “DIC”  
 4|Light|Illumination|To interpret the image according to the illumination(s) used|“Ringlight illumination” or “Coaxial illumination”  
 5|Light|Type + wavelength of the light source  |To calculate the optical resolutions|“Violet LED 405 nm”  
-6|Optics|Objective specifications|To calculate magnifications and resolutions|“Objective Zeiss C Epiplan-Apochromat Mag. = 50x / NA = 0.95 / WD = 0.22 mm”  
-7|Optics|Oculars magnification, if applicable (see #1)|To calculate the optical magnification|“10x oculars”
-8|Optics|Optical zoom, if applicable  |To calculate magnifications|“2x optical zoom”
-9|Camera|Digital zoom, if applicable  |To calculate the digital magnification|“2x digital zoom”
-10|Camera|Measuring point spacing / field of view / number of pixels (at least two of them)  |To calculate the digital lateral resolution|“100 x 100 µm for 1000 x 1000 pixels” or “1000 x 1000 pixels, measuring point spacing = 0.1 µm”
+6|Optics|Objective specifications|To calculate magnifications and resolutions|“Objective Zeiss C Epiplan-Apochromat Mag. = 50 $\times$ / NA = 0.95 / WD = 0.22 mm”  
+7|Optics|Oculars magnification, if applicable (see #1)|To calculate the optical magnification|“10 $\times$ oculars”
+8|Optics|Optical zoom, if applicable  |To calculate magnifications|“2 $\times$ optical zoom”
+9|Camera|Digital zoom, if applicable  |To calculate the digital magnification|“2 $\times$ digital zoom”
+10|Camera|Measuring point spacing / field of view / number of pixels (at least two of them)  |To calculate the digital lateral resolution|“100 $\times$ 100 µm for 1000 $\times$ 1000 pixels” or “1000 $\times$ 1000 pixels, measuring point spacing = 0.1 µm”
 11|Camera|Scale bar  |To visualize the size of the imaged region|“Scale bar = 100 µm”
 12|Confocal|Pinhole diameter, if applicable  |To calculate the optical resolutions|“PH = 54 µm (1 AU)”
 13|Confocal|Step size / z-range, if applicable|To ...?|“40-50 µm with 0.2 µm steps”
 14|Confocal|Temperature + humidity during topography scanning|T & H can influence the fine-scale measurements of topography|“Scans were acquired at 20 < T < 22 °C and 50 < rH < 70 %”
 15|Confocal|Location of the equipment|An environment without vibrations is necessary for fine-scale measurements of topography|“The confocal microscope is located in the basement and placed on a passive anti-vibration table, itself placed on a concrete based decoupled from the rest of the floor”
 16|Software|Versions of acquisition and analysis software packages|Different versions might produce different results|“ZEN blue 3.5 Hotfix 7 (Carl Zeiss Microscopy GmbH) with module Shuttle-and-Find” or “ConfoMap 9.2.10042 with module Scale-sensitive Analysis”
+17|Processing|Stitching, if applicable| | 
+18|Processing|EDF, if applicable| | 
+19|Processing|Image enhancements / filters, if applicable| |
 
 
 ---
