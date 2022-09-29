@@ -129,7 +129,7 @@ Due to aberrations from the optics and diffraction of the light, an optical syst
 
 The calculated optical lateral resolution is the "minimum theoretical distance between two adjacent, barely distinguishable features of an object" (FDS §2.2.8). In other words, if two points are closer from each other than the optical lateral resolution, then it is not possible to distinguish them (*i.e.* they will looks like one point only). They will appear as two separate points only if they are further from each other than the optical lateral resolution.
 
-The calculated optical lateral resolution ($\delta_L$) depends on the numerical aperture of the optics (= objective + optical zoom, $NA$), on the wavelength of the light ($\lambda$) and on a factor ($K$):
+The calculated optical lateral resolution $\delta_L$ depends on the numerical aperture of the optics (= objective + optical zoom, $NA$), on the wavelength of the light $\lambda$ and on a factor $K$:
 
 $\delta_L = \frac{K.\lambda}{NA}$ (3)
 
@@ -176,7 +176,7 @@ The optical vertical, or axial, resolution is equal to the depth of field for a 
 
 $\delta_A(BF) = depth \ of \ field = \frac{n.\lambda}{NA^2}$ (5)
 
-with $n$ the refractive index of the medium ($n_{air} = 1$). 
+with $n$ the refractive index of the medium; $n_{air} = 1$. 
 
 For a confocal microscope, the axial resolution is calculated by the optical slice thickness, which also depends on the pinhole diameter ([Artigas 2011](#references)):
 
