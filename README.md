@@ -193,7 +193,7 @@ Here again, **the smaller $\delta_A$, the better the resolution is.**
 ## What should we report?
 All the background information of the previous section aims at providing the required knowledge to use a microscope to reach the desired scale of observation. While it is important for the analyst to see what he/she/they want to see on the sample, it is equally important that the reader/audience that will be presented - or even will assess - the work is able to know what can be observed in terms of scale on the reported/published/shared images. This is also important for repeatability and reproducibilty (and pre-producibility *sensu* [Stark 2018](#references)).
 
-So here is a list of what **I** think is necessary for pre-producible microscopic images:
+So here is a list of what **I** think is necessary for pre-producible microscopic images. This list should be adapted according to the equipment/software used.
 
 
 **Number**|**Category**|**What?**|**Why?**|**How? (examples)**  
@@ -203,21 +203,23 @@ So here is a list of what **I** think is necessary for pre-producible microscopi
 3|Technique|Imaging technique / contrast|To interpret the image according to the technique(s) used|“Confocal microscopy” or “bright field” or “DIC”  
 4|Light|Illumination|To interpret the image according to the illumination(s) used|“Ringlight illumination” or “Coaxial illumination”  
 5|Light|Type + wavelength of the light source  |To calculate the optical resolutions|“Violet LED 405 nm”  
-6|Light|Light source intensity, exposure, gain...||
-6|Optics|Objective specifications|To calculate magnifications and resolutions|“Objective Zeiss C Epiplan-Apochromat Mag. = 50 $\times$ / NA = 0.95 / WD = 0.22 mm”  
-7|Optics|Oculars magnification, if applicable (see #1)|To calculate the optical magnification|“10 $\times$ oculars”
-8|Optics|Optical zoom, if applicable  |To calculate magnifications|“2 $\times$ optical zoom”
-9|Camera|Digital zoom, if applicable  |To calculate the digital magnification|“2 $\times$ digital zoom”
-10|Camera|Measuring point spacing / field of view / number of pixels (at least two of them)  |To calculate the digital lateral resolution|“100 $\times$ 100 µm for 1000 $\times$ 1000 pixels” or “1000 $\times$ 1000 pixels, measuring point spacing = 0.1 µm”
-11|Camera|Scale bar  |To visualize the size of the imaged region|“Scale bar = 100 µm”
-12|Confocal|Pinhole diameter, if applicable  |To calculate the optical resolutions|“PH = 54 µm (1 AU)”
-13|Confocal|Step size / z-range, if applicable|To ...?|“40-50 µm with 0.2 µm steps”
-14|Confocal|Temperature + humidity during topography scanning|T & H can influence the fine-scale measurements of topography|“Scans were acquired at 20 < T < 22 °C and 50 < rH < 70 %”
-15|Confocal|Location of the equipment|An environment without vibrations is necessary for fine-scale measurements of topography|“The confocal microscope is located in the basement and placed on a passive anti-vibration table, itself placed on a concrete based decoupled from the rest of the floor”
-16|Software|Versions of acquisition and analysis software packages|Different versions might produce different results|“ZEN blue 3.5 Hotfix 7 (Carl Zeiss Microscopy GmbH) with module Shuttle-and-Find” or “ConfoMap 9.2.10042 with module Scale-sensitive Analysis”
-17|Processing|Stitching, if applicable| | 
-18|Processing|EDF, if applicable| | 
-19|Processing|Image enhancements / filters, if applicable| |
+6|Light|Light source intensity|To be able to repeat the acquisition|"60%"
+7|Light|Exposure time|To be able to repeat the acquisition|"100 ms"
+8|Optics|Objective specifications|To calculate magnifications and resolutions|“Objective Zeiss C Epiplan-Apochromat Mag. = 50 $\times$ / NA = 0.95 / WD = 0.22 mm”  
+9|Optics|Oculars magnification, if applicable (see #1)|To calculate the optical magnification|“10 $\times$ oculars”
+10|Optics|Optical zoom, if applicable  |To calculate magnifications|“2 $\times$ optical zoom”
+11|Camera|Digital zoom, if applicable  |To calculate the digital magnification|“2 $\times$ digital zoom”
+12|Camera|Measuring point spacing + field of view + number of pixels (at least two of them)  |To calculate the digital lateral resolution|“100 $\times$ 100 µm for 1000 $\times$ 1000 pixels” or “1000 $\times$ 1000 pixels, measuring point spacing = 0.1 µm”
+13|Camera|Scale bar  |To visualize the size of the imaged region|“Scale bar = 100 µm”
+14|Confocal|Pinhole diameter, if applicable  |To calculate the optical resolutions|“PH = 54 µm (1 AU)”
+15|Confocal|Step size + z-range, if applicable|To be able to repeat the measurement|“40-50 µm with 0.2 µm steps”
+16|Confocal|Temperature + humidity during topography scanning|T & H can influence the fine-scale measurements of topography|“Scans were acquired at 20 < T < 22 °C and 50 < rH < 70 %”
+17|Confocal|Location of the equipment|An environment without vibrations is necessary for fine-scale measurements of topography|“The confocal microscope is located in the basement and placed on a passive anti-vibration table, itself placed on a concrete based decoupled from the rest of the floor”
+18|Confocal|Any other equipment-specific setting|To be able to repeat the measurement|"Master gain = 220 V"
+19|Software|Versions of acquisition and analysis software packages|Different versions might produce different results|“ZEN blue 3.5 Hotfix 7 (Carl Zeiss Microscopy GmbH) with module Shuttle-and-Find” or “ConfoMap 9.2.10042 with module Scale-sensitive Analysis”
+20|Processing|Stitching, if applicable|To be able to repeat the processing|"2 $\times$ 2 tile regions were acquired, with shading correction (to avoid seeing the separations between single images), 5% minimal overlap and 10% maximal shift, 'optimized' comparer and 'best' global optimizer.  
+21|Processing|Extended depth of focus (EDF), if applicable|To be able to repeat the processing|"Z-stacks were processed to EDF images with the wavelets method and without z-stack alignment"
+22|Processing|Image enhancements / filters / image analysis settings, if applicable|To be able to repeat the acquisition|"The contour were enhanced with settings A and B; and brightness, contrast and gamma were adjusted to C, D and E respectively"
 
 
 ---
