@@ -21,6 +21,9 @@
     - [Relationship between optical and digital lateral resolutions](#relationship-between-optical-and-digital-lateral-resolutions)
     - [Digital zoom](#digital-zoom)
     - [Optical vertical resolution and depth of field](#optical-vertical-resolution-and-depth-of-field)
+    - [Digital vertical resolution](#digital-vertical-resolution)
+- [Processing](#processing)
+- [Saving an image](#saving-an-image)
 - [What should we report?](#what-should-we-report)
 - [How to contribute](#how-to-contribute)
     - [Submit an issue](#submit-an-issue)
@@ -50,7 +53,7 @@ This document is by no means exhaustive and is limited in scope on purpose, but 
 A microscope is obviously used to observe features of an object that are too small to be visible to the naked eye. To do so, a series of lenses magnifies the object so that the analyst sees more details. But which scale(s) is (are) appropriate and how to reach this (these) scale(s) with a microscope?
 
 So, the first question the analyst should ask is: **What is the size of the features of interest?** It is important to consider the range of sizes: the size of the smallest features is important, but so is the size of the largest. This is because the larger this range, the less likely it is that all these sizes can be observed with a single set of settings. In other words, if features of different sizes are of interest, several acquisitions at different scales will probably be needed.  
-Finding the size(s) of the features is often done directly during observation: increasing the magnification until the features of interest are visible. This is a valid approach if the microscope used has the appropriate hardware (objectives) to resolve the features of interest. But it can also happen that the features of interest are smaller or larger than what is permitted by the hardware at hand. Moreover, when dealing with digital images, some other issues might occur. This is why it is always advisable to start with at least a rough idea of the size(s) of the features and of the capabilities of the microscope(s) available to the analyst.  
+Finding the size(s) of the features is often done directly during observation: increasing the magnification until the features of interest are visible. This is a valid approach if the microscope used has the appropriate hardware (objectives and optical zoom) to resolve the features of interest. But it can also happen that the features of interest are smaller or larger than what is permitted by the hardware at hand. Moreover, when dealing with digital images, some other issues might occur. This is why it is always advisable to start with at least a rough idea of the size(s) of the features and of the capabilities of the microscope(s) available to the analyst.  
 
 But how do we know what the microscope's hardware can achieve in terms of scale? Most publications and reports talk about *magnification*. But what is it really and what does it mean? In the next section, I will argue that magnification is (almost) useless in digital microscopic imaging and actually only confuses the analyst. Resolution is much more important, but it is unfortunately still cryptic to many analysts; I will therefore try to explain some concepts afterwards.
 
@@ -93,7 +96,7 @@ Also, the formula (2) shows that calculating the total digital magnification is 
 ### Banning magnification?
 So what now? **Should we all forget about magnification in digital microscopy?** Well, pretty much, in my opinion.  
 
-If the analyst has observed and analyzed while looking through the ocular, the optical magnification is very relevant and should be reported. However, the image published is a digital one. This implies that the analyst and the readers/audience will observe the sample at different magnifications (and resolutions as well, see the next section). In some cases, the readers/audience might not be able to see what the analyst is referring too. This might result in misunderstanding and potentially even disbelief in respect to the analyst. Even when the analyst analyzed the digital image directly, the viewing medium diagonal might change for each person anyway (laptop screen vs. desktop screen vs. projected screen...).  
+If the analyst has observed and analyzed while looking through the ocular, the optical magnification is very relevant and should be reported. However, the image published is a digital one. This implies that the analyst and the readers/audience will observe the sample at different magnifications (and resolutions as well, see the next section). In some cases, the readers/audience might not be able to see what the analyst is referring to. This might result in misunderstanding and potentially even disbelief in respect to the analyst. Even when the analyst analyzed the digital image directly, the viewing medium diagonal might change for each person anyway (laptop screen vs. desktop screen vs. projected screen...).  
 
 As a side note, the field of view of a digital image is usually smaller (to avoid [vignetting](https://en.wikipedia.org/wiki/Vignetting)) than the field of view of the image as seen through the oculars. This is another source of differences when the analyst observed through the ocular but reports/publishes a digital image.
 
@@ -110,7 +113,7 @@ There might be one case where the digital magnification might be useful, namely 
 ### Scale bar
 So, if the digital magnification is useless, how can we know the size of a digital microscopic image? The good old **scale bar**! The field of view, *i.e* the size of the imaged area of the sample, or rulers or anything similar will do the trick too.
 
-In summary, in my opinion, talking about *resolution* is much more useful and relevant than digital magnification.
+**In summary, in my opinion, talking about *resolution* is much more useful and relevant than digital magnification.**
 
 
 ---
@@ -135,7 +138,7 @@ $\delta_L = \frac{K.\lambda}{NA}$ (3)
 
 The value of $K$ is 0.61 for bright field microscopy (= "classical" light microscopes). For laser-scanning confocal microscopy, $K$ depends on the diameter of the pinhole and varies between 0.37 and 0.61 ([Artigas 2011](#references)).
 
-From formula (3) and the definition of the optical lateral resolution, it becomes apparent that **the smaller $\delta_L$ is, the better the resolving power of the microscope is** (*i.e.* closer points will be distinguishable). This is what we usually refer to as "*higher* resolution", even though the value for $\delta_L$ is *smaller*. Confusing, right? This is why I prefer to talk about "better/worse" resolution rather than "smaller/larger".
+From formula (3) and the definition of the optical lateral resolution, it becomes apparent that **the smaller $\delta_L$, the better the resolving power of the microscope** (*i.e.* closer points will be distinguishable). This is what we usually refer to as "*higher* resolution", even though the value for $\delta_L$ is *smaller*. Confusing, right? This is why I prefer to talk about "better/worse" resolution rather than "smaller/larger".
 
 The NOTE 3 of the FDS §2.2.8 states that "the optical [lateral] resolution can be achieved only under ideal conditions (including complete illumination of the pupil) on planar objects. This value is usually not reached on textured surfaces". In archaeology and paleontology, we usually deal with textured surfaces!
 
@@ -163,8 +166,8 @@ Formula (2) includes the digital zoom in the calculation of the digital magnific
 
 Let us start with an original image 100 $\times$ 100 µm  with 1000 $\times$ 1000 pixels. This results in a measuring point spacing of 0.1 µm.  
 The digital zoom acts like a cropping and enlarging tool: the original image will be first cropped and then enlarged to the same viewing size as the original image.  
-A digital zoom factor 2x means that the original image is cropped by half in X and in Y directions, *i.e.* the zoomed in image is 4  $\times$ smaller than the original image. This is true both for the size in µm and for the number of pixels. The zoomed in image will therefore be 50 $\times$ 50 µm but it will occupy the same space on your screen as the original image (*i.e.* digital magnification 2 $\times$ larger). And it will have 500 $\times$ 500 pixels.  
-So what about the digital lateral resolution of the zoomed in image? 0.1 µm, just like the original image.
+A digital zoom factor 2x means that the original image is cropped by half in X and in Y directions, *i.e.* the zoomed image is 4  $\times$ smaller than the original image. This is true both for the size in µm and for the number of pixels. The zoomed image will therefore be 50 $\times$ 50 µm but it will occupy the same space on your screen as the original image (*i.e.* digital magnification 2 $\times$ larger). And it will have 500 $\times$ 500 pixels.  
+So what about the digital lateral resolution of the zoomed image? 0.1 µm, just like the original image.
 
 All this to say that the **digital zoom obviously changes the digital magnification but does not influence the digital lateral resolution**.  
 
@@ -172,26 +175,56 @@ Still, it seems that zooming in digitally helps to see more details. This is jus
 
 
 ### Optical vertical resolution and depth of field
-The optical vertical, or axial, resolution is equal to the depth of field for a bright field microscope:
+The optical vertical, or axial, resolution is equal to the depth of field for a bright field (BF) microscope:
 
 $\delta_A(BF) = depth \ of \ field = \frac{n.\lambda}{NA^2}$ (5)
 
-with $n$ the refractive index of the medium; $n_{air} = 1$. 
+with $n$ the refractive index of the medium; $n_{air} \approx 1$. 
 
 For a confocal microscope, the axial resolution is calculated by the optical slice thickness, which also depends on the pinhole diameter ([Artigas 2011](#references)):
 
 $\delta_A(conf) = \frac{0.64 \lambda}{n- \sqrt{n^2-NA^2}}$ (6) with a pinhole diameter $PH < 0.25 AU$ ([Airy Unit](https://en.wikipedia.org/wiki/Airy_disk))
 
-$\delta_A(conf) = \sqrt{(\frac{0.88 \lambda}{n- \sqrt{n^2-NA^2}})^2 + (\frac{n.PH.\sqrt{2}}{NA})^2}$ (6) with a pinhole diameter $PH$ $\ge 0.25 AU$
+$\delta_A(conf) = \sqrt{(\frac{0.88 \lambda}{n- \sqrt{n^2-NA^2}})^2 + (\frac{n.PH.\sqrt{2}}{NA})^2}$ (7) with a pinhole diameter $PH$ $\ge 0.25 AU$
 
 Here again, **the smaller $\delta_A$, the better the resolution is.**
+
+
+### Digital vertical resolution
+The digital vertical resolution is meaningless in case of a 2D image (even for extended depth of focus - EDF - images) but it is relevant for 2.5 and 3D images. Unfortunately, I do not know how to calculate the digital vertical resolution of a z-stack.  
+If anyone knows more about it, please [contribute](#how-to-contribute)!
 
 
 ---
 
 
+## Processing
+Few images are published without some form of processing. Sometimes, processing is even necessary to create (e.g. EDF, stitching, topography reconstruction) or analyze (e.g. contrast/brightness, surface texture analysis) the image.  
+While processing deserves a whole good-practice document on its own, I would just like to give some general advices here that will hopefully be applicable to most processing routines.
+
+Even if we sometimes tend to assume that there is only one way to process an image, there are in fact often several methods or algorithms to do so. This is why it is important to **be as precise as possible when reporting about the processing** (see section [What should we report?](#what-should-we-report)).  
+
+It is also crucial to **process all images of a dataset in the same way**. This might seem obvious, but different processing methods might produce results that might appear identical/similar even if they actually are different. Processing all images in the same way ensures that all images are comparable at least within a dataset. Of course, this is true only if **the images were acquired in the same way**!  
+I believe the message is clear and every analyst should try his/her/their best to acquire and process images and data in a consistent and comparable manner.
+
+Another general piece of advice is to **keep the raw data**, in this case the acquired image, and to **process a copy** of it rather than overwriting the acquired image. This way, it is possible to check the result and process differently if necessary. See section [Saving an image](#saving-an-image) for a discussion on file formats and raw data.
+
+
+---
+
+
+## Saving an image
+File formats and software
+
+Raw/processed/derived data
+
+---
+
+
 ## What should we report?
-All the background information of the previous section aims at providing the required knowledge to use a microscope to reach the desired scale of observation. While it is important for the analyst to see what he/she/they want to see on the sample, it is equally important that the reader/audience that will be presented - or even will assess - the work is able to know what can be observed in terms of scale on the reported/published/shared images. This is also important for repeatability and reproducibilty (and pre-producibility *sensu* [Stark 2018](#references)).
+All the background information of the previous section aims at providing the required knowledge to use a microscope to reach the desired scale of observation. While it is important for the analyst to see what he/she/they want to see on the sample, it is equally important that the reader/audience that will be presented - or even will assess - the work is able to know what can be observed in terms of scale on the reported/published/shared images. This is also important for *repeatability* and *reproducibilty* (and *pre-producibility* *sensu* [Stark 2018](#references)).  
+
+The importance of reporting for microscopy is not unique to archaeology/paleontology and other fields also suffer from a lack of high-quality reporting (see e.g. [Marqués et al. 2020](https://doi.org/10.7554/eLife.55133) in biomedical research).
 
 So here is a list of what **I** think is necessary for pre-producible microscopic images. This list should be adapted according to the equipment/software used.
 
@@ -235,7 +268,7 @@ If you notice any problem or have a question, submit an [issue](https://docs.git
 This document is written in [Markdown](https://www.markdownguide.org/). If you know how to write in this format, please propose text edits as a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) (abbreviated "PR").
 
 ### Send me an email  
-For options 1-2, you need to create a GitHub account. If you do not have one and do not want to sign up, you can still write me an email (Google me to find my email address).
+For options 1-2, you need to create a GitHub account. If you do not have one and do not want to sign up, you can still write me an email (Google my name together with my affiliation to find my email address).
 
 By participating in this project, you agree to abide by our [code of conduct](CONDUCT.md).
 
