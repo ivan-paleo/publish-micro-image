@@ -200,12 +200,12 @@ If anyone knows more about it, please [contribute](#how-to-contribute)!
 
 ## Processing
 Few images are published without some form of processing. Sometimes, processing is even necessary to create (e.g. EDF, stitching, topography reconstruction) or analyze (e.g. contrast/brightness, surface texture analysis) the image.  
-While processing deserves a whole good-practice document on its own, I would just like to give some general advices here that will hopefully be applicable to most processing routines.
+While processing deserves a whole good-practice document on its own, I would just like to give some general advices here that will hopefully be applicable to most processing routines. But feel free to [contribute](#how-to-contribute)!
 
-Even if we sometimes tend to assume that there is only one way to process an image, there are in fact often several methods or algorithms to do so. This is why it is important to **be as precise as possible when reporting about the processing** (see section [What should we report?](#what-should-we-report)).  
+Even if we sometimes tend to assume that there is only one way to process an image, there are in fact often several methods or algorithms to do so, and there are always various settings to adjust. This is why it is important to **be as precise as possible when reporting about the processing** (see section [What should we report?](#what-should-we-report)).  
 
 It is also crucial to **process all images of a dataset in the same way**. This might seem obvious, but different processing methods might produce results that might appear identical/similar even if they actually are different. Processing all images in the same way ensures that all images are comparable at least within a dataset. Of course, this is true only if **the images were acquired in the same way**!  
-I believe the message is clear and every analyst should try his/her/their best to acquire and process images and data in a consistent and comparable manner.
+So, while the details are more nuanced, I believe the message is clear and every analyst should try his/her/their best to acquire and process images and data in a consistent and comparable manner.
 
 Another general piece of advice is to **keep the raw data**, in this case the acquired image, and to **process a copy** of it rather than overwriting the acquired image. This way, it is possible to check the result and process differently if necessary. See section [Saving an image](#saving-an-image) for a discussion on file formats and raw data.
 
@@ -214,9 +214,15 @@ Another general piece of advice is to **keep the raw data**, in this case the ac
 
 
 ## Saving an image
-File formats and software
-
 Raw/processed/derived data
+
+For long-term usability, accessibility and sustainability, proprietary formats (i.e. files that can only be opened with a paid software) should be avoided and **stable, open, non-proprietary formats should be preferred**. The DANS maintains a [list of preferred and non-preferred formats](https://dans.knaw.nl/en/file-formats/). For microscopy images, the [OME-TIFF format](https://docs.openmicroscopy.org/ome-model/6.3.1/ome-tiff/index.html) is probably the standard.  
+Most microscope manufacturers offer software packages to acquire images; in some cases, these software packages are even necessary to operate the microscopes. Not all of these software packages can save in an open format, even less so in OME-TIFF. Unfortunately, metadata sometimes get lost when the image is not saved in the native, proprietary format.  
+This is why, if your acquisition software cannot natively save in an open format, ***I* would recommend to save the image in the proprietary format** (in order to save all the metadata) **and to additionally export to an open format** (for long-term accessibility).
+
+Following on this discussion, it is therefore important to favor open-source software packages over paid ones. Nevertheless, open-source projects often have difficulties to keep running and being developed (see e.g. [Coelho & Valente 2017](#references)). Also, open-source software packages are often less user-friendly, and are slower to add new functionalities and to adapt to OS upgrades. So, open-source is not always better.  
+Still, [Fiji and ImageJ](https://imagej.net/) is a great open-source solution for image analysis with a 25-year-long history (meaning it is likely to survive). [Bio-Formats](https://www.openmicroscopy.org/bio-formats/) is an important "software tool for reading and writing image data using standardized, open formats", which is incorporated into ImageJ. Some microscope manufacturers also offer a free viewer or a free light version (e.g. Zeiss' [ZEN starter](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-starter.html) and [ZEN lite](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-lite.html)).
+
 
 ---
 
@@ -224,7 +230,7 @@ Raw/processed/derived data
 ## What should we report?
 All the background information of the previous section aims at providing the required knowledge to use a microscope to reach the desired scale of observation. While it is important for the analyst to see what he/she/they want to see on the sample, it is equally important that the reader/audience that will be presented - or even will assess - the work is able to know what can be observed in terms of scale on the reported/published/shared images. This is also important for *repeatability* and *reproducibilty* (and *pre-producibility* *sensu* [Stark 2018](#references)).  
 
-The importance of reporting for microscopy is not unique to archaeology/paleontology and other fields also suffer from a lack of high-quality reporting (see e.g. [Marqués et al. 2020](https://doi.org/10.7554/eLife.55133) in biomedical research).
+The importance of reporting for microscopy is not unique to archaeology/paleontology (see e.g. [Calandra et al. 2019](#references)) and other fields also suffer from a lack of high-quality reporting (see e.g. [Marqués et al. 2020](#references) in biomedical research).
 
 So here is a list of what **I** think is necessary for pre-producible microscopic images. This list should be adapted according to the equipment/software used.
 
@@ -295,8 +301,16 @@ This work is licensed under a
 ## References
 Artigas R. 2011. Imaging Confocal Microscopy. In: Leach R ed. Optical Measurement of Surface Topography. Berlin, Heidelberg: Springer Berlin Heidelberg, 237–286. https://doi.org/10.1007/978-3-642-12012-1_11.
 
-Pedergnana A. 2019. *“All that glitters is not gold”*: Evaluating the Nature of the Relationship Between Archeological Residues and Stone Tool Function. Journal of Paleolithic Archaeology. https://doi.org/10.1007/s41982-019-00039-z.
+Calandra I, Schunk L, Bob K, Gneisinger W, Pedergnana A, Paixao E, Hildebrandt A, Marreiros J. 2019. The effect of numerical aperture on quantitative use-wear studies and its implication on reproducibility. Scientific Reports 9: 6313. https://doi.org/10.1038/s41598-019-42713-w.
+
+Coelho J, Valente MT. 2017. Why modern open source projects fail. In: Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering and the ACM SIGSOFT Symposium on the Foundations of Software Engineering, Paderborn, Germany. 186–196. https://doi.org/10.1145/3106237.3106246.
+
+
+
+Marqués G, Pengo T, Sanders MA. 2020. Imaging methods are vastly underreported in biomedical research. eLife 9: e55133. https://doi.org/10.7554/eLife.55133.
+
+Pedergnana A. 2020. “*All that glitters is not gold*”: Evaluating the Nature of the Relationship Between Archeological Residues and Stone Tool Function. Journal of Paleolithic Archaeology 3: 225–254. https://doi.org/10.1007/s41982-019-00039-z.
 
 Soler S. 2022.cc-licenses: Creative Commons Licenses for GitHub Projects. Available at https://github.com/santisoler/cc-licenses (accessed September 27, 2022).
 
-Stark PB. 2018. Before reproducibility must come preproducibility. Nature 557:613–613. https://doi.org/10.1038/d41586-018-05256-0.
+Stark PB. 2018. Before reproducibility must come preproducibility. Nature 557: 613–613. https://doi.org/10.1038/d41586-018-05256-0.
