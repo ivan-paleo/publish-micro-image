@@ -2,6 +2,9 @@
 
 **How to publish microscope images**
 
+*The releases are available and citable on Zenodo*  
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7503328.svg)](https://doi.org/10.5281/zenodo.7503328)
+
 
 **Table of content**
 
