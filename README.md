@@ -3,7 +3,6 @@
 **How to publish microscope images**
 
 
-
 **Table of content**
 
 <!-- TOC depthfrom:2 -->
@@ -23,12 +22,16 @@
     - [Optical vertical resolution and depth of field](#optical-vertical-resolution-and-depth-of-field)
     - [Digital vertical resolution](#digital-vertical-resolution)
 - [Processing](#processing)
-- [Saving an image](#saving-an-image)
-- [What should we report?](#what-should-we-report)
+- [Saving](#saving)
+    - [Raw vs. derived data](#raw-vs-derived-data)
+    - [File formats and software](#file-formats-and-software)
+- [Reporting](#reporting)
+- [Sharing](#sharing)
 - [How to contribute](#how-to-contribute)
     - [Submit an issue](#submit-an-issue)
     - [Propose changes](#propose-changes)
     - [Send me an email](#send-me-an-email)
+    - [Code of conduct](#code-of-conduct)
 - [License](#license)
 - [References](#references)
 
@@ -39,11 +42,13 @@
 
 
 ## Introduction
-This good-practice document is directed at archaeologists and paleontologists working with microscopes, but anyone working with microscope images might learn a few things here (or might want to [contribute](#how-to-contribute)!).  
+This good-practice document is directed at archaeologists and paleontologists working with microscopes, but anyone working with microscope images might learn a few things here.  
 
 Microscopes now deliver digital images. However, digital images are different to analog images and to what the observer/analyst sees through the oculars. Therefore, digital images have specific properties that must be reported in publications, so that other researchers have the necessary details to assess the published images and also so that they can repeat/reproduce these images.  
 
 This document is by no means exhaustive and is limited in scope on purpose, but I hope it will help many archaeologists and paleontologists. 
+
+As a disclaimer, **this document only presents my opinion**, at least for now. You are free to disagree. Whether you agree or not, I would really appreciate if you could share your opinion and [contribute](#how-to-contribute) to the development of this document so that it can be accepted by a larger community.
 
 
 ---
@@ -55,7 +60,7 @@ A microscope is obviously used to observe features of an object that are too sma
 So, the first question the analyst should ask is: **What is the size of the features of interest?** It is important to consider the range of sizes: the size of the smallest features is important, but so is the size of the largest. This is because the larger this range, the less likely it is that all these sizes can be observed with a single set of settings. In other words, if features of different sizes are of interest, several acquisitions at different scales will probably be needed.  
 Finding the size(s) of the features is often done directly during observation: increasing the magnification until the features of interest are visible. This is a valid approach if the microscope used has the appropriate hardware (objectives and optical zoom) to resolve the features of interest. But it can also happen that the features of interest are smaller or larger than what is permitted by the hardware at hand. Moreover, when dealing with digital images, some other issues might occur. This is why it is always advisable to start with at least a rough idea of the size(s) of the features and of the capabilities of the microscope(s) available to the analyst.  
 
-But how do we know what the microscope's hardware can achieve in terms of scale? Most publications and reports talk about *magnification*. But what is it really and what does it mean? In the next section, I will argue that magnification is (almost) useless in digital microscopic imaging and actually only confuses the analyst. Resolution is much more important, but it is unfortunately still cryptic to many analysts; I will therefore try to explain some concepts afterwards.
+But how do we know what the microscope's hardware can achieve in terms of scale? Most publications and reports talk about *magnification*. But what is it really and what does it mean? In the next section, I will argue that magnification is (almost) useless in digital microscope imaging and actually only confuses the analyst. Resolution is much more important, but it is unfortunately still cryptic to many analysts; I will therefore try to explain some concepts afterwards.
 
 
 ---
@@ -67,7 +72,7 @@ Magnification is simply: the size of the magnified area divided by the real size
 
 ### Optical magnification
 But let us first have a look at the optical magnification.  
-The optical magnification of a microscopic image when observed through the oculars is straightforward to calculate:   
+The optical magnification of a microscope image when observed through the oculars is straightforward to calculate:   
 
 $optical \ mag. = objective \ magnification \times ocular \ magnification \times optical \ zoom$ (1)
 
@@ -82,7 +87,7 @@ This is how to calculate the digital magnification:
 
 $digital \ mag. = \frac{objective \ magnification \times optical \ zoom \times camera \ adaptor \times viewing \ medium \ diagonal \times digital \ zoom}{camera \ sensor \ diagonal}$  (2)
 
-For example, using a 20x objective, 2x optical zoom, 1x camera adaptor, 381 mm or 15" screen diagonal (to be precise, what matters is **the diagonal of the part of the screen where the image is displayed**), 1x digital zoom, and 11 mm camera sensor diagonal, the total on-screen magnification is:  
+For example, using a 20x objective, 2x optical zoom, 1x camera adaptor, 381 mm or 15" screen diagonal (to be precise, what matters is the diagonal of the part of the screen where the image is displayed), 1x digital zoom, and 11 mm camera sensor diagonal, the total on-screen magnification is:  
 
 $\frac{20 \times 2 \times 1 \times 381 \times 1}{11} \approx 1385 \times$ 
 
@@ -111,9 +116,9 @@ There might be one case where the digital magnification might be useful, namely 
 
 
 ### Scale bar
-So, if the digital magnification is useless, how can we know the size of a digital microscopic image? The good old **scale bar**! The field of view, *i.e* the size of the imaged area of the sample, or rulers or anything similar will do the trick too.
+So, if the digital magnification is useless, how can we know the size of a digital microscope image? The good old **scale bar**! The field of view, *i.e* the size of the imaged area of the sample, or rulers or anything similar will do the trick too.
 
-**In summary, in my opinion, talking about *resolution* is much more useful and relevant than digital magnification.**
+**In summary, in my opinion, talking about *resolution* is much more useful and relevant than magnification.**
 
 
 ---
@@ -202,20 +207,36 @@ If anyone knows more about it, please [contribute](#how-to-contribute)!
 Few images are published without some form of processing. Sometimes, processing is even necessary to create (e.g. EDF, stitching, topography reconstruction) or analyze (e.g. contrast/brightness, surface texture analysis) the image.  
 While processing deserves a whole good-practice document on its own, I would just like to give some general advices here that will hopefully be applicable to most processing routines. But feel free to [contribute](#how-to-contribute)!
 
-Even if we sometimes tend to assume that there is only one way to process an image, there are in fact often several methods or algorithms to do so, and there are always various settings to adjust. This is why it is important to **be as precise as possible when reporting about the processing** (see section [What should we report?](#what-should-we-report)).  
+Even if we sometimes tend to assume that there is only one way to process an image, there are in fact often several methods or algorithms to do so, and there are always various settings to adjust. This is why it is important to **be as precise as possible when reporting about the processing** (see section [Reporting](#reporting)).  
 
 It is also crucial to **process all images of a dataset in the same way**. This might seem obvious, but different processing methods might produce results that might appear identical/similar even if they actually are different. Processing all images in the same way ensures that all images are comparable at least within a dataset. Of course, this is true only if **the images were acquired in the same way**!  
 So, while the details are more nuanced, I believe the message is clear and every analyst should try his/her/their best to acquire and process images and data in a consistent and comparable manner.
 
-Another general piece of advice is to **keep the raw data**, in this case the acquired image, and to **process a copy** of it rather than overwriting the acquired image. This way, it is possible to check the result and process differently if necessary. See section [Saving an image](#saving-an-image) for a discussion on file formats and raw data.
+Another general piece of advice is to **keep the raw data**, in this case the acquired image, and to **process a copy** of it rather than overwriting the acquired image. This way, it is possible to check the result and process differently if necessary. See section [Saving](#saving) for a discussion on raw/derived data and file formats.
+
+Last but not least, it is important to **keep a very detailed record of the processing and analysis steps that were performed**. Templates and scripts will make it easier to repeat and reproduce the processing/analysis. This is not only important to share data (see section [Sharing](#sharing)); it is also important for yourself as it is likely that you will have to repeat the analysis at some point, at least for some images.
 
 
 ---
 
 
-## Saving an image
-Raw/processed/derived data
+## Saving
 
+### Raw vs. derived data
+I totally agree with Ben Marwick and colleagues that raw data should be kept raw and clearly separated from derived data (e.g. [Marwick et al. 2018, Marwick & Pilaar Birch 2018](#references)).  
+
+Still, it is not always clear to distiguish between the two, nor practicable to keep the raw(est) data. For example, the raw data of an EDF image or a 2.5D topographical model (= height map, e.g. from a confocal microscope) is a z-stack. The z-stacks can be very large files so keeping all these z-stacks requires a lot of storage space. While storage is not really limiting anymore, the environmental impacts of data centers and online repositories cannot be ignored (e.g. [Samuel & Lucivero 2020](#references)).  
+
+Also the derived data of an analysis can be the raw data of another. Using the example of surface texture analysis (dental microwear texture analysis or quantitative artifact microwear analysis), the raw data of the analysis are the height maps (which are themselves derived from processing the z-stacks) that are used as input for MountainsMap (or equivalent) to calculate the surface texture parameters for each height map, which are eventually exported into a CSV file. This CSV file is in-turn the raw data for the subsequent statistical analysis.  
+
+All this to say that the decision should be made on a case-by-case basis about what data is raw and what is derived. Nevertheless, there are some general principles that apply in most (all?) cases, make sure to:
+
+- **save the rawest data possible**, usually the acquired, unprocessed image;
+- **save every derived data that is included in the final analyis** (i.e. input data of the results), especially if the processing/analyes are not fully automatized;
+- **save all the metadata** associated with the raw data (see section [File formats and software](#file-formats-and-software));
+- **save in appropriate format(s)** (see section [File formats and software](#file-formats-and-software)).
+
+### File formats and software
 For long-term usability, accessibility and sustainability, proprietary formats (i.e. files that can only be opened with a paid software) should be avoided and **stable, open, non-proprietary formats should be preferred**. The DANS maintains a [list of preferred and non-preferred formats](https://dans.knaw.nl/en/file-formats/). For microscopy images, the [OME-TIFF format](https://docs.openmicroscopy.org/ome-model/6.3.1/ome-tiff/index.html) is probably the standard.  
 Most microscope manufacturers offer software packages to acquire images; in some cases, these software packages are even necessary to operate the microscopes. Not all of these software packages can save in an open format, even less so in OME-TIFF. Unfortunately, metadata sometimes get lost when the image is not saved in the native, proprietary format.  
 This is why, if your acquisition software cannot natively save in an open format, ***I* would recommend to save the image in the proprietary format** (in order to save all the metadata) **and to additionally export to an open format** (for long-term accessibility).
@@ -227,12 +248,12 @@ Still, [Fiji and ImageJ](https://imagej.net/) is a great open-source solution fo
 ---
 
 
-## What should we report?
-All the background information of the previous section aims at providing the required knowledge to use a microscope to reach the desired scale of observation. While it is important for the analyst to see what he/she/they want to see on the sample, it is equally important that the reader/audience that will be presented - or even will assess - the work is able to know what can be observed in terms of scale on the reported/published/shared images. This is also important for *repeatability* and *reproducibilty* (and *pre-producibility* *sensu* [Stark 2018](#references)).  
+## Reporting
+All the background information of the previous sections aims at providing the required knowledge to use a microscope to reach the desired scale of observation and to save all the acquired data and metadata. While it is important for the analyst to see what he/she/they want to see on the sample, it is equally important that the reader/audience that will be presented - or even will assess - the work is able to know what can be observed in terms of scale on the reported/published/shared images. This is also important for *repeatability* and *reproducibilty* (and *pre-producibility* *sensu* [Stark 2018](#references)).  
 
 The importance of reporting for microscopy is not unique to archaeology/paleontology (see e.g. [Calandra et al. 2019](#references)) and other fields also suffer from a lack of high-quality reporting (see e.g. [Marqués et al. 2020](#references) in biomedical research).
 
-So here is a list of what **I** think is necessary for pre-producible microscopic images. This list should be adapted according to the equipment/software used.
+So here is a list of what I think is necessary for pre-producible microscope images. This list should be adapted according to the equipment/software used.
 
 
 **Number**|**Category**|**What?**|**Why?**|**How? (examples)**  
@@ -258,7 +279,32 @@ So here is a list of what **I** think is necessary for pre-producible microscopi
 19|Software|Versions of acquisition and analysis software packages|Different versions might produce different results|“ZEN blue 3.5 Hotfix 7 (Carl Zeiss Microscopy GmbH) with module Shuttle-and-Find” or “ConfoMap 9.2.10042 with module Scale-sensitive Analysis”
 20|Processing|Stitching, if applicable|To be able to repeat the processing|"2 $\times$ 2 tile regions were acquired, with shading correction (to avoid seeing the separations between single images), 5% minimal overlap and 10% maximal shift, 'optimized' comparer and 'best' global optimizer.  
 21|Processing|Extended depth of focus (EDF), if applicable|To be able to repeat the processing|"Z-stacks were processed to EDF images with the wavelets method and without z-stack alignment"
-22|Processing|Image enhancements / filters / image analysis settings, if applicable|To be able to repeat the acquisition|"The contour were enhanced with settings A and B; and brightness, contrast and gamma were adjusted to C, D and E respectively"
+22|Processing|Image enhancements / filters / image analysis settings, if applicable|To be able to repeat the processing|"The contour were enhanced with settings A and B; and brightness, contrast and gamma were adjusted to C, D and E respectively"
+23|Processing|Workflow and settings of the surface texture analysis, if applicable|To be able to repeat the processing|"The surface texture analysis was performed with the following template [add analysis details and link to template]"
+
+From my point of view, **all of these pieces of information should be published together with every microscope acquisition**.
+
+
+---
+
+
+## Sharing
+A lot could be said about data sharing and Open Science. I will keep it brief here and focused on microscope images; more general aqnd extensive discussions can be found in e.g. [Marwick & Pilaar Birch 2018, Gomes et al. 2022, Karoune & Plomp 2022](#references).
+
+**In my opinion, publishing only a few, supposedly representative images of the whole dataset is not enough** because of the following reasons:
+1. The sample might be representative in some aspects but not in others. 
+2. To be honest, in most cases, only the "nicest" images are published and the least informative/relevant are not; this implies a strong bias and the true signal might just be lost by this selective sampling/reporting. 
+3. Images published in a journal article are usually small and of reduced quality, so the published images might not even show what can be seen on the full-scale image.
+4. Without seeing all images in full resolution, how can anyone assess whether the data support the conclusions? 
+5. It would be a shame to keep all these images for yourself.
+6. Why should we show only a small part of the extensive work we did? Let us do ourselves a favor and show how hard we work! 
+
+**In addition to detailed reporting** (see section [Reporting](#reporting)), **I would therefore recommend:**
+1. **to keep showing a sample as representative as possible in the journal article, but**
+2. **to additionally upload all images with their metadata to an online repository** .
+
+I would like to stress that the data should be uploaded to a trustworthy online repository (e.g. [Zenodo](https://zenodo.org/), [OSF](https://osf.io/), [Figshare](https://figshare.com/)) rather than as online supplementary information (SI) to the article. This is because SI might be behind a paywall, just like the article. Even when it is not, publishers might have restrictions about file formats and names. And since everyone does mistakes, it is easier to correct them if you have access to the repository rather than relying on the publisher to do it (which can take a long time or might even never happen).  
+Here again, the discussion about raw/derived data and file formats is important (see section [Saving](#saving)).  
 
 
 ---
@@ -269,13 +315,16 @@ I appreciate any comment from anyone (expert or novice) to improve this document
 
 ### Submit an issue  
 If you notice any problem or have a question, submit an [issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues). You can do so [here](https://github.com/ivan-paleo/publish-micro-image/issues).  
+A GitHub account is necessary. 
 
 ### Propose changes  
-This document is written in [Markdown](https://www.markdownguide.org/). If you know how to write in this format, please propose text edits as a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) (abbreviated "PR").
+This document is written in [Markdown](https://www.markdownguide.org/). If you know how to write in this format, please propose text edits as a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) (abbreviated "PR").  
+A GitHub account is necessary. 
 
 ### Send me an email  
-For options 1-2, you need to create a GitHub account. If you do not have one and do not want to sign up, you can still write me an email (Google my name together with my affiliation to find my email address).
+If you do not have a GitHub account and do not want to sign up, you can still write me an email (Google my name together with my affiliation to find my email address).
 
+### Code of conduct
 By participating in this project, you agree to abide by our [code of conduct](CONDUCT.md).
 
 
@@ -299,18 +348,26 @@ This work is licensed under a
 
 
 ## References
-Artigas R. 2011. Imaging Confocal Microscopy. In: Leach R ed. Optical Measurement of Surface Topography. Berlin, Heidelberg: Springer Berlin Heidelberg, 237–286. https://doi.org/10.1007/978-3-642-12012-1_11.
+Artigas R. 2011. Imaging Confocal Microscopy. In: Leach R ed. Optical Measurement of Surface Topography. Berlin, Heidelberg: Springer Berlin Heidelberg, 237–286. https://doi.org/10.1007/978-3-642-12012-1_11
 
-Calandra I, Schunk L, Bob K, Gneisinger W, Pedergnana A, Paixao E, Hildebrandt A, Marreiros J. 2019. The effect of numerical aperture on quantitative use-wear studies and its implication on reproducibility. Scientific Reports 9: 6313. https://doi.org/10.1038/s41598-019-42713-w.
+Calandra I, Schunk L, Bob K, Gneisinger W, Pedergnana A, Paixao E, Hildebrandt A, Marreiros J. 2019. The effect of numerical aperture on quantitative use-wear studies and its implication on reproducibility. Scientific Reports 9: 6313. https://doi.org/10.1038/s41598-019-42713-w
 
-Coelho J, Valente MT. 2017. Why modern open source projects fail. In: Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering and the ACM SIGSOFT Symposium on the Foundations of Software Engineering, Paderborn, Germany. 186–196. https://doi.org/10.1145/3106237.3106246.
+Coelho J, Valente MT. 2017. Why modern open source projects fail. In: Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering and the ACM SIGSOFT Symposium on the Foundations of Software Engineering, Paderborn, Germany. 186–196. https://doi.org/10.1145/3106237.3106246
 
+Gomes DGE, Pottier P, Crystal-Ornelas R, Hudgins EJ, Foroughirad V, Sánchez-Reyes LL, Turba R, Martinez PA, Moreau D, Bertram MG, Smout CA, Gaynor KM. 2022. Why don’t we share data and code? Perceived barriers and benefits to public archiving practices. Proceedings of the Royal Society B: Biological Sciences 289: 20221113. https://doi.org/10.1098/rspb.2022.1113
 
+Karoune E, Plomp E. 2022. Removing Barriers to Reproducible Research in Archaeology. Zenodo, ver. 5 peer-reviewed and recommended by Peer Community in Archaeology. https://doi.org/10.5281/zenodo.7320029
 
-Marqués G, Pengo T, Sanders MA. 2020. Imaging methods are vastly underreported in biomedical research. eLife 9: e55133. https://doi.org/10.7554/eLife.55133.
+Marqués G, Pengo T, Sanders MA. 2020. Imaging methods are vastly underreported in biomedical research. eLife 9: e55133. https://doi.org/10.7554/eLife.55133
 
-Pedergnana A. 2020. “*All that glitters is not gold*”: Evaluating the Nature of the Relationship Between Archeological Residues and Stone Tool Function. Journal of Paleolithic Archaeology 3: 225–254. https://doi.org/10.1007/s41982-019-00039-z.
+Marwick B, Pilaar Birch SE. 2018. A Standard for the Scholarly Citation of Archaeological Data as an Incentive to Data Sharing. Advances in Archaeological Practice 6: 125–143. https://doi.org/10.1017/aap.2018.3
 
-Soler S. 2022.cc-licenses: Creative Commons Licenses for GitHub Projects. Available at https://github.com/santisoler/cc-licenses (accessed September 27, 2022).
+Marwick B, Boettiger C, Mullen L. 2018. Packaging Data Analytical Work Reproducibly Using R (and Friends). The American Statistician 72: 80–88. https://doi.org/10.1080/00031305.2017.1375986
 
-Stark PB. 2018. Before reproducibility must come preproducibility. Nature 557: 613–613. https://doi.org/10.1038/d41586-018-05256-0.
+Pedergnana A. 2020. “*All that glitters is not gold*”: Evaluating the Nature of the Relationship Between Archeological Residues and Stone Tool Function. Journal of Paleolithic Archaeology 3: 225–254. https://doi.org/10.1007/s41982-019-00039-z
+
+Samuel G, Lucivero F. 2020. Responsible Open Science: Moving towards an Ethics of Environmental Sustainability. Publications 8: 54. https://doi.org/10.3390/publications8040054
+
+Soler S. 2022.cc-licenses: Creative Commons Licenses for GitHub Projects. Available at https://github.com/santisoler/cc-licenses (accessed September 27, 2022)
+
+Stark PB. 2018. Before reproducibility must come preproducibility. Nature 557: 613–613. https://doi.org/10.1038/d41586-018-05256-0
