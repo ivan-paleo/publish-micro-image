@@ -373,6 +373,8 @@ By participating in this project, you agree to abide by our [code of conduct](CO
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
 
+See also [License file](LICENSE) in the repository.
+
 Author: Ivan Calandra
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
