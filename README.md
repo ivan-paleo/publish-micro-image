@@ -2,8 +2,7 @@
 <!-- TOC ignore:true -->
 # publish-micro-image
 
-<!-- TOC ignore:true -->
-## How to publish microscope images
+**Recommendations on how to publish microscope images**
 
 *The releases are available and citable on Zenodo*  
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7503328.svg)](https://doi.org/10.5281/zenodo.7503328)
@@ -57,7 +56,7 @@ Microscopes now deliver digital images. However, digital images are different to
 
 This document is by no means exhaustive and is limited in scope on purpose, but I hope it will help many archaeologists and paleontologists. 
 
-As a disclaimer, **this document only presents my opinion**, at least for now. You are free to disagree. Whether you agree or not, I would really appreciate if you could share your opinion and [contribute](#how-to-contribute) to the development of this document so that it can be accepted by a larger community.
+As a disclaimer, **this document only presents my opinion**, at least for now. You are free to disagree. Whether you agree or not, I would really appreciate if you could share your opinion and [contribute](#how-to-contribute) to the development of this document, so that it can be accepted by a larger community.
 
 
 ---
@@ -102,7 +101,7 @@ $\frac{20 \times 2 \times 1 \times 381 \times 1}{11} \approx 1385 \times$
 
 As you can see, with the same optical components (except oculars) as in the example calculation of the optical magnification above (see formula (1)), the resulting digital magnification is about 3.5 $\times$ larger than the optical magnification. **So digital and optical magnifications *are* different!**  
 
-An example I like to show is the figure 8a of [Pedergnana (2020)](#references) (the paper can be read [here](https://rdcu.be/cWpDH)). According to the legend, the original magnification of the optical light microscopy image on the left is 10x and that of the SEM image on the right is 200x (actually 260x according to the data zone on the image itself). So different magnifications but same field of view and roughly same size on the PDF...?! Here I do not mean that Antonella Pedergnana was wrong; she actually did correctly report the microscopes' settings, which are misleading for the reader. This example shows that the concept of digital magnification is troublesome!
+An example I like to show is the figure 8a of [Pedergnana (2020)](#references) (the paper can be read [here](https://rdcu.be/cWpDH)). According to the legend, the original magnification of the optical light microscopy image on the left is 10 $\times$ and that of the SEM image on the right is 200 $\times$ (actually 260 $\times$ according to the data zone on the image itself). So different magnifications but same field of view and roughly same size on the PDF...?! Here I do not mean that Antonella Pedergnana was wrong; she actually did correctly report the microscopes' settings, which are misleading for the reader. This example shows that the concept of digital magnification is troublesome!
 
 Also, the formula (2) shows that calculating the total digital magnification is not so easy in practice: the camera sensor diagonal and the viewing medium diagonal are not always known. 
 
@@ -321,7 +320,7 @@ From my point of view, **all of these pieces of information should be published 
 
 
 ## Reporting templates
-Nevertheless, much more should be reported to follow the recommendations of e.g. [Heddleston et al. (2021)](#references). I have tried to make it easy for the users of the **Im**aging **P**latform **a**t **L**EIZ**A** ([IMPALA](https://www.leiza.de/forschung/infrastrukturen/labore/impala)): a [Shiny App](https://shiny.rstudio.com/) guides the users to fill in the required information and exports the report to an XLSX file that can be shared together with the images. 
+Nevertheless, much more should be reported to follow the recommendations of e.g. [Heddleston et al. (2021)](#references). I have tried to make it easy for the users of the **Im**aging **P**latform **a**t **L**EIZ**A** ([IMPALA](https://www.leiza.de/forschung/infrastrukturen/labore/impala)): a [Shiny App](https://shiny.rstudio.com/) guides the users to fill in the required information and exports the report to an XLSX file that can be shared together with the images (see section [Sharing](#sharing)). 
 
 This App is still in development and is part of the repository [reporting-templates](https://github.com/ivan-paleo/reporting-templates) on GitHub. It is not yet available publicly; contact me (see section [How to contribute](#how-to-contribute)) if you would like to have a look / try it out / contribute already.
 
@@ -373,6 +372,8 @@ By participating in this project, you agree to abide by our [code of conduct](CO
 
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
+
+Author: Ivan Calandra
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
 
