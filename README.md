@@ -155,7 +155,7 @@ The NOTE 3 of the FDS §2.2.8 states that "the optical [lateral] resolution can 
 
 
 ## Digital lateral resolution
-The digital lateral resolution, or *measuring point spacing*, is the "sampling interval of measuring points in the measuring volume, both in X and in Y direction" (FDS §2.2.7). This is also referred to as the *pixel size* (though pixel size can also refer to the size of the photodiodes on the detector/camera, which is a fixed value independent of the field of view) or *spatial sampling*.
+The digital lateral resolution, or *measuring point spacing*, is the "sampling interval of measuring points in the measuring volume, both in X and in Y direction" (FDS §2.2.7). This is also referred to as the *pixel size* (though it should be *pixel pitch* because pixel size can also refer to the size of the photodiodes on the detector/camera, which is a fixed value independent of the field of view) or *spatial sampling*.
 
 The measuring point spacing is calculated by dividing the *measuring area* (FDS §2.2.1, also called *field of view*) by the *maximum number of measuring points in a single measurement* (FDS §2.1.2, also called *frame size* or *number of pixels*):
 
@@ -165,11 +165,13 @@ $measuring \ point \ spacing = \frac{measuring \ area}{number \ of \ pixels}$ (4
 ## Relationship between optical and digital lateral resolutions
 So far, so good, and not too complicated. The problem is that we now have two different values for the lateral resolution. Which one should we care about? Both, of course! But **what should the relationship between optical and digital lateral resolutions be?** 
 
-The Nyquist criterion (based on [Nyquist–Shannon sampling theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem)) states that [the digital lateral resolution should be 2-3 $\times$ smaller than the optical lateral resolution](https://zeiss-campus.magnet.fsu.edu/articles/basics/digitalimaging.html). This is necessary to digitally image with sufficient details the transition between features that are optically visible.  
+The Nyquist criterion (based on [Nyquist–Shannon sampling theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem)) states that [the value for the digital lateral resolution (measuring point spacing) should be 2-3 $\times$ smaller than the value for optical lateral resolution ($\delta_L$)](https://zeiss-campus.magnet.fsu.edu/articles/basics/digitalimaging.html). This is necessary to digitally image with sufficient details the transition between features that are optically visible.  
 For example, if $\delta_L = 0.6 \ \mu m$, then the measuring point spacing should be 0.2-0.3 µm.  
 
 If the digital lateral resolution is more than 3 $\times$ smaller than the optical lateral resolution, this will result in oversampling: adjacent pixels will have the same values, so the digital image will not contain more meaningful information but simply more information. This results in larger files than necessary and generally does not improve the quality of the image.  
 If the digital lateral resolution is less than 2 $\times$ smaller than the optical lateral resolution, this will result in undersampling: the transition between features that are optically visible will not be visible on the digital image.
+
+Note that in the section [Optical lateral resolution](#optical-lateral-resolution), I argued that we should avoid the terms "larger" and "smaller" when talking about resolutions. But in this section, it is really about the relationship between the values of $\delta_L$ and measuring point spacing. In any case, the relationship could also be stated that way: "the digital lateral resolution should be 2-3 $\times$ better than the value for optical lateral resolution".
 
 
 ## Digital zoom
@@ -202,7 +204,12 @@ Here again, **the smaller $\delta_A$, the better the resolution is.**
 
 
 ## Digital vertical resolution
-The digital vertical resolution is meaningless in case of a 2D image (even for extended depth of focus - EDF - images) but it is relevant for 2.5 and 3D images. Unfortunately, I do not know how to calculate the digital vertical resolution of a z-stack.  
+The digital vertical resolution is meaningless in case of a 2D image (even for extended depth of focus - EDF - images) but it is relevant for 2.5 and 3D images. 
+
+The digital vertical resolution of a 2.5D image acquired from a confocal microscope is better than the step size (*i.e.* the distance between the individual images, or slices, of a stack) because of the way it is processed (see [Artigas 2011](#references)).  
+In short, the focal distance is constant for a given objective, so when the microscope's objective moves up and down, different points of the sample are in focus. Each point (pixel) on each slice records the intensity of the signal (called axial response) at that location (X+Y from stage coordinates and Z from the slice's height). The intensity increases when the focal plane gets closer to the point on the sample and decreases again when the focal plane moves further away from the point on the sample. The curve of the axial response (intensity) vs. height of the slice therefore has a maximum that can be mathematically computed (see fig. 11.6 in [Artigas 2011](#references)) and that do not necessarily fall on the height of a given slice. This maximum is the value used for the height of the given pixel. Repeat the process for all pixels, and you get a 2.5D height map with a digital vertical resolution better than what the mecanics (drives or piezo) can achieve.
+
+Unfortunately, I do not know how to calculate the digital vertical resolution of a z-stack.  
 If anyone knows more about it, please [contribute](#how-to-contribute)!
 
 
@@ -210,7 +217,7 @@ If anyone knows more about it, please [contribute](#how-to-contribute)!
 
 
 # Processing
-Few images are published without some form of processing. Sometimes, processing is even necessary to create (e.g. EDF, stitching, topography reconstruction) or analyze (e.g. contrast/brightness, wavelength filters) the image.  
+Few images are published without some form of processing. Sometimes, processing is even necessary to create (e.g. EDF, stitching, topography reconstruction) or analyze (e.g. contrast/brightness, wavelength filters) the image. Even the raw data output by every instrument are processed to some degree.  
 While processing deserves a whole good-practice document on its own, I would just like to give some general advices here that will hopefully be applicable to most processing routines. But feel free to [contribute](#how-to-contribute) for more!
 
 
@@ -225,7 +232,7 @@ In the remaining of this section, I will use the term processing to include both
 
 
 ## Recommendations
-Even if we sometimes tend to assume that there is only one way to process an image, there are in fact often several methods or algorithms to do so, and there are always various settings to adjust. This is why it is important to **be as precise as possible when reporting about the processing** (see section [Reporting](#reporting)).  
+Even if we sometimes tend to assume that there is only one way to process an image, there are in fact often several methods or algorithms to do so, and there are always various settings to adjust. Additionally, some processing happens before you get the raw data from the instrument. This is why it is important to **be as precise as possible when reporting about the acquisition and processing**  (see section [Reporting](#reporting)).    
 
 It is also crucial to **process all images of a dataset in the same way**. This might seem obvious, but different processing methods might produce results that might appear identical/similar even if they actually are different. Processing all images in the same way ensures that all images are comparable at least within a dataset. Of course, this is true only if **the images were acquired in the same way**!  
 So, while the details are more nuanced, I believe the message is clear and every analyst should try his/her/their best to acquire and process images and data in a consistent and comparable manner.
@@ -243,7 +250,7 @@ Last but not least, it is important to **keep a very detailed record of the proc
 ## Raw vs. derived data
 I totally agree with Ben Marwick and colleagues that raw data should be kept raw and clearly separated from derived data (e.g. [Marwick et al. 2018, Marwick & Pilaar Birch 2018](#references)).  
 
-Still, it is not always clear to distiguish between the two, nor practicable to keep the raw(est) data. For example, the raw data of an EDF image or a 2.5D topographical model (= height map, e.g. from a confocal microscope) is a Z-stack. Z-stacks can be very large files so keeping all these Z-stacks requires a lot of storage space. While storage is not really limiting anymore, the environmental impacts of data centers and online repositories cannot be ignored (e.g. [Samuel & Lucivero 2020](#references)).  
+Still, it is not always clear to distinguish between the two, nor practicable to keep the raw(est) data. For example, the raw data of an EDF image or a 2.5D topographical model (= height map, e.g. from a confocal microscope) is a Z-stack. Z-stacks can be very large files so keeping all these Z-stacks requires a lot of storage space. While storage is not really limiting anymore, the environmental impacts of data centers and online repositories cannot be ignored (e.g. [Samuel & Lucivero 2020](#references)).  
 
 Also the derived data of an analysis can be the raw data of another. Using the example of surface texture analysis (dental microwear texture analysis or quantitative artifact microwear analysis), the raw data of the analysis are the height maps (which are themselves derived from pre-processing the Z-stacks) that are used as input for MountainsMap (or equivalent) to calculate the surface texture parameters for each height map, which are eventually exported into a CSV file. This CSV file is in-turn the raw data for the subsequent statistical analysis.  
 
