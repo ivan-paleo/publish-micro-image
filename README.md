@@ -126,6 +126,8 @@ There might be one case where the digital magnification might be useful, namely 
 ## Scale bar
 So, if the digital magnification is useless, how can we know the size of a digital microscope image? The good old **scale bar**! The field of view, *i.e* the size of the imaged area of the sample, or rulers or anything similar will do the trick too.
 
+---
+
 **In summary, magnification can be understood as an aid to see the *resolution*: resolution will define what can be seen or not** (see below)**, while increasing the magnification will make the visualization of the observable details easier. This is why, in my opinion, talking about *resolution* is much more useful and relevant than magnification.**
 
 
