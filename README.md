@@ -126,13 +126,15 @@ There might be one case where the digital magnification might be useful, namely 
 ## Scale bar
 So, if the digital magnification is useless, how can we know the size of a digital microscope image? The good old **scale bar**! The field of view, *i.e* the size of the imaged area of the sample, or rulers or anything similar will do the trick too.
 
-**In summary, in my opinion, talking about *resolution* is much more useful and relevant than magnification.**
+**In summary, magnification can be understood as an aid to see the *resolution*: resolution will define what can be seen or not** (see below)**, while increasing the magnification will make the visualization of the observable details easier. This is why, in my opinion, talking about *resolution* is much more useful and relevant than magnification.**
 
 
 ---
 
 
 # Resolution
+**In general, *resolution* refers to the level of details that can be observed. In other words, it defines the size of the smallest observable features.**
+
 There is not one single resolution but many different, complementary definitions of resolution. First, it is important, once again, to differentiate between optical and digital resolutions. And second, there are lateral (XY) and vertical (Z) resolutions. 
 
 Most terms and definitions here refer to the [Fair Data Sheet Initiative, v1.2α](http://www.optassyst.de/fairesdatenblatt/) (the website is only in German, but the Fair Data Sheet itself has an English version). I will abbreviate it "FDS".
