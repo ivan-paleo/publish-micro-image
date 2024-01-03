@@ -1,0 +1,33 @@
+---
+title: "publish-micro-image"
+author: "Ivan Calandra"
+date: "2024-01-03"
+format: 
+  gfm:
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    link-citations: true
+bibliography: references.bib
+---
+
+**Recommendations on how to publish microscope images**
+
+*The releases are available and citable on Zenodo*\
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7503328.svg)](https://doi.org/10.5281/zenodo.7503328)
+
+------------------------------------------------------------------------
+
+# Introduction
+
+This good-practice document is directed at archaeologists and paleontologists working with microscopes, but anyone working with microscope images might learn a few things here.
+
+Microscopes now deliver digital images. "Digital images are data" [@cromey2013]. However, digital images are different to analog images and to what the observer/analyst sees through the oculars. Therefore, digital images have specific properties that must be reported in publications, so that other researchers have the necessary details to assess the published images and also so that they can repeat/reproduce these images.
+
+This document is by no means exhaustive and is limited in scope on purpose, but I hope it will help many archaeologists and paleontologists.
+
+As a disclaimer, **this document only presents my opinion**, at least for now. You are free to disagree. Whether you agree or not, I would really appreciate if you could share your opinion and [contribute](#how-to-contribute) to the development of this document, so that it can be accepted by a larger community.
+
+------------------------------------------------------------------------
+
+# References
