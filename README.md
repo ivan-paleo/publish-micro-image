@@ -34,7 +34,7 @@
 - [Saving](#saving)
     - [Raw vs. derived data](#raw-vs-derived-data)
     - [File formats and software](#file-formats-and-software)
-    - [JPG, JPEG, PNG, TIF, TIFF, RAW](#jpg-jpeg-png-tif-tiff-raw)
+    - [JPEG, PNG, TIFF, RAW](#jpeg-png-tiff-raw)
 - [Reporting](#reporting)
     - [Minimum requirements](#minimum-requirements)
     - [Reporting templates](#reporting-templates)
@@ -52,7 +52,7 @@
 # Introduction
 This good-practice document is directed at archaeologists and paleontologists working with microscopes, but anyone working with microscope images might learn a few things here.  
 
-Microscopes now deliver digital images. However, digital images are different to analog images and to what the observer/analyst sees through the oculars. Therefore, digital images have specific properties that must be reported in publications, so that other researchers have the necessary details to assess the published images and also so that they can repeat/reproduce these images.  
+Microscopes now deliver digital images. "Digital images are data" ([Cromey 2013](#references)). However, digital images are different to analog images and to what the observer/analyst sees through the oculars. Therefore, digital images have specific properties that must be reported in publications, so that other researchers have the necessary details to assess the published images and also so that they can repeat/reproduce these images.  
 
 This document is by no means exhaustive and is limited in scope on purpose, but I hope it will help many archaeologists and paleontologists. 
 
@@ -124,7 +124,10 @@ There might be one case where the digital magnification might be useful, namely 
 
 
 ## Scale bar
-So, if the digital magnification is useless, how can we know the size of a digital microscope image? The good old **scale bar**! The field of view, *i.e* the size of the imaged area of the sample, or rulers or anything similar will do the trick too.
+So, if the digital magnification is useless, how can we know the size of a digital microscope image? The good old **scale bar**! The field of view, *i.e* the size of the imaged area of the sample, or rulers or anything similar will do the trick too.  
+
+One would expect that everybody knows that a scale bar (or some form of scaling) must be provided with each image. Yet, "[a]pproximately half of papers in physiology (49%) and cell biology (55%) and 28% of plant science papers provided scale bars with dimensions (in the figure or legend) for all images in the paper [...]. Approximately one-third of papers in each field contained incomplete scale information, such as reporting magnification or presenting scale information for a subset of images. Twenty-four percent of physiology papers, 10% of cell biology papers, and 29% of plant sciences papers contained no scale information on any image" ([Jambor et al. 2021, p. 3](#references)).  
+In sum, **only about half of the papers in these fields publish microscope images with proper scaling information; this is not much!** I do not expect that archaeology is any different, although I am not aware of such a survey for archaeology.
 
 ---
 
@@ -241,10 +244,11 @@ Even if we sometimes tend to assume that there is only one way to process an ima
 It is also crucial to **process all images of a dataset in the same way**. This might seem obvious, but different processing methods might produce results that might appear identical/similar even if they actually are different. Processing all images in the same way ensures that all images are comparable at least within a dataset. Of course, this is true only if **the images were acquired in the same way**!  
 So, while the details are more nuanced, I believe the message is clear and every analyst should try his/her/their best to acquire and process images and data in a consistent and comparable manner.
 
-Another general piece of advice is to **keep the raw data**, in this case the acquired image, and to **process a copy** of it rather than overwriting the acquired image. This way, it is possible to check the result and process differently if necessary. See section [Saving](#saving) for a discussion on raw/derived data and file formats.
+Another general piece of advice is to **keep the raw data**, in this case the acquired image, and to **process a copy** of it rather than overwriting the acquired image (see e.g. [Cromey 2013 and Schmied & Jambor 2021](#references)). This way, it is possible to check the result and process differently if necessary. See section [Saving](#saving) for a discussion on raw/derived data and file formats.
 
 Last but not least, it is important to **keep a very detailed record of the processing and analysis steps that were performed**. Templates and scripts will make it easier to repeat and reproduce the processing/analysis. This is not only important to share data (see section [Sharing](#sharing)); it is also important for yourself as it is likely that you will have to repeat the analysis at some point, at least for some images. [protocols.io](https://www.protocols.io/) can be a useful tool for this.
 
+[Fiji/ImageJ](https://imagej.net/) is a great, open-source tool for image analysis. [Schmied & Jambor (2021)](#references) proposed guidelines for image analysis and a processing workflow in Fiji; there is no reason not to follow and use them! 
 
 ---
 
@@ -275,14 +279,14 @@ Following on this discussion, it is therefore important to favor open-source sof
 Still, [Fiji and ImageJ](https://imagej.net/) is a great open-source solution for image analysis with a 25-year-long history (meaning it is likely to survive). [Bio-Formats](https://www.openmicroscopy.org/bio-formats/) is an important "software tool for reading and writing image data using standardized, open formats", which is incorporated into ImageJ. Some microscope manufacturers also offer a free viewer or a free light version (e.g. Zeiss' [ZEN starter](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-starter.html) and [ZEN lite](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-lite.html)).
 
 
-## JPG, JPEG, PNG, TIF, TIFF, RAW
+## JPEG, PNG, TIFF, RAW
 Following up on the previous section, every one of us has wondered at least once which image format should be preferred and what the differences are between JPG, JPEG, PNG, TIF and TIFF. Here, I will try to give an overview and general recommendations. This section concerns only raster image formats, as microscope images are always raster images.
 
 I recommend reading the documentation about the different [raster file formats](https://www.adobe.com/creativecloud/file-types/image/raster.html) on the Adobe website, which is, in my opinion, clear and detailed.
 
-- [TIFF or TIF](https://www.adobe.com/creativecloud/file-types/image/raster/tiff-file.html) (same format but different extensions for historical reasons) is the format to choose if you want to save images at full resolution and with best quality, which in turn implies that TIFF files are large. Metadata can be saved together with the image when using this format (e.g. for SEM images).   
-- [JPG or JPEG](https://www.adobe.com/creativecloud/file-types/image/raster/jpeg-file.html) (same format but different extensions for historical reasons) is a widely used format for photos. Files are small and of generally good quality, but the lossy compression means that some details are lost. JPG files can include metadata, especially the camera's [EXIF data](https://en.wikipedia.org/wiki/Exif).  
-- [PNG](https://www.adobe.com/creativecloud/file-types/image/raster/png-file.html) is best knowned for their transparent backgrounds, but it is also a good format for any type of image thanks to its lossless compression. Files are smaller than TIFF but larger than JPG. While many users tend to prefer JPG, I think PNG could be better for many applications and should be preferred to JPG/JPEG according to [Schmied et al. 2023](#references). Compare the two formats [here](https://www.adobe.com/creativecloud/file-types/image/comparison/jpeg-vs-png.html).  
+- [TIFF](https://www.adobe.com/creativecloud/file-types/image/raster/tiff-file.html) (.tif or .tiff, same format but different extensions for historical reasons) is the format to choose if you want to save images at full resolution and with best quality, which in turn implies that TIFF files are large. Metadata can be saved together with the image when using this format (e.g. for SEM images).   
+- [JPEG](https://www.adobe.com/creativecloud/file-types/image/raster/jpeg-file.html) (.jpg or .jpeg, same format but different extensions for historical reasons) is a widely used format for photos. Files are small and of generally good quality, but the lossy compression means that some details are lost. JPEG files can include metadata, especially the camera's [EXIF data](https://en.wikipedia.org/wiki/Exif), but is not recommended for scientific imaging ([Cromey 2013](#references)).  
+- [PNG](https://www.adobe.com/creativecloud/file-types/image/raster/png-file.html) is best knowned for their transparent backgrounds, but it is also a good format for any type of image thanks to its lossless compression. Files are smaller than TIFF but larger than JPEG. While many users tend to prefer JPEG, I think PNG could be better for many applications and should be preferred to JPEG according to [Cromey 2013, Schmied & Jambor 2021 and Schmied et al. 2023](#references). Compare the two formats [here](https://www.adobe.com/creativecloud/file-types/image/comparison/jpeg-vs-png.html).  
 - I am not aware of any microscope camera that can save in [RAW](https://www.adobe.com/creativecloud/file-types/image/raw.html), but DSLR cameras can usually do it. So this format is worth considering for users who have a DSLR camera mounted on the phototube.
 
 
@@ -296,6 +300,7 @@ The importance of reporting for microscopy is not unique to archaeology/paleonto
 
 A large community of researchers in life sciences are working on guidelines for reporting microscope data (e.g. [Aaron & Chew 2021, Hammer et al. 2021, Heddleston et al. 2021, Jambor et al. 2021, Ryan et al. 2021, Sarkans et al. 2021 and Schmied et al. 2023](#references), as well as the [Open Microscopy Environment - OME](https://www.openmicroscopy.org/about/), the [European Light microscopy initiative - ELMI](https://elmi.embl.org/home/our-aims/), the [Society for Microscopy and Image Analysis - GerBI-GMB](https://gerbi-gmb.de/society/) and the [Quality Assessment and Reproducibility for Instruments & Images in Light Microscopy - QUAREP-LiMi](https://quarep.org/about/) communities). The work they do is incredible, but unfortunately, it concerns mostly life sciences and some aspects are not relevant to archaeology, while some others relevant to archaeology are not addressed.
 
+**"The underlying premise of image publication and ethics guidelines is that a digital image is data and that the data should not be manipulated inappropriately"** ([Cromey 2013, p. 5](#references)).
 
 ## Minimum requirements
 Below is a list of what I think is necessary for pre-producible microscope images. This list should be adapted according to the equipment/software used.
@@ -328,6 +333,7 @@ Below is a list of what I think is necessary for pre-producible microscope image
 23|Processing/Analysis|Workflow and settings of the surface texture analysis, if applicable|To be able to repeat the processing|"The surface texture analysis was performed with the following template [add analysis details and link to template]"
 
 From my point of view, **all of these pieces of information should be published together with every microscope acquisition**.  
+Additionally, I recommend **following the guidelines of [Jambor et al. (2021)](#references) to improve the quality of the images themselves**.
 
 
 ## Reporting templates
@@ -407,6 +413,8 @@ Calandra I, Schunk L, Bob K, Gneisinger W, Pedergnana A, Paixao E, Hildebrandt A
 
 Coelho J, Valente MT. 2017. Why modern open source projects fail. In: Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering and the ACM SIGSOFT Symposium on the Foundations of Software Engineering, Paderborn, Germany. 186–196. https://doi.org/10.1145/3106237.3106246
 
+Cromey DW. 2013. Digital Images Are Data: And Should Be Treated as Such. In: Taatjes DJ, Roth J eds. Cell Imaging Techniques: Methods and Protocols. Methods in Molecular Biology. Totowa, NJ: Humana Press, 1–27. https://doi.org/10.1007/978-1-62703-056-4_1
+
 Gomes DGE, Pottier P, Crystal-Ornelas R, Hudgins EJ, Foroughirad V, Sánchez-Reyes LL, Turba R, Martinez PA, Moreau D, Bertram MG, Smout CA, Gaynor KM. 2022. Why don’t we share data and code? Perceived barriers and benefits to public archiving practices. Proceedings of the Royal Society B: Biological Sciences 289: 20221113. https://doi.org/10.1098/rspb.2022.1113
 
 Hammer M, Huisman M, Rigano A, Boehm U, Chambers JJ, Gaudreault N, North AJ, Pimentel JA, Sudar D, Bajcsy P, Brown CM, Corbett AD, Faklaris O, Lacoste J, Laude A, Nelson G, Nitschke R, Farzam F, Smith CS, Grunwald D, Strambio-De-Castillia C. 2021. Towards community-driven metadata standards for light microscopy: tiered specifications extending the OME model. Nature Methods 18: 1427–1440. https://doi.org/10.1038/s41592-021-01327-9.
@@ -431,8 +439,12 @@ Samuel G, Lucivero F. 2020. Responsible Open Science: Moving towards an Ethics o
 
 Sarkans U, Chiu W, Collinson L, Darrow MC, Ellenberg J, Grunwald D, Hériché J-K, Iudin A, Martins GG, Meehan T, Narayan K, Patwardhan A, Russell MRG, Saibil HR, Strambio-De-Castillia C, Swedlow JR, Tischer C, Uhlmann V, Verkade P, Barlow M, Bayraktar O, Birney E, Catavitello C, Cawthorne C, Wagner-Conrad S, Duke E, Paul-Gilloteaux P, Gustin E, Harkiolaki M, Kankaanpää P, Lemberger T, McEntyre J, Moore J, Nicholls AW, Onami S, Parkinson H, Parsons M, Romanchikova M, Sofroniew N, Swoger J, Utz N, Voortman LM, Wong F, Zhang P, Kleywegt GJ, Brazma A. 2021. REMBI: Recommended Metadata for Biological Images—enabling reuse of microscopy data in biology. Nature Methods 18: 1418–1422. https://doi.org/10.1038/s41592-021-01166-8
 
+Schmied C, Jambor HK. 2021. Effective image visualization for publications – a workflow using open access tools and concepts. F1000Research 9: 1373. https://doi.org/10.12688/f1000research.27140.2.
+
+
 Schmied C, Nelson MS, Avilov S, Bakker G-J, Bertocchi C, Bischof J, Boehm U, Brocher J, Carvalho MT, Chiritescu C, Christopher J, Cimini BA, Conde-Sousa E, Ebner M, Ecker R, Eliceiri K, Fernandez-Rodriguez J, Gaudreault N, Gelman L, Grunwald D, Gu T, Halidi N, Hammer M, Hartley M, Held M, Jug F, Kapoor V, Koksoy AA, Lacoste J, Le Dévédec S, Le Guyader S, Liu P, Martins GG, Mathur A, Miura K, Montero Llopis P, Nitschke R, North A, Parslow AC, Payne-Dwyer A, Plantard L, Ali R, Schroth-Diez B, Schütz L, Scott RT, Seitz A, Selchow O, Sharma VP, Spitaler M, Srinivasan S, Strambio-De-Castillia C, Taatjes D, Tischer C, Jambor HK. 2023. Community-developed checklists for publishing images and image analyses. Nature Methods: 1–12. https://doi.org/10.1038/s41592-023-01987-9
 
 Soler S. 2022.cc-licenses: Creative Commons Licenses for GitHub Projects. Available at https://github.com/santisoler/cc-licenses (accessed September 27, 2022)
 
 Stark PB. 2018. Before reproducibility must come preproducibility. Nature 557: 613–613. https://doi.org/10.1038/d41586-018-05256-0
+
