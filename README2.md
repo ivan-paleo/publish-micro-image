@@ -67,7 +67,7 @@ paleontologists working with microscopes, but anyone working with
 microscope images might learn a few things here.
 
 Microscopes now deliver digital images. “Digital images are data”
-([Cromey 2013a](#ref-cromey2013)). However, digital images are different
+([Cromey 2013](#ref-cromey2013)). However, digital images are different
 to analog images and to what the observer/analyst sees through the
 oculars. Therefore, digital images have specific properties that must be
 reported in publications, so that other researchers have the necessary
@@ -180,8 +180,8 @@ the example calculation of the optical magnification above (see formula
 than the optical magnification. **So digital and optical magnifications
 *are* different!**
 
-An example I like to show is the figure 8a of ([Pedergnana
-2020](#ref-pedergnana2020)) (the paper can be read
+An example I like to show is the figure 8a of Pedergnana
+([2020](#ref-pedergnana2020)) (the paper can be read
 [here](https://rdcu.be/cWpDH)). According to the legend, the original
 magnification of the optical light microscopy image on the left is 10
 $\times$ and that of the SEM image on the right is 200 $\times$
@@ -324,7 +324,7 @@ $\delta_L = \frac{K.\lambda}{NA}$ (3)
 The value of $K$ is 0.61 for bright field microscopy (= “classical”
 light microscopes). For laser-scanning confocal microscopy, $K$ depends
 on the diameter of the pinhole and varies between 0.37 and 0.61
-([Artigas 2011a](#ref-artigas2011)).
+([Artigas 2011](#ref-artigas2011)).
 
 From formula (3) and the definition of the optical lateral resolution,
 it becomes apparent that **the smaller** $\delta_L$, the better the
@@ -368,7 +368,7 @@ between optical and digital lateral resolutions be?**
 The Nyquist criterion (based on the [Nyquist–Shannon sampling
 theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem))
 states that [the value for the digital lateral resolution (measuring
-point spacing) should be 2-3 $\times$ smaller than the value for optical
+point spacing) should be 2-3 times smaller than the value for optical
 lateral resolution
 ($\delta_L$)](https://zeiss-campus.magnet.fsu.edu/articles/basics/digitalimaging.html).
 This is necessary to digitally image with sufficient details the
@@ -439,7 +439,7 @@ with $n$ the refractive index of the medium; $n_{air} \approx 1$.
 
 For a confocal microscope, the axial resolution is calculated by the
 optical slice thickness, which also depends on the pinhole diameter
-([Artigas 2011a](#ref-artigas2011)):
+([Artigas 2011](#ref-artigas2011)):
 
 $\delta_A(conf) = \frac{0.64 \lambda}{n- \sqrt{n^2-NA^2}}$ (6) with a
 pinhole diameter $PH < 0.25 AU$ ([Airy
@@ -459,7 +459,7 @@ The digital vertical resolution is meaningless in case of a 2D image
 The digital vertical resolution of a 2.5D image acquired from a confocal
 microscope is better than the step size (*i.e.* the distance between the
 individual images, or slices, of a stack) because of the way it is
-processed (see [Artigas 2011b](#ref-artigas2011a)).  
+processed (see [Artigas 2011](#ref-artigas2011)).  
 In short, the focal distance is constant for a given objective, so when
 the microscope’s objective moves up and down, different points of the
 sample are in focus. Each point (pixel) on each slice records the
@@ -470,10 +470,10 @@ and decreases again when the focal plane moves further away from the
 point on the sample. The curve of the axial response (intensity)
 vs. height of the slice therefore has a maximum that can be
 mathematically computed (see fig. 11.6 in [Artigas
-2011b](#ref-artigas2011a)) and that do not necessarily fall on the
-height of a given slice. This maximum is the value used for the height
-of the given pixel. Repeat the process for all pixels, and you get a
-2.5D height map with a digital vertical resolution better than what the
+2011](#ref-artigas2011)) and that do not necessarily fall on the height
+of a given slice. This maximum is the value used for the height of the
+given pixel. Repeat the process for all pixels, and you get a 2.5D
+height map with a digital vertical resolution better than what the
 mecanics (drives or piezo) can achieve.
 
 Unfortunately, I do not know how to calculate the digital vertical
@@ -566,8 +566,9 @@ is no reason not to follow and use them!
 ## Raw vs. derived data
 
 I totally agree with Ben Marwick and colleagues that raw data should be
-kept raw and clearly separated from derived data (e.g. [Marwick et
-al. 2018, Marwick & Pilaar Birch 2018](#references)).
+kept raw and clearly separated from derived data (e.g. [Marwick and
+Pilaar Birch 2018](#ref-marwick2018) and) (e.g. [Marwick & Pilaar Birch
+2018](#references)).
 
 Still, it is not always clear to distinguish between the two, nor
 practicable to keep the raw(est) data. For example, the raw data of an
@@ -575,8 +576,8 @@ EDF image or a 2.5D topographical model (= height map, e.g. from a
 confocal microscope) is a Z-stack. Z-stacks can be very large files so
 keeping all these Z-stacks requires a lot of storage space. While
 storage is not really limiting anymore, the environmental impacts of
-data centers and online repositories cannot be ignored (e.g. [Samuel &
-Lucivero 2020](#references)).
+data centers and online repositories cannot be ignored (e.g. [Samuel and
+Lucivero 2020](#ref-samuel2020)).
 
 Also the derived data of an analysis can be the raw data of another.
 Using the example of surface texture analysis (dental microwear texture
@@ -624,7 +625,7 @@ additionally export to an open format** (for long-term accessibility).
 Following on this discussion, it is therefore important to favor
 open-source software packages over paid ones. Nevertheless, open-source
 projects often have difficulties to keep running and being developed
-(see e.g. [Coelho & Valente 2017](#references)). Also, open-source
+(see e.g. [Coelho and Valente 2017](#ref-coelho2017)). Also, open-source
 software packages are often less user-friendly, and are slower to add
 new functionalities and to adapt to OS upgrades. So, open-source is not
 always better.  
@@ -665,15 +666,14 @@ on the Adobe website, which is, in my opinion, clear and detailed.
   generally good quality, but the lossy compression means that some
   details are lost. JPEG files can include metadata, especially the
   camera’s [EXIF data](https://en.wikipedia.org/wiki/Exif), but is not
-  recommended for scientific imaging ([Cromey 2013](#references)).  
+  recommended for scientific imaging ([Cromey 2013](#ref-cromey2013)).  
 - [PNG](https://www.adobe.com/creativecloud/file-types/image/raster/png-file.html)
   is best knowned for their transparent backgrounds, but it is also a
   good format for any type of image thanks to its lossless compression.
   Files are smaller than TIFF but larger than JPEG. While many users
   tend to prefer JPEG, I think PNG could be better for many applications
-  and should be preferred to JPEG according to [Cromey 2013, Schmied &
-  Jambor 2021 and Schmied et al. 2023](#references). Compare the two
-  formats
+  and should be preferred to JPEG Schmied et al.
+  ([2023](#ref-schmied2023)). Compare the two formats
   [here](https://www.adobe.com/creativecloud/file-types/image/comparison/jpeg-vs-png.html).  
 - I am not aware of any microscope camera that can save in
   [RAW](https://www.adobe.com/creativecloud/file-types/image/raw.html),
@@ -693,31 +693,24 @@ reader/audience that will be presented - or even will assess - the work
 is able to know what can be observed in terms of scale on the
 reported/published/shared images. This is also important for
 *repeatability* and *reproducibilty* (and *pre-producibility* *sensu*
-[Stark 2018](#references)).
+[Stark 2018](#ref-stark2018)).
 
 The importance of reporting for microscopy is not unique to
-archaeology/paleontology (see e.g. [Calandra et al. 2019](#references))
-and other fields also suffer from a lack of high-quality reporting (see
-e.g. [Marqués et al. 2020](#references) in biomedical research).
+archaeology/paleontology (see e.g. [Calandra et al.
+2019](#ref-calandra2019)) and other fields also suffer from a lack of
+high-quality reporting (see e.g. [Marqués, Pengo, and Sanders
+2020](#ref-marqués2020) in biomedical research).
 
 A large community of researchers in life sciences are working on
-guidelines for reporting microscope data (e.g. [Aaron & Chew 2021,
-Hammer et al. 2021, Heddleston et al. 2021, Jambor et al. 2021, Ryan et
-al. 2021, Sarkans et al. 2021 and Schmied et al. 2023](#references), as
-well as the [Open Microscopy Environment -
-OME](https://www.openmicroscopy.org/about/), the [European Light
-microscopy initiative - ELMI](https://elmi.embl.org/home/our-aims/), the
-[Society for Microscopy and Image Analysis -
-GerBI-GMB](https://gerbi-gmb.de/society/) and the [Quality Assessment
-and Reproducibility for Instruments & Images in Light Microscopy -
-QUAREP-LiMi](https://quarep.org/about/) communities). The work they do
-is incredible, but unfortunately, it concerns mostly life sciences and
-some aspects are not relevant to archaeology, while some others relevant
-to archaeology are not addressed.
+guidelines for reporting microscope data ([Aaron and Chew
+2021](#ref-aaron2021)) Schmied et al. ([2023](#ref-schmied2023)). The
+work they do is incredible, but unfortunately, it concerns mostly life
+sciences and some aspects are not relevant to archaeology, while some
+others relevant to archaeology are not addressed.
 
 **“The underlying premise of image publication and ethics guidelines is
 that a digital image is data and that the data should not be manipulated
-inappropriately”** ([Cromey 2013, p. 5](#references)).
+inappropriately”** ([Cromey 2013, 5](#ref-cromey2013)).
 
 ## Minimum requirements
 
@@ -753,15 +746,16 @@ equipment/software used.
 
 From my point of view, **all of these pieces of information should be
 published together with every microscope acquisition**.  
-Additionally, I recommend **following the guidelines of [Jambor et
-al. (2021)](#references) to improve the quality of the images
+Additionally, I recommend **following the guidelines of Jambor et al.
+([2021](#ref-jambor2021)) to improve the quality of the images
 themselves**.
 
 ## Reporting templates
 
 Nevertheless, much more should be reported to follow the recommendations
-of e.g. [Heddleston et al. (2021)](#references). I have tried to make it
-easy for the users of the **Im**aging **P**latform **a**t **L**EIZ**A**
+of e.g. Heddleston et al. ([2021](#ref-heddleston2021)). I have tried to
+make it easy for the users of the **Im**aging **P**latform **a**t
+**L**EIZ**A**
 ([IMPALA](https://www.leiza.de/forschung/infrastrukturen/labore/impala)):
 a [Shiny App](https://shiny.rstudio.com/) guides the users to fill in
 the required information and exports the report to an XLSX file that can
@@ -779,8 +773,9 @@ look / try it out / contribute already.
 
 A lot could be said about data sharing and Open Science. I will keep it
 brief here and focused on microscope images; more general and extensive
-discussions can be found in e.g. [Marwick & Pilaar Birch 2018, Gomes et
-al. 2022, Karoune & Plomp 2022](#references).
+discussions can be found in e.g. Marwick & Pilaar Birch 2018, Gomes et
+al. ([2022](#ref-gomes2022)) and Karoune and Plomp
+([2022](#ref-karoune2022)).
 
 **In my opinion, publishing only a few, supposedly representative images
 of the whole dataset is not enough** because of the following
@@ -829,8 +824,8 @@ document, so do not be shy! There are three possibilities to contribute.
     A GitHub account is necessary.
 
 2.  Propose changes: This document is written in
-    [Markdown](https://www.markdownguide.org/). If you know how to write
-    in this format, please propose text edits as a [pull
+    [Quarto](https://quarto.org/). If you know how to write in this
+    format, please propose text edits as a [pull
     request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
     (abbreviated “PR”).  
     A GitHub account is necessary.
@@ -870,6 +865,8 @@ CC BY-NC-SA 4.0
 
 </div>
 
+Soler ([2022](#ref-soler2022))
+
 ------------------------------------------------------------------------
 
 # References
@@ -887,35 +884,67 @@ Analysis?” *Journal of Cell Science* 134 (6): jcs254151.
 
 <div id="ref-artigas2011" class="csl-entry">
 
-Artigas, Roger. 2011a. “Imaging Confocal Microscopy.” In, edited by R.
+Artigas, Roger. 2011. “Imaging Confocal Microscopy.” In, edited by R.
 Leach, 237–86. Berlin, Heidelberg: Springer Berlin Heidelberg.
 <https://doi.org/10.1007/978-3-642-12012-1_11>.
 
 </div>
 
-<div id="ref-artigas2011a" class="csl-entry">
+<div id="ref-calandra2019" class="csl-entry">
 
-———. 2011b. “Imaging Confocal Microscopy.” In, edited by R. Leach,
-237–86. Berlin, Heidelberg: Springer Berlin Heidelberg.
-<https://doi.org/10.1007/978-3-642-12012-1_11>.
+Calandra, Ivan, Lisa Schunk, Konstantin Bob, Walter Gneisinger,
+Antonella Pedergnana, Eduardo Paixao, Andreas Hildebrandt, and Joao
+Marreiros. 2019. “The Effect of Numerical Aperture on Quantitative
+Use-Wear Studies and Its Implication on Reproducibility.” *Scientific
+Reports* 9 (1): 6313. <https://doi.org/10.1038/s41598-019-42713-w>.
+
+</div>
+
+<div id="ref-coelho2017" class="csl-entry">
+
+Coelho, Jailton, and Marco Tulio Valente. 2017. “ESEC/FSE’17: Joint
+Meeting of the European Software Engineering Conference and the ACM
+SIGSOFT Symposium on the Foundations of Software Engineering.” In,
+186–96. Paderborn Germany. <https://doi.org/grmgjz>.
 
 </div>
 
 <div id="ref-cromey2013" class="csl-entry">
 
-Cromey, Douglas W. 2013a. “Digital Images Are Data: And Should Be
-Treated as Such.” In, edited by Douglas J. Taatjes and Jürgen Roth,
-1–27. Methods in Molecular Biology. Totowa, NJ: Humana Press.
+Cromey, Douglas W. 2013. “Digital Images Are Data: And Should Be Treated
+as Such.” In, edited by Douglas J. Taatjes and Jürgen Roth, 1–27.
+Methods in Molecular Biology. Totowa, NJ: Humana Press.
 <https://doi.org/10.1007/978-1-62703-056-4_1>.
 
 </div>
 
-<div id="ref-cromey2013a" class="csl-entry">
+<div id="ref-gomes2022" class="csl-entry">
 
-———. 2013b. “Digital Images Are Data: And Should Be Treated as Such.”
-In, edited by Douglas J. Taatjes and Jürgen Roth, 1–27. Methods in
-Molecular Biology. Totowa, NJ: Humana Press.
-<https://doi.org/10.1007/978-1-62703-056-4_1>.
+Gomes, Dylan G. E., Patrice Pottier, Robert Crystal-Ornelas, Emma J.
+Hudgins, Vivienne Foroughirad, Luna L. Sánchez-Reyes, Rachel Turba, et
+al. 2022. “Why Don’t We Share Data and Code? Perceived Barriers and
+Benefits to Public Archiving Practices.” *Proceedings of the Royal
+Society B: Biological Sciences* 289 (1987): 20221113.
+<https://doi.org/grbx5m>.
+
+</div>
+
+<div id="ref-hammer2021" class="csl-entry">
+
+Hammer, Mathias, Maximiliaan Huisman, Alessandro Rigano, Ulrike Boehm,
+James J. Chambers, Nathalie Gaudreault, Alison J. North, et al. 2021.
+“Towards Community-Driven Metadata Standards for Light Microscopy:
+Tiered Specifications Extending the OME Model.” *Nature Methods* 18
+(12): 1427–40. <https://doi.org/10.1038/s41592-021-01327-9>.
+
+</div>
+
+<div id="ref-heddleston2021" class="csl-entry">
+
+Heddleston, John M., Jesse S. Aaron, Satya Khuon, and Teng-Leong Chew.
+2021. “A Guide to Accurate Reporting in Digital Image Acquisition Can
+Anyone Replicate Your Microscopy Data?” *Journal of Cell Science* 134
+(6): jcs254144. <https://doi.org/10.1242/jcs.254144>.
 
 </div>
 
@@ -929,6 +958,33 @@ Clear and Informative Image-Based Figures for Scientific Publications.”
 
 </div>
 
+<div id="ref-karoune2022" class="csl-entry">
+
+Karoune, Emma, and Esther Plomp. 2022. “Removing Barriers to
+Reproducible Research in Archaeology.” *Zenodo, ver. 5 peer-reviewed and
+recommended by Peer Community in Archaeology*, November.
+<https://doi.org/10.5281/zenodo.7320029>.
+
+</div>
+
+<div id="ref-marqués2020" class="csl-entry">
+
+Marqués, Guillermo, Thomas Pengo, and Mark A Sanders. 2020. “Imaging
+Methods Are Vastly Underreported in Biomedical Research.” Edited by
+Peter Rodgers and Elisabeth M Bik. *eLife* 9 (August): e55133.
+<https://doi.org/ghmkv4>.
+
+</div>
+
+<div id="ref-marwick2018" class="csl-entry">
+
+Marwick, Ben, and Suzanne E. Pilaar Birch. 2018. “A Standard for the
+Scholarly Citation of Archaeological Data as an Incentive to Data
+Sharing.” *Advances in Archaeological Practice* 6 (2): 125–43.
+<https://doi.org/gf5vpk>.
+
+</div>
+
 <div id="ref-pedergnana2020" class="csl-entry">
 
 Pedergnana, Antonella. 2020. ““All That Glitters Is Not Gold”:
@@ -938,12 +994,66 @@ and Stone Tool Function.” *Journal of Paleolithic Archaeology* 3 (3):
 
 </div>
 
+<div id="ref-ryan2021" class="csl-entry">
+
+Ryan, Joel, Thomas Pengo, Alex Rigano, Paula Montero Llopis, Michelle S.
+Itano, Lisa A. Cameron, Guillermo Marqués, Caterina
+Strambio-De-Castillia, Mark A. Sanders, and Claire M. Brown. 2021.
+“MethodsJ2: A Software Tool to Capture Metadata and Generate
+Comprehensive Microscopy Methods Text.” *Nature Methods* 18 (12):
+1414–16. <https://doi.org/10.1038/s41592-021-01290-5>.
+
+</div>
+
+<div id="ref-samuel2020" class="csl-entry">
+
+Samuel, Gabrielle, and Federica Lucivero. 2020. “Responsible Open
+Science: Moving Towards an Ethics of Environmental Sustainability.”
+*Publications* 8 (4): 54. <https://doi.org/grmgjx>.
+
+</div>
+
+<div id="ref-sarkans2021" class="csl-entry">
+
+Sarkans, Ugis, Wah Chiu, Lucy Collinson, Michele C. Darrow, Jan
+Ellenberg, David Grunwald, Jean-Karim Hériché, et al. 2021. “REMBI:
+Recommended Metadata for Biological Imagesenabling Reuse of Microscopy
+Data in Biology.” *Nature Methods* 18 (12): 1418–22.
+<https://doi.org/10.1038/s41592-021-01166-8>.
+
+</div>
+
 <div id="ref-schmied2021" class="csl-entry">
 
 Schmied, Christopher, and Helena Klara Jambor. 2021. “Effective Image
 Visualization for Publications a Workflow Using Open Access Tools and
 Concepts.” *F1000Research* 9 (February): 1373.
 <https://doi.org/10.12688/f1000research.27140.2>.
+
+</div>
+
+<div id="ref-schmied2023" class="csl-entry">
+
+Schmied, Christopher, Michael S. Nelson, Sergiy Avilov, Gert-Jan Bakker,
+Cristina Bertocchi, Johanna Bischof, Ulrike Boehm, et al. 2023.
+“Community-Developed Checklists for Publishing Images and Image
+Analyses.” *Nature Methods*, September, 1–12.
+<https://doi.org/10.1038/s41592-023-01987-9>.
+
+</div>
+
+<div id="ref-soler2022" class="csl-entry">
+
+Soler, Santiago. 2022. “Cc-Licenses: Creative Commons Licenses for
+GitHub Projects.” <https://github.com/santisoler/cc-licenses>.
+
+</div>
+
+<div id="ref-stark2018" class="csl-entry">
+
+Stark, Philip B. 2018. “Before Reproducibility Must Come
+Preproducibility.” *Nature* 557 (7707): 613–13.
+<https://doi.org/gdh9xc>.
 
 </div>
 

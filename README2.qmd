@@ -69,7 +69,7 @@ $\frac{20 \times 2 \times 1 \times 381 \times 1}{11} \approx 1385 \times$
 
 As you can see, with the same optical components (except oculars) as in the example calculation of the optical magnification above (see formula (1)), the resulting digital magnification is about 3.5 $\times$ larger than the optical magnification. **So digital and optical magnifications *are* different!**
 
-An example I like to show is the figure 8a of [@pedergnana2020] (the paper can be read [here](https://rdcu.be/cWpDH)). According to the legend, the original magnification of the optical light microscopy image on the left is 10 $\times$ and that of the SEM image on the right is 200 $\times$ (actually 260 $\times$ according to the data zone on the image itself). So different magnifications but same field of view and roughly same size on the PDF...?! Here I do not mean that Antonella Pedergnana was wrong; on the contrary, she actually did **correctly** report the microscopes' settings **as it should be done**. She even specified in the legend that the reported magnifications are 'original magnifications' to highlight the fact that the images in the PDF have other (digital) magnifications. The problem is that this acquisition setting can be misleading for the non-expert reader. This example demonstrates that the concept of digital magnification is troublesome!
+An example I like to show is the figure 8a of @pedergnana2020 (the paper can be read [here](https://rdcu.be/cWpDH)). According to the legend, the original magnification of the optical light microscopy image on the left is 10 $\times$ and that of the SEM image on the right is 200 $\times$ (actually 260 $\times$ according to the data zone on the image itself). So different magnifications but same field of view and roughly same size on the PDF...?! Here I do not mean that Antonella Pedergnana was wrong; on the contrary, she actually did **correctly** report the microscopes' settings **as it should be done**. She even specified in the legend that the reported magnifications are 'original magnifications' to highlight the fact that the images in the PDF have other (digital) magnifications. The problem is that this acquisition setting can be misleading for the non-expert reader. This example demonstrates that the concept of digital magnification is troublesome!
 
 Also, the formula (2) shows that calculating the total digital magnification is not so easy in practice: the camera sensor diagonal and the viewing medium diagonal are not always known.
 
@@ -94,7 +94,7 @@ There might be one case where the digital magnification might be useful, namely 
 
 So, if the digital magnification is useless, how can we know the size of a digital microscope image? The good old **scale bar**! The field of view, *i.e* the size of the imaged area of the sample, or rulers or anything similar will do the trick too.
 
-One would expect that everybody knows that a scale bar (or some form of scaling) must be provided with each image. Yet, "\[a\]pproximately half of papers in physiology (49%) and cell biology (55%) and 28% of plant science papers provided scale bars with dimensions (in the figure or legend) for all images in the paper \[...\]. Approximately one-third of papers in each field contained incomplete scale information, such as reporting magnification or presenting scale information for a subset of images. Twenty-four percent of physiology papers, 10% of cell biology papers, and 29% of plant sciences papers contained no scale information on any image" [@jambor2021, p.3].\
+One would expect that everybody knows that a scale bar (or some form of scaling) must be provided with each image. Yet, "\[a\]pproximately half of papers in physiology (49%) and cell biology (55%) and 28% of plant science papers provided scale bars with dimensions (in the figure or legend) for all images in the paper \[...\]. Approximately one-third of papers in each field contained incomplete scale information, such as reporting magnification or presenting scale information for a subset of images. Twenty-four percent of physiology papers, 10% of cell biology papers, and 29% of plant sciences papers contained no scale information on any image" [@jambor2021, p. 3].\
 In sum, **only about half of the papers in these fields publish microscope images with proper scaling information; this is not much!** I do not expect that archaeology is any different, although I am not aware of such a survey for archaeology.
 
 ------------------------------------------------------------------------
@@ -139,7 +139,7 @@ $measuring \ point \ spacing = \frac{measuring \ area}{number \ of \ pixels}$ (4
 
 So far, so good, and not too complicated. The problem is that we now have two different values for the lateral resolution. Which one should we care about? Both, of course! But **what should the relationship between optical and digital lateral resolutions be?**
 
-The Nyquist criterion (based on the [Nyquist–Shannon sampling theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem)) states that [the value for the digital lateral resolution (measuring point spacing) should be 2-3 $\times$ smaller than the value for optical lateral resolution ($\delta_L$)](https://zeiss-campus.magnet.fsu.edu/articles/basics/digitalimaging.html). This is necessary to digitally image with sufficient details the transition between features that are optically visible.\
+The Nyquist criterion (based on the [Nyquist–Shannon sampling theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem)) states that [the value for the digital lateral resolution (measuring point spacing) should be 2-3 times smaller than the value for optical lateral resolution ($\delta_L$)](https://zeiss-campus.magnet.fsu.edu/articles/basics/digitalimaging.html). This is necessary to digitally image with sufficient details the transition between features that are optically visible.\
 For example, if $\delta_L = 0.6 \ \mu m$, then the measuring point spacing should be 0.2-0.3 µm.
 
 If the digital lateral resolution is more than 3 $\times$ smaller than the optical lateral resolution, this will result in oversampling: adjacent pixels will have the same values, so the digital image will not contain more meaningful information but simply more information. This results in larger files than necessary and generally does not improve the quality of the image.\
@@ -180,8 +180,8 @@ Here again, **the smaller** $\delta_A$, the better the resolution is.
 
 The digital vertical resolution is meaningless in case of a 2D image (even for extended depth of focus - EDF - images) but it is relevant for 2.5 and 3D images.
 
-The digital vertical resolution of a 2.5D image acquired from a confocal microscope is better than the step size (*i.e.* the distance between the individual images, or slices, of a stack) because of the way it is processed [see @artigas2011a].\
-In short, the focal distance is constant for a given objective, so when the microscope's objective moves up and down, different points of the sample are in focus. Each point (pixel) on each slice records the intensity of the signal (called axial response) at that location (X+Y from stage coordinates and Z from the slice's height). The intensity increases when the focal plane gets closer to the point on the sample and decreases again when the focal plane moves further away from the point on the sample. The curve of the axial response (intensity) vs. height of the slice therefore has a maximum that can be mathematically computed [see fig. 11.6 in @artigas2011a] and that do not necessarily fall on the height of a given slice. This maximum is the value used for the height of the given pixel. Repeat the process for all pixels, and you get a 2.5D height map with a digital vertical resolution better than what the mecanics (drives or piezo) can achieve.
+The digital vertical resolution of a 2.5D image acquired from a confocal microscope is better than the step size (*i.e.* the distance between the individual images, or slices, of a stack) because of the way it is processed [see @artigas2011].\
+In short, the focal distance is constant for a given objective, so when the microscope's objective moves up and down, different points of the sample are in focus. Each point (pixel) on each slice records the intensity of the signal (called axial response) at that location (X+Y from stage coordinates and Z from the slice's height). The intensity increases when the focal plane gets closer to the point on the sample and decreases again when the focal plane moves further away from the point on the sample. The curve of the axial response (intensity) vs. height of the slice therefore has a maximum that can be mathematically computed [see fig. 11.6 in @artigas2011] and that do not necessarily fall on the height of a given slice. This maximum is the value used for the height of the given pixel. Repeat the process for all pixels, and you get a 2.5D height map with a digital vertical resolution better than what the mecanics (drives or piezo) can achieve.
 
 Unfortunately, I do not know how to calculate the digital vertical resolution of a z-stack.\
 If anyone knows more about it, please [contribute](#how-to-contribute)!
@@ -207,7 +207,7 @@ Even if we sometimes tend to assume that there is only one way to process an ima
 It is also crucial to **process all images of a dataset in the same way**. This might seem obvious, but different processing methods might produce results that might appear identical/similar even if they actually are different. Processing all images in the same way ensures that all images are comparable at least within a dataset. Of course, this is true only if **the images were acquired in the same way**!\
 So, while the details are more nuanced, I believe the message is clear and every analyst should try his/her/their best to acquire and process images and data in a consistent and comparable manner.
 
-Another general piece of advice is to **keep the raw data**, in this case the acquired image, and to **process a copy** of it rather than overwriting the acquired image [see e.g. @cromey2013a and @schmied2021]. This way, it is possible to check the result and process differently if necessary. See section [Saving](#saving) for a discussion on raw/derived data and file formats.
+Another general piece of advice is to **keep the raw data**, in this case the acquired image, and to **process a copy** of it rather than overwriting the acquired image [see e.g. @cromey2013 and @schmied2021]. This way, it is possible to check the result and process differently if necessary. See section [Saving](#saving) for a discussion on raw/derived data and file formats.
 
 Last but not least, it is important to **keep a very detailed record of the processing and analysis steps that were performed**. Templates and scripts will make it easier to repeat and reproduce the processing/analysis. This is not only important to share data (see section [Sharing](#sharing)); it is also important for yourself as it is likely that you will have to repeat the analysis at some point, at least for some images. [protocols.io](https://www.protocols.io/) can be a useful tool for this.
 
@@ -215,13 +215,13 @@ Last but not least, it is important to **keep a very detailed record of the proc
 
 ------------------------------------------------------------------------
 
-# Saving
+# Saving {#saving}
 
 ## Raw vs. derived data
 
-I totally agree with Ben Marwick and colleagues that raw data should be kept raw and clearly separated from derived data (e.g. [Marwick et al. 2018, Marwick & Pilaar Birch 2018](#references)).
+I totally agree with Ben Marwick and colleagues that raw data should be kept raw and clearly separated from derived data [e.g. @marwick2018 and ] (e.g. [Marwick & Pilaar Birch 2018](#references)).
 
-Still, it is not always clear to distinguish between the two, nor practicable to keep the raw(est) data. For example, the raw data of an EDF image or a 2.5D topographical model (= height map, e.g. from a confocal microscope) is a Z-stack. Z-stacks can be very large files so keeping all these Z-stacks requires a lot of storage space. While storage is not really limiting anymore, the environmental impacts of data centers and online repositories cannot be ignored (e.g. [Samuel & Lucivero 2020](#references)).
+Still, it is not always clear to distinguish between the two, nor practicable to keep the raw(est) data. For example, the raw data of an EDF image or a 2.5D topographical model (= height map, e.g. from a confocal microscope) is a Z-stack. Z-stacks can be very large files so keeping all these Z-stacks requires a lot of storage space. While storage is not really limiting anymore, the environmental impacts of data centers and online repositories cannot be ignored [e.g. @samuel2020].
 
 Also the derived data of an analysis can be the raw data of another. Using the example of surface texture analysis (dental microwear texture analysis or quantitative artifact microwear analysis), the raw data of the analysis are the height maps (which are themselves derived from pre-processing the Z-stacks) that are used as input for MountainsMap (or equivalent) to calculate the surface texture parameters for each height map, which are eventually exported into a CSV file. This CSV file is in-turn the raw data for the subsequent statistical analysis.
 
@@ -238,7 +238,7 @@ For long-term usability, accessibility and sustainability, proprietary formats (
 Most microscope manufacturers offer software packages to acquire images; in some cases, these software packages are even necessary to operate the microscopes. Not all of these software packages can save in an open format, even less so in OME-TIFF. Unfortunately, metadata sometimes get lost when the image is not saved in the native, proprietary format.\
 This is why, if your acquisition software cannot natively save in an open format, ***I*** **would recommend to save the image in the proprietary format** (in order to save all the metadata) **and to additionally export to an open format** (for long-term accessibility).
 
-Following on this discussion, it is therefore important to favor open-source software packages over paid ones. Nevertheless, open-source projects often have difficulties to keep running and being developed (see e.g. [Coelho & Valente 2017](#references)). Also, open-source software packages are often less user-friendly, and are slower to add new functionalities and to adapt to OS upgrades. So, open-source is not always better.\
+Following on this discussion, it is therefore important to favor open-source software packages over paid ones. Nevertheless, open-source projects often have difficulties to keep running and being developed [see e.g. @coelho2017]. Also, open-source software packages are often less user-friendly, and are slower to add new functionalities and to adapt to OS upgrades. So, open-source is not always better.\
 Still, [Fiji and ImageJ](https://imagej.net/) is a great open-source solution for image analysis with a 25-year-long history (meaning it is likely to survive). [Bio-Formats](https://www.openmicroscopy.org/bio-formats/) is an important "software tool for reading and writing image data using standardized, open formats", which is incorporated into ImageJ. Some microscope manufacturers also offer a free viewer or a free light version (e.g. Zeiss' [ZEN starter](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-starter.html) and [ZEN lite](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-lite.html)).
 
 ## JPEG, PNG, TIFF, RAW
@@ -248,21 +248,21 @@ Following up on the previous section, every one of us has wondered at least once
 I recommend reading the documentation about the different [raster file formats](https://www.adobe.com/creativecloud/file-types/image/raster.html) on the Adobe website, which is, in my opinion, clear and detailed.
 
 -   [TIFF](https://www.adobe.com/creativecloud/file-types/image/raster/tiff-file.html) (.tif or .tiff, same format but different extensions for historical reasons) is the format to choose if you want to save images at full resolution and with best quality, which in turn implies that TIFF files are large. Metadata can be saved together with the image when using this format (e.g. for SEM images).\
--   [JPEG](https://www.adobe.com/creativecloud/file-types/image/raster/jpeg-file.html) (.jpg or .jpeg, same format but different extensions for historical reasons) is a widely used format for photos. Files are small and of generally good quality, but the lossy compression means that some details are lost. JPEG files can include metadata, especially the camera's [EXIF data](https://en.wikipedia.org/wiki/Exif), but is not recommended for scientific imaging ([Cromey 2013](#references)).\
--   [PNG](https://www.adobe.com/creativecloud/file-types/image/raster/png-file.html) is best knowned for their transparent backgrounds, but it is also a good format for any type of image thanks to its lossless compression. Files are smaller than TIFF but larger than JPEG. While many users tend to prefer JPEG, I think PNG could be better for many applications and should be preferred to JPEG according to [Cromey 2013, Schmied & Jambor 2021 and Schmied et al. 2023](#references). Compare the two formats [here](https://www.adobe.com/creativecloud/file-types/image/comparison/jpeg-vs-png.html).\
+-   [JPEG](https://www.adobe.com/creativecloud/file-types/image/raster/jpeg-file.html) (.jpg or .jpeg, same format but different extensions for historical reasons) is a widely used format for photos. Files are small and of generally good quality, but the lossy compression means that some details are lost. JPEG files can include metadata, especially the camera's [EXIF data](https://en.wikipedia.org/wiki/Exif), but is not recommended for scientific imaging [@cromey2013].\
+-   [PNG](https://www.adobe.com/creativecloud/file-types/image/raster/png-file.html) is best knowned for their transparent backgrounds, but it is also a good format for any type of image thanks to its lossless compression. Files are smaller than TIFF but larger than JPEG. While many users tend to prefer JPEG, I think PNG could be better for many applications and should be preferred to JPEG [@cromey2013, @schmied2021, @schmied2023]. Compare the two formats [here](https://www.adobe.com/creativecloud/file-types/image/comparison/jpeg-vs-png.html).\
 -   I am not aware of any microscope camera that can save in [RAW](https://www.adobe.com/creativecloud/file-types/image/raw.html), but DSLR cameras can usually do it. So this format is worth considering for users who have a DSLR camera mounted on the phototube.
 
 ------------------------------------------------------------------------
 
 # Reporting {#reporting}
 
-All the background information of the previous sections aims at providing the required knowledge to use a microscope to reach the desired scale of observation and to save all the acquired data and metadata. While it is important for the analyst to see what he/she/they want to see on the sample, it is equally important that the reader/audience that will be presented - or even will assess - the work is able to know what can be observed in terms of scale on the reported/published/shared images. This is also important for *repeatability* and *reproducibilty* (and *pre-producibility* *sensu* [Stark 2018](#references)).
+All the background information of the previous sections aims at providing the required knowledge to use a microscope to reach the desired scale of observation and to save all the acquired data and metadata. While it is important for the analyst to see what he/she/they want to see on the sample, it is equally important that the reader/audience that will be presented - or even will assess - the work is able to know what can be observed in terms of scale on the reported/published/shared images. This is also important for *repeatability* and *reproducibilty* [and *pre-producibility* *sensu* @stark2018].
 
-The importance of reporting for microscopy is not unique to archaeology/paleontology (see e.g. [Calandra et al. 2019](#references)) and other fields also suffer from a lack of high-quality reporting (see e.g. [Marqués et al. 2020](#references) in biomedical research).
+The importance of reporting for microscopy is not unique to archaeology/paleontology [see e.g. @calandra2019] and other fields also suffer from a lack of high-quality reporting [see e.g. @marqués2020 in biomedical research].
 
-A large community of researchers in life sciences are working on guidelines for reporting microscope data (e.g. [Aaron & Chew 2021, Hammer et al. 2021, Heddleston et al. 2021, Jambor et al. 2021, Ryan et al. 2021, Sarkans et al. 2021 and Schmied et al. 2023](#references), as well as the [Open Microscopy Environment - OME](https://www.openmicroscopy.org/about/), the [European Light microscopy initiative - ELMI](https://elmi.embl.org/home/our-aims/), the [Society for Microscopy and Image Analysis - GerBI-GMB](https://gerbi-gmb.de/society/) and the [Quality Assessment and Reproducibility for Instruments & Images in Light Microscopy - QUAREP-LiMi](https://quarep.org/about/) communities). The work they do is incredible, but unfortunately, it concerns mostly life sciences and some aspects are not relevant to archaeology, while some others relevant to archaeology are not addressed.
+A large community of researchers in life sciences are working on guidelines for reporting microscope data [@aaron2021] [e.g. @aaron2021, @hammer2021, @heddleston2021, @jambor2021, @ryan2021, @sarkans2021 and @schmied2023, as well as the [Open Microscopy Environment - OME](https://www.openmicroscopy.org/about/), the [European Light microscopy initiative - ELMI](https://elmi.embl.org/home/our-aims/), the [Society for Microscopy and Image Analysis - GerBI-GMB](https://gerbi-gmb.de/society/) and the [Quality Assessment and Reproducibility for Instruments & Images in Light Microscopy - QUAREP-LiMi](https://quarep.org/about/) communities]. The work they do is incredible, but unfortunately, it concerns mostly life sciences and some aspects are not relevant to archaeology, while some others relevant to archaeology are not addressed.
 
-**"The underlying premise of image publication and ethics guidelines is that a digital image is data and that the data should not be manipulated inappropriately"** ([Cromey 2013, p. 5](#references)).
+**"The underlying premise of image publication and ethics guidelines is that a digital image is data and that the data should not be manipulated inappropriately"** [@cromey2013, p. 5].
 
 ## Minimum requirements
 
@@ -295,11 +295,11 @@ Below is a list of what I think is necessary for pre-producible microscope image
 | 23         | Processing/Analysis         | Workflow and settings of the surface texture analysis, if applicable              | To be able to repeat the processing                                                      | "The surface texture analysis was performed with the following template \[add analysis details and link to template\]"                                                                                                 |
 
 From my point of view, **all of these pieces of information should be published together with every microscope acquisition**.\
-Additionally, I recommend **following the guidelines of [Jambor et al. (2021)](#references) to improve the quality of the images themselves**.
+Additionally, I recommend **following the guidelines of @jambor2021 to improve the quality of the images themselves**.
 
 ## Reporting templates
 
-Nevertheless, much more should be reported to follow the recommendations of e.g. [Heddleston et al. (2021)](#references). I have tried to make it easy for the users of the **Im**aging **P**latform **a**t **L**EIZ**A** ([IMPALA](https://www.leiza.de/forschung/infrastrukturen/labore/impala)): a [Shiny App](https://shiny.rstudio.com/) guides the users to fill in the required information and exports the report to an XLSX file that can be shared together with the images (see section [Sharing](#sharing)).
+Nevertheless, much more should be reported to follow the recommendations of e.g. @heddleston2021. I have tried to make it easy for the users of the **Im**aging **P**latform **a**t **L**EIZ**A** ([IMPALA](https://www.leiza.de/forschung/infrastrukturen/labore/impala)): a [Shiny App](https://shiny.rstudio.com/) guides the users to fill in the required information and exports the report to an XLSX file that can be shared together with the images (see section [Sharing](#sharing)).
 
 This App is still in development and is part of the repository [reporting-templates](https://github.com/ivan-paleo/reporting-templates) on GitHub. It is not yet available publicly; contact me (see section [How to contribute](#how-to-contribute)) if you would like to have a look / try it out / contribute already.
 
@@ -307,7 +307,7 @@ This App is still in development and is part of the repository [reporting-templa
 
 # Sharing {#sharing}
 
-A lot could be said about data sharing and Open Science. I will keep it brief here and focused on microscope images; more general and extensive discussions can be found in e.g. [Marwick & Pilaar Birch 2018, Gomes et al. 2022, Karoune & Plomp 2022](#references).
+A lot could be said about data sharing and Open Science. I will keep it brief here and focused on microscope images; more general and extensive discussions can be found in e.g. Marwick & Pilaar Birch 2018, @gomes2022 and @karoune2022.
 
 **In my opinion, publishing only a few, supposedly representative images of the whole dataset is not enough** because of the following reasons: 1. The sample might be representative in some aspects but not in others. 2. To be honest, in most cases, only the "nicest" images are published and the least informative/relevant are not; this implies a strong bias and the true signal might just be lost by this selective sampling/reporting. 3. Images published in a journal article are usually small and of reduced quality, so the published images might not even show what can be seen on the full-scale image. 4. Without seeing all images in full resolution, how can anyone assess whether the data support the conclusions? 5. It would be a shame to keep all these images for yourself. 6. Why should we show only a small part of the extensive work we did? Let us do ourselves a favor and show how hard we work!
 
@@ -325,7 +325,7 @@ I appreciate any comment from anyone (expert or novice) to improve this document
 1.  Submit an issue: If you notice any problem or have a question, submit an [issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues). You can do so [here](https://github.com/ivan-paleo/publish-micro-image/issues).\
     A GitHub account is necessary.
 
-2.  Propose changes: This document is written in [Markdown](https://www.markdownguide.org/). If you know how to write in this format, please propose text edits as a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) (abbreviated "PR").\
+2.  Propose changes: This document is written in [Quarto](https://quarto.org/). If you know how to write in this format, please propose text edits as a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) (abbreviated "PR").\
     A GitHub account is necessary.
 
 3.  Send me an email: If you do not have a GitHub account and do not want to sign up, you can still write me an email (Google my name together with my affiliation to find my email address).
@@ -346,6 +346,8 @@ Author: Ivan Calandra
 
 [![CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
+@soler2022
+
 ------------------------------------------------------------------------
 
-# References
+# References {#references}
