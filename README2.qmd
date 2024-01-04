@@ -219,7 +219,7 @@ Last but not least, it is important to **keep a very detailed record of the proc
 
 ## Raw vs. derived data
 
-I totally agree with Ben Marwick and colleagues that raw data should be kept raw and clearly separated from derived data [e.g. @marwick2018 and ] (e.g. [Marwick & Pilaar Birch 2018](#references)).
+I totally agree with Ben Marwick and colleagues that raw data should be kept raw and clearly separated from derived data [e.g. @marwickpilaar2018 and @marwicketal2018].
 
 Still, it is not always clear to distinguish between the two, nor practicable to keep the raw(est) data. For example, the raw data of an EDF image or a 2.5D topographical model (= height map, e.g. from a confocal microscope) is a Z-stack. Z-stacks can be very large files so keeping all these Z-stacks requires a lot of storage space. While storage is not really limiting anymore, the environmental impacts of data centers and online repositories cannot be ignored [e.g. @samuel2020].
 
@@ -307,7 +307,7 @@ This App is still in development and is part of the repository [reporting-templa
 
 # Sharing {#sharing}
 
-A lot could be said about data sharing and Open Science. I will keep it brief here and focused on microscope images; more general and extensive discussions can be found in e.g. Marwick & Pilaar Birch 2018, @gomes2022 and @karoune2022.
+A lot could be said about data sharing and Open Science. I will keep it brief here and focused on microscope images; more general and extensive discussions can be found in e.g. @marwickpilaar2018, @gomes2022 and @karoune2022.
 
 **In my opinion, publishing only a few, supposedly representative images of the whole dataset is not enough** because of the following reasons: 1. The sample might be representative in some aspects but not in others. 2. To be honest, in most cases, only the "nicest" images are published and the least informative/relevant are not; this implies a strong bias and the true signal might just be lost by this selective sampling/reporting. 3. Images published in a journal article are usually small and of reduced quality, so the published images might not even show what can be seen on the full-scale image. 4. Without seeing all images in full resolution, how can anyone assess whether the data support the conclusions? 5. It would be a shame to keep all these images for yourself. 6. Why should we show only a small part of the extensive work we did? Let us do ourselves a favor and show how hard we work!
 

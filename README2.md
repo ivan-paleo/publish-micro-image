@@ -566,9 +566,8 @@ is no reason not to follow and use them!
 ## Raw vs. derived data
 
 I totally agree with Ben Marwick and colleagues that raw data should be
-kept raw and clearly separated from derived data (e.g. [Marwick and
-Pilaar Birch 2018](#ref-marwick2018) and) (e.g. [Marwick & Pilaar Birch
-2018](#references)).
+kept raw and clearly separated from derived data Marwick, Boettiger, and
+Mullen ([2018](#ref-marwicketal2018)).
 
 Still, it is not always clear to distinguish between the two, nor
 practicable to keep the raw(est) data. For example, the raw data of an
@@ -773,9 +772,9 @@ look / try it out / contribute already.
 
 A lot could be said about data sharing and Open Science. I will keep it
 brief here and focused on microscope images; more general and extensive
-discussions can be found in e.g. Marwick & Pilaar Birch 2018, Gomes et
-al. ([2022](#ref-gomes2022)) and Karoune and Plomp
-([2022](#ref-karoune2022)).
+discussions can be found in e.g. Marwick and Pilaar Birch
+([2018](#ref-marwickpilaar2018)), Gomes et al. ([2022](#ref-gomes2022))
+and Karoune and Plomp ([2022](#ref-karoune2022)).
 
 **In my opinion, publishing only a few, supposedly representative images
 of the whole dataset is not enough** because of the following
@@ -976,7 +975,15 @@ Peter Rodgers and Elisabeth M Bik. *eLife* 9 (August): e55133.
 
 </div>
 
-<div id="ref-marwick2018" class="csl-entry">
+<div id="ref-marwicketal2018" class="csl-entry">
+
+Marwick, Ben, Carl Boettiger, and Lincoln Mullen. 2018. “Packaging Data
+Analytical Work Reproducibly Using R (and Friends).” *The American
+Statistician* 72 (1): 80–88. <https://doi.org/gdhvm8>.
+
+</div>
+
+<div id="ref-marwickpilaar2018" class="csl-entry">
 
 Marwick, Ben, and Suzanne E. Pilaar Birch. 2018. “A Standard for the
 Scholarly Citation of Archaeological Data as an Incentive to Data
