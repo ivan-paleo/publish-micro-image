@@ -141,7 +141,7 @@ $measuring \ point \ spacing = \frac{measuring \ area}{number \ of \ pixels}$ (4
 
 So far, so good, and not too complicated. The problem is that we now have two different values for the lateral resolution. Which one should we care about? Both, of course! But **what should the relationship between optical and digital lateral resolutions be?**
 
-The Nyquist criterion (based on the [Nyquist–Shannon sampling theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem)) states that [the value for the digital lateral resolution (measuring point spacing) should be 2-3 times smaller than the value for optical lateral resolution](https://zeiss-campus.magnet.fsu.edu/articles/basics/digitalimaging.html) ($\delta_L$). This is necessary to digitally image with sufficient details the transition between features that are optically visible.\
+The Nyquist criterion (based on the [Nyquist–Shannon sampling theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem)) states that the value for the digital lateral resolution (measuring point spacing) should be 2-3 times smaller [approx. 2.8 times smaller according to @pawley2006] than the value for optical lateral resolution ($\delta_L$). This is necessary to digitally image with sufficient details the transition between features that are optically visible.\
 For example, if $\delta_L = 0.6 \ \mu m$, then the measuring point spacing should be 0.2-0.3 µm.
 
 If the digital lateral resolution is more than 3 $\times$ smaller than the optical lateral resolution, this will result in oversampling: adjacent pixels will have the same values, so the digital image will not contain more meaningful information but simply more information. This results in larger files than necessary and generally does not improve the quality of the image.\
@@ -197,14 +197,21 @@ While processing deserves a whole good-practice document on its own, I would jus
 
 ## Definitions
 
-Following the definitions of @aaron2021 [p. 1], *processing* "serves to digitally transform an acquired dataset by enhancing or isolating signals of interest and/or suppressing other signals and noise that will otherwise prevent accurate analysis". *Analysis* refers to "a vast set of diverse approaches to extract \[...\] meaningful, quantitative measurements from a dataset". Lastly, *pre-processing* includes the "steps that are required to be taken before image data can be properly processed \[...\]. Such steps generally do not serve to enhance particular features in an image per se, but rather correct for imperfections commonly encountered in imaging systems."\
-Here are some examples in each category when considering surface texture analysis (dental microwear texture analysis or quantitative artifact microwear analysis): - pre-processing: topography reconstruction from a Z-stack, stitching... - processing: leveling, form removal, thresholding, wavelength filters... - analysis: texture analysis following ISO 25178, scale-sensitive fractal analysis, furrow analysis...
+Following the definitions of @aaron2021 [p. 1], *processing* "serves to digitally transform an acquired dataset by enhancing or isolating signals of interest and/or suppressing other signals and noise that will otherwise prevent accurate analysis". *Analysis* refers to "a vast set of diverse approaches to extract \[...\] meaningful, quantitative measurements from a dataset". Lastly, *pre-processing* includes the "steps that are required to be taken before image data can be properly processed \[...\]. Such steps generally do not serve to enhance particular features in an image per se, but rather correct for imperfections commonly encountered in imaging systems."
+
+Here are some examples in each category when considering surface texture analysis (dental microwear texture analysis or quantitative artifact microwear analysis):
+
+-   pre-processing: topography reconstruction from a Z-stack, stitching...
+
+-   processing: leveling, form removal, thresholding, wavelength filters...
+
+-   analysis: texture analysis following ISO 25178, scale-sensitive fractal analysis, furrow analysis...
 
 In the remaining of this section, I will use the term processing to include both pre-processing and true processing. This makes the sentences easier to read and the discussion applies to both anyway.
 
 ## Recommendations
 
-Even if we sometimes tend to assume that there is only one way to process an image, there are in fact often several methods or algorithms to do so, and there are always various settings to adjust. Additionally, some processing happens before you get the raw data from the instrument. This is why it is important to **be as precise as possible when reporting about the acquisition and processing** (see section [Reporting](#reporting)).
+Even if we sometimes tend to assume that there is only one way to process an image, there are in fact often several methods or algorithms to do so, and there are always various settings to adjust. Additionally, some processing happens before you get the raw data from the instrument. Lastly, "\[a\]s images are numerical data, image processing invariably changes these data and thus needs to be transparently documented" [@schmied2023, p. 7]. This is why it is important to **be as precise as possible when reporting about the acquisition and processing** (see section [Reporting](#reporting)).
 
 It is also crucial to **process all images of a dataset in the same way**. This might seem obvious, but different processing methods might produce results that might appear identical/similar even if they actually are different. Processing all images in the same way ensures that all images are comparable at least within a dataset. Of course, this is true only if **the images were acquired in the same way**!\
 So, while the details are more nuanced, I believe the message is clear and every analyst should try his/her/their best to acquire and process images and data in a consistent and comparable manner.
@@ -213,7 +220,7 @@ Another general piece of advice is to **keep the raw data**, in this case the ac
 
 Last but not least, it is important to **keep a very detailed record of the processing and analysis steps that were performed**. Templates and scripts will make it easier to repeat and reproduce the processing/analysis. This is not only important to share data (see section [Sharing](#sharing)); it is also important for yourself as it is likely that you will have to repeat the analysis at some point, at least for some images. [protocols.io](https://www.protocols.io/) can be a useful tool for this.
 
-[Fiji/ImageJ](https://imagej.net/) is a great, open-source tool for image analysis. @schmied2021 proposed guidelines for image analysis and a processing workflow in Fiji; there is no reason not to follow and use them!
+[Fiji/ImageJ](https://imagej.net/) is a great, open-source tool for image analysis. @schmied2021 proposed guidelines for image analysis and a processing workflow in Fiji; there is no reason not to follow and use them! The checklists of @schmied2023 are also very useful.
 
 ------------------------------------------------------------------------
 
@@ -236,7 +243,7 @@ All this to say that the decision should be made on a case-by-case basis about w
 
 ## File formats and software {#file-formats-and-software}
 
-For long-term usability, accessibility and sustainability, proprietary formats (i.e. files that can only be opened with a paid software) should be avoided and **stable, open, non-proprietary formats should be preferred**. The DANS maintains a [list of preferred and non-preferred formats](https://dans.knaw.nl/en/file-formats/). For microscopy images, the [OME-TIFF format](https://docs.openmicroscopy.org/ome-model/6.3.1/ome-tiff/index.html) is probably the standard.\
+For long-term usability, accessibility and sustainability, proprietary formats (i.e. files that can only be opened with a paid software) should be avoided and **stable, open, non-proprietary formats should be preferred**. The DANS maintains a [list of preferred and non-preferred formats](https://dans.knaw.nl/en/file-formats/). **For microscopy images, the [OME-TIFF format](https://docs.openmicroscopy.org/ome-model/6.3.1/ome-tiff/index.html) has become the standard.**\
 Most microscope manufacturers offer software packages to acquire images; in some cases, these software packages are even necessary to operate the microscopes. Not all of these software packages can save in an open format, even less so in OME-TIFF. Unfortunately, metadata sometimes get lost when the image is not saved in the native, proprietary format.\
 This is why, if your acquisition software cannot natively save in an open format, ***I*** **would recommend to save the image in the proprietary format** (in order to save all the metadata) **and to additionally export to an open format** (for long-term accessibility).
 
@@ -296,8 +303,9 @@ Below is a list of what I think is necessary for pre-producible microscope image
 | 22         | Processing/Analysis         | Image enhancements / filters / image analysis settings, if applicable             | To be able to repeat the processing                                                      | "The contour were enhanced with settings A and B; and brightness, contrast and gamma were adjusted to C, D and E respectively"                                                                                         |
 | 23         | Processing/Analysis         | Workflow and settings of the surface texture analysis, if applicable              | To be able to repeat the processing                                                      | "The surface texture analysis was performed with the following template \[add analysis details and link to template\]"                                                                                                 |
 
-From my point of view, **all of these pieces of information should be published together with every microscope acquisition**.\
-Additionally, I recommend **following the guidelines of @jambor2021 to improve the quality of the images themselves**.
+From my point of view, **all of these pieces of information should be published together with every microscope acquisition**.
+
+Additionally, I recommend **following the guidelines of @jambor2021 to improve the quality of the images themselves, as well as using the checklists of @schmied2023 to make sure that at least the relevant "minimal" requirements are met** (but aim for the "ideal" requirements!).
 
 ## Reporting templates
 
@@ -313,10 +321,13 @@ A lot could be said about data sharing and Open Science. I will keep it brief he
 
 **In my opinion, publishing only a few, supposedly representative images of the whole dataset is not enough** because of the following reasons: 1. The sample might be representative in some aspects but not in others. 2. To be honest, in most cases, only the "nicest" images are published and the least informative/relevant are not; this implies a strong bias and the true signal might just be lost by this selective sampling/reporting. 3. Images published in a journal article are usually small and of reduced quality, so the published images might not even show what can be seen on the full-scale image. 4. Without seeing all images in full resolution, how can anyone assess whether the data support the conclusions? 5. It would be a shame to keep all these images for yourself. 6. Why should we show only a small part of the extensive work we did? Let us do ourselves a favor and show how hard we work!
 
+Or as @cromey2013 [p. 3] puts it: "If we only show other people the pictures we want them to see, then the viewers will most likely reach the interpretation that we want them to have. What if our interpretation is wrong? It may be a poorly kept secret that most published images are somewhat less than “representative”, but is this right? What would happen to the quality of science if we only showed our most compelling images to our project leaders, lab group, or collaborators?"
+
 **In addition to detailed reporting** (see section [Reporting](#reporting)), **I would therefore recommend:** 1. **to keep showing a sample as representative as possible in the journal article, but** 2. **to additionally upload all images with their metadata to an online repository** .
 
-I would like to stress that the data should be uploaded to a trustworthy online repository (e.g. [Zenodo](https://zenodo.org/), [OSF](https://osf.io/), [Figshare](https://figshare.com/)) rather than as online supplementary information (SI) to the article. This is because SI might be behind a paywall, just like the article. Even when it is not, publishers might have restrictions about file formats and names. And since everyone does mistakes, it is easier to correct them if you have access to the repository rather than relying on the publisher to do it (which can take a long time or might even never happen).\
-Here again, the discussion about raw/derived data and file formats is important (see section [Saving](#saving)).
+I would like to stress that the data should be uploaded to a trustworthy online repository (e.g. [Zenodo](https://zenodo.org/), [OSF](https://osf.io/), [Figshare](https://figshare.com/)) rather than as online supplementary information (SI) to the article. This is because SI might be behind a paywall, just like the article. Even when it is not, publishers might have restrictions about file formats and names. And since everyone does mistakes, it is easier to correct them if you have access to the repository rather than relying on the publisher to do it (which can take a long time or might even never happen).
+
+Here again, the discussion about raw/derived data and file formats is important (see section [Saving](#saving)): both raw and derived data should be shared in formats that include all the metadata [@schmied2023].
 
 ------------------------------------------------------------------------
 

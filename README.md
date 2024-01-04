@@ -1,6 +1,6 @@
 # publish-micro-image
 Ivan Calandra
-2024-01-04 11:45:44
+2024-01-04 17:15:56
 
 - [Introduction](#introduction)
 - [Scale of observation](#scale-of-observation)
@@ -349,12 +349,12 @@ between optical and digital lateral resolutions be?**
 
 The Nyquist criterion (based on the [Nyquist–Shannon sampling
 theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem))
-states that [the value for the digital lateral resolution (measuring
-point spacing) should be 2-3 times smaller than the value for optical
-lateral
-resolution](https://zeiss-campus.magnet.fsu.edu/articles/basics/digitalimaging.html)
-($\delta_L$). This is necessary to digitally image with sufficient
-details the transition between features that are optically visible.  
+states that the value for the digital lateral resolution (measuring
+point spacing) should be 2-3 times smaller (approx. 2.8 times smaller
+according to [Pawley 2006](#ref-pawley2006)) than the value for optical
+lateral resolution ($\delta_L$). This is necessary to digitally image
+with sufficient details the transition between features that are
+optically visible.  
 For example, if $\delta_L = 0.6 \ \mu m$, then the measuring point
 spacing should be 0.2-0.3 µm.
 
@@ -488,13 +488,18 @@ meaningful, quantitative measurements from a dataset”. Lastly,
 before image data can be properly processed \[…\]. Such steps generally
 do not serve to enhance particular features in an image per se, but
 rather correct for imperfections commonly encountered in imaging
-systems.”  
+systems.”
+
 Here are some examples in each category when considering surface texture
 analysis (dental microwear texture analysis or quantitative artifact
-microwear analysis): - pre-processing: topography reconstruction from a
-Z-stack, stitching… - processing: leveling, form removal, thresholding,
-wavelength filters… - analysis: texture analysis following ISO 25178,
-scale-sensitive fractal analysis, furrow analysis…
+microwear analysis):
+
+- pre-processing: topography reconstruction from a Z-stack, stitching…
+
+- processing: leveling, form removal, thresholding, wavelength filters…
+
+- analysis: texture analysis following ISO 25178, scale-sensitive
+  fractal analysis, furrow analysis…
 
 In the remaining of this section, I will use the term processing to
 include both pre-processing and true processing. This makes the
@@ -506,9 +511,11 @@ Even if we sometimes tend to assume that there is only one way to
 process an image, there are in fact often several methods or algorithms
 to do so, and there are always various settings to adjust. Additionally,
 some processing happens before you get the raw data from the instrument.
-This is why it is important to **be as precise as possible when
-reporting about the acquisition and processing** (see section
-[Reporting](#reporting)).
+Lastly, “\[a\]s images are numerical data, image processing invariably
+changes these data and thus needs to be transparently documented”
+([Schmied et al. 2023, 7](#ref-schmied2023)). This is why it is
+important to **be as precise as possible when reporting about the
+acquisition and processing** (see section [Reporting](#reporting)).
 
 It is also crucial to **process all images of a dataset in the same
 way**. This might seem obvious, but different processing methods might
@@ -539,7 +546,8 @@ useful tool for this.
 [Fiji/ImageJ](https://imagej.net/) is a great, open-source tool for
 image analysis. Schmied and Jambor ([2021](#ref-schmied2021)) proposed
 guidelines for image analysis and a processing workflow in Fiji; there
-is no reason not to follow and use them!
+is no reason not to follow and use them! The checklists of Schmied et
+al. ([2023](#ref-schmied2023)) are also very useful.
 
 ------------------------------------------------------------------------
 
@@ -590,10 +598,10 @@ For long-term usability, accessibility and sustainability, proprietary
 formats (i.e. files that can only be opened with a paid software) should
 be avoided and **stable, open, non-proprietary formats should be
 preferred**. The DANS maintains a [list of preferred and non-preferred
-formats](https://dans.knaw.nl/en/file-formats/). For microscopy images,
-the [OME-TIFF
+formats](https://dans.knaw.nl/en/file-formats/). **For microscopy
+images, the [OME-TIFF
 format](https://docs.openmicroscopy.org/ome-model/6.3.1/ome-tiff/index.html)
-is probably the standard.  
+has become the standard.**  
 Most microscope manufacturers offer software packages to acquire images;
 in some cases, these software packages are even necessary to operate the
 microscopes. Not all of these software packages can save in an open
@@ -738,10 +746,14 @@ equipment/software used.
 | 23         | Processing/Analysis         | Workflow and settings of the surface texture analysis, if applicable              | To be able to repeat the processing                                                      | “The surface texture analysis was performed with the following template \[add analysis details and link to template\]”                                                                                                 |
 
 From my point of view, **all of these pieces of information should be
-published together with every microscope acquisition**.  
+published together with every microscope acquisition**.
+
 Additionally, I recommend **following the guidelines of Jambor et al.
 ([2021](#ref-jambor2021)) to improve the quality of the images
-themselves**.
+themselves, as well as using the checklists of Schmied et al.
+([2023](#ref-schmied2023)) to make sure that at least the relevant
+“minimal” requirements are met** (but aim for the “ideal”
+requirements!).
 
 ## Reporting templates
 
@@ -784,6 +796,15 @@ support the conclusions? 5. It would be a shame to keep all these images
 for yourself. 6. Why should we show only a small part of the extensive
 work we did? Let us do ourselves a favor and show how hard we work!
 
+Or as Cromey ([2013, 3](#ref-cromey2013)) puts it: “If we only show
+other people the pictures we want them to see, then the viewers will
+most likely reach the interpretation that we want them to have. What if
+our interpretation is wrong? It may be a poorly kept secret that most
+published images are somewhat less than “representative”, but is this
+right? What would happen to the quality of science if we only showed our
+most compelling images to our project leaders, lab group, or
+collaborators?”
+
 **In addition to detailed reporting** (see section
 [Reporting](#reporting)), **I would therefore recommend:** 1. **to keep
 showing a sample as representative as possible in the journal article,
@@ -798,9 +819,12 @@ SI might be behind a paywall, just like the article. Even when it is
 not, publishers might have restrictions about file formats and names.
 And since everyone does mistakes, it is easier to correct them if you
 have access to the repository rather than relying on the publisher to do
-it (which can take a long time or might even never happen).  
+it (which can take a long time or might even never happen).
+
 Here again, the discussion about raw/derived data and file formats is
-important (see section [Saving](#saving)).
+important (see section [Saving](#saving)): both raw and derived data
+should be shared in formats that include all the metadata ([Schmied et
+al. 2023](#ref-schmied2023)).
 
 ------------------------------------------------------------------------
 
@@ -983,6 +1007,14 @@ Marwick, Ben, and Suzanne E. Pilaar Birch. 2018. “A Standard for the
 Scholarly Citation of Archaeological Data as an Incentive to Data
 Sharing.” *Advances in Archaeological Practice* 6 (2): 125–43.
 <https://doi.org/gf5vpk>.
+
+</div>
+
+<div id="ref-pawley2006" class="csl-entry">
+
+Pawley, James B. 2006. “Points, Pixels, and Gray Levels: Digitizing
+Image Data.” In, edited by James B. Pawley, 59–79. Boston, MA: Springer
+US. <https://doi.org/10.1007/978-0-387-45524-2_4>.
 
 </div>
 
