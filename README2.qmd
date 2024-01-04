@@ -1,15 +1,17 @@
 ---
 title: "publish-micro-image"
 author: "Ivan Calandra"
-date: "2024-01-03"
+date: now
+date-format: "YYYY-MM-DD HH:mm:ss"
 format: 
-  gfm:
-    toc: true
-    toc-depth: 2
-    number-sections: true
-    link-citations: true
+  gfm: default
+toc: true
+toc-depth: 2
+link-citations: true
 bibliography: references.bib
 ---
+
+------------------------------------------------------------------------
 
 **Recommendations on how to publish microscope images**
 
@@ -207,7 +209,7 @@ Even if we sometimes tend to assume that there is only one way to process an ima
 It is also crucial to **process all images of a dataset in the same way**. This might seem obvious, but different processing methods might produce results that might appear identical/similar even if they actually are different. Processing all images in the same way ensures that all images are comparable at least within a dataset. Of course, this is true only if **the images were acquired in the same way**!\
 So, while the details are more nuanced, I believe the message is clear and every analyst should try his/her/their best to acquire and process images and data in a consistent and comparable manner.
 
-Another general piece of advice is to **keep the raw data**, in this case the acquired image, and to **process a copy** of it rather than overwriting the acquired image [see e.g. @cromey2013 and @schmied2021]. This way, it is possible to check the result and process differently if necessary. See section [Saving](#saving) for a discussion on raw/derived data and file formats.
+Another general piece of advice is to **keep the raw data**, in this case the acquired image, and to **process a copy** of it rather than overwriting the acquired image [see e.g. @cromey2013; @schmied2021]. This way, it is possible to check the result and process differently if necessary. See section [Saving](#saving) for a discussion on raw/derived data and file formats.
 
 Last but not least, it is important to **keep a very detailed record of the processing and analysis steps that were performed**. Templates and scripts will make it easier to repeat and reproduce the processing/analysis. This is not only important to share data (see section [Sharing](#sharing)); it is also important for yourself as it is likely that you will have to repeat the analysis at some point, at least for some images. [protocols.io](https://www.protocols.io/) can be a useful tool for this.
 

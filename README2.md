@@ -1,57 +1,39 @@
 # publish-micro-image
 Ivan Calandra
-2024-01-03
+2024-01-04 11:40:53
 
-- [<span class="toc-section-number">1</span>
-  Introduction](#introduction)
-- [<span class="toc-section-number">2</span> Scale of
-  observation](#scale-of-observation)
-- [<span class="toc-section-number">3</span>
-  Magnification](#magnification)
-  - [<span class="toc-section-number">3.1</span> Optical
-    magnification](#optical-magnification)
-  - [<span class="toc-section-number">3.2</span> Digital
-    magnification](#digital-magnification)
-  - [<span class="toc-section-number">3.3</span> Banning
-    magnification?](#banning-magnification)
-  - [<span class="toc-section-number">3.4</span> Scale bar](#scale-bar)
-- [<span class="toc-section-number">4</span> Resolution](#resolution)
-  - [<span class="toc-section-number">4.1</span> Optical lateral
-    resolution](#optical-lateral-resolution)
-  - [<span class="toc-section-number">4.2</span> Digital lateral
-    resolution](#digital-lateral-resolution)
-  - [<span class="toc-section-number">4.3</span> Relationship between
-    optical and digital lateral
+- [Introduction](#introduction)
+- [Scale of observation](#scale-of-observation)
+- [Magnification](#magnification)
+  - [Optical magnification](#optical-magnification)
+  - [Digital magnification](#digital-magnification)
+  - [Banning magnification?](#banning-magnification)
+  - [Scale bar](#scale-bar)
+- [Resolution](#resolution)
+  - [Optical lateral resolution](#optical-lateral-resolution)
+  - [Digital lateral resolution](#digital-lateral-resolution)
+  - [Relationship between optical and digital lateral
     resolutions](#relationship-between-optical-and-digital-lateral-resolutions)
-  - [<span class="toc-section-number">4.4</span> Digital
-    zoom](#digital-zoom)
-  - [<span class="toc-section-number">4.5</span> Optical vertical
-    resolution and depth of
+  - [Digital zoom](#digital-zoom)
+  - [Optical vertical resolution and depth of
     field](#optical-vertical-resolution-and-depth-of-field)
-  - [<span class="toc-section-number">4.6</span> Digital vertical
-    resolution](#digital-vertical-resolution)
-- [<span class="toc-section-number">5</span> Processing](#processing)
-  - [<span class="toc-section-number">5.1</span>
-    Definitions](#definitions)
-  - [<span class="toc-section-number">5.2</span>
-    Recommendations](#recommendations)
-- [<span class="toc-section-number">6</span> Saving](#saving)
-  - [<span class="toc-section-number">6.1</span> Raw vs. derived
-    data](#raw-vs.-derived-data)
-  - [<span class="toc-section-number">6.2</span> File formats and
-    software](#file-formats-and-software)
-  - [<span class="toc-section-number">6.3</span> JPEG, PNG, TIFF,
-    RAW](#jpeg-png-tiff-raw)
-- [<span class="toc-section-number">7</span> Reporting](#reporting)
-  - [<span class="toc-section-number">7.1</span> Minimum
-    requirements](#minimum-requirements)
-  - [<span class="toc-section-number">7.2</span> Reporting
-    templates](#reporting-templates)
-- [<span class="toc-section-number">8</span> Sharing](#sharing)
-- [<span class="toc-section-number">9</span> How to
-  contribute](#how-to-contribute)
-- [<span class="toc-section-number">10</span> License](#license)
-- [<span class="toc-section-number">11</span> References](#references)
+  - [Digital vertical resolution](#digital-vertical-resolution)
+- [Processing](#processing)
+  - [Definitions](#definitions)
+  - [Recommendations](#recommendations)
+- [Saving](#saving)
+  - [Raw vs. derived data](#raw-vs.-derived-data)
+  - [File formats and software](#file-formats-and-software)
+  - [JPEG, PNG, TIFF, RAW](#jpeg-png-tiff-raw)
+- [Reporting](#reporting)
+  - [Minimum requirements](#minimum-requirements)
+  - [Reporting templates](#reporting-templates)
+- [Sharing](#sharing)
+- [How to contribute](#how-to-contribute)
+- [License](#license)
+- [References](#references)
+
+------------------------------------------------------------------------
 
 **Recommendations on how to publish microscope images**
 
@@ -540,10 +522,10 @@ images and data in a consistent and comparable manner.
 
 Another general piece of advice is to **keep the raw data**, in this
 case the acquired image, and to **process a copy** of it rather than
-overwriting the acquired image Schmied and Jambor
-([2021](#ref-schmied2021)). This way, it is possible to check the result
-and process differently if necessary. See section [Saving](#saving) for
-a discussion on raw/derived data and file formats.
+overwriting the acquired image (see e.g. [Cromey 2013](#ref-cromey2013);
+[Schmied and Jambor 2021](#ref-schmied2021)). This way, it is possible
+to check the result and process differently if necessary. See section
+[Saving](#saving) for a discussion on raw/derived data and file formats.
 
 Last but not least, it is important to **keep a very detailed record of
 the processing and analysis steps that were performed**. Templates and
