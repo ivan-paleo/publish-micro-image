@@ -369,10 +369,10 @@ The Nyquist criterion (based on the [Nyquist–Shannon sampling
 theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem))
 states that [the value for the digital lateral resolution (measuring
 point spacing) should be 2-3 times smaller than the value for optical
-lateral resolution
-($\delta_L$)](https://zeiss-campus.magnet.fsu.edu/articles/basics/digitalimaging.html).
-This is necessary to digitally image with sufficient details the
-transition between features that are optically visible.  
+lateral
+resolution](https://zeiss-campus.magnet.fsu.edu/articles/basics/digitalimaging.html)
+($\delta_L$). This is necessary to digitally image with sufficient
+details the transition between features that are optically visible.  
 For example, if $\delta_L = 0.6 \ \mu m$, then the measuring point
 spacing should be 0.2-0.3 µm.
 
@@ -496,10 +496,10 @@ applicable to most processing routines. But feel free to
 
 ## Definitions
 
-Following the definitions of Aaron and Chew ([2021](#ref-aaron2021))
-\[p. 1\], *processing* “serves to digitally transform an acquired
-dataset by enhancing or isolating signals of interest and/or suppressing
-other signals and noise that will otherwise prevent accurate analysis”.
+Following the definitions of Aaron and Chew ([2021, 1](#ref-aaron2021)),
+*processing* “serves to digitally transform an acquired dataset by
+enhancing or isolating signals of interest and/or suppressing other
+signals and noise that will otherwise prevent accurate analysis”.
 *Analysis* refers to “a vast set of diverse approaches to extract \[…\]
 meaningful, quantitative measurements from a dataset”. Lastly,
 *pre-processing* includes the “steps that are required to be taken
@@ -566,8 +566,9 @@ is no reason not to follow and use them!
 ## Raw vs. derived data
 
 I totally agree with Ben Marwick and colleagues that raw data should be
-kept raw and clearly separated from derived data Marwick, Boettiger, and
-Mullen ([2018](#ref-marwicketal2018)).
+kept raw and clearly separated from derived data (e.g. [Marwick and
+Pilaar Birch 2018](#ref-marwickpilaar2018); [Marwick, Boettiger, and
+Mullen 2018](#ref-marwicketal2018)).
 
 Still, it is not always clear to distinguish between the two, nor
 practicable to keep the raw(est) data. For example, the raw data of an
@@ -671,8 +672,9 @@ on the Adobe website, which is, in my opinion, clear and detailed.
   good format for any type of image thanks to its lossless compression.
   Files are smaller than TIFF but larger than JPEG. While many users
   tend to prefer JPEG, I think PNG could be better for many applications
-  and should be preferred to JPEG Schmied et al.
-  ([2023](#ref-schmied2023)). Compare the two formats
+  and should be preferred to JPEG ([Cromey 2013](#ref-cromey2013);
+  [Schmied and Jambor 2021](#ref-schmied2021); [Schmied et al.
+  2023](#ref-schmied2023)). Compare the two formats
   [here](https://www.adobe.com/creativecloud/file-types/image/comparison/jpeg-vs-png.html).  
 - I am not aware of any microscope camera that can save in
   [RAW](https://www.adobe.com/creativecloud/file-types/image/raw.html),
@@ -701,11 +703,21 @@ high-quality reporting (see e.g. [Marqués, Pengo, and Sanders
 2020](#ref-marqués2020) in biomedical research).
 
 A large community of researchers in life sciences are working on
-guidelines for reporting microscope data ([Aaron and Chew
-2021](#ref-aaron2021)) Schmied et al. ([2023](#ref-schmied2023)). The
-work they do is incredible, but unfortunately, it concerns mostly life
-sciences and some aspects are not relevant to archaeology, while some
-others relevant to archaeology are not addressed.
+guidelines for reporting microscope data (e.g. [Aaron and Chew
+2021](#ref-aaron2021); [Hammer et al. 2021](#ref-hammer2021);
+[Heddleston et al. 2021](#ref-heddleston2021); [Jambor et al.
+2021](#ref-jambor2021); [Ryan et al. 2021](#ref-ryan2021); [Sarkans et
+al. 2021](#ref-sarkans2021); [Schmied et al. 2023](#ref-schmied2023), as
+well as the [Open Microscopy Environment -
+OME](https://www.openmicroscopy.org/about/), the [European Light
+microscopy initiative - ELMI](https://elmi.embl.org/home/our-aims/), the
+[Society for Microscopy and Image Analysis -
+GerBI-GMB](https://gerbi-gmb.de/society/) and the [Quality Assessment
+and Reproducibility for Instruments & Images in Light Microscopy -
+QUAREP-LiMi](https://quarep.org/about/) communities). The work they do
+is incredible, but unfortunately, it concerns mostly life sciences and
+some aspects are not relevant to archaeology, while some others relevant
+to archaeology are not addressed.
 
 **“The underlying premise of image publication and ethics guidelines is
 that a digital image is data and that the data should not be manipulated
@@ -864,7 +876,7 @@ CC BY-NC-SA 4.0
 
 </div>
 
-Soler ([2022](#ref-soler2022))
+License file, badge and image from Soler ([2022](#ref-soler2022)).
 
 ------------------------------------------------------------------------
 

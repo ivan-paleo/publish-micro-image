@@ -139,7 +139,7 @@ $measuring \ point \ spacing = \frac{measuring \ area}{number \ of \ pixels}$ (4
 
 So far, so good, and not too complicated. The problem is that we now have two different values for the lateral resolution. Which one should we care about? Both, of course! But **what should the relationship between optical and digital lateral resolutions be?**
 
-The Nyquist criterion (based on the [Nyquist–Shannon sampling theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem)) states that [the value for the digital lateral resolution (measuring point spacing) should be 2-3 times smaller than the value for optical lateral resolution ($\delta_L$)](https://zeiss-campus.magnet.fsu.edu/articles/basics/digitalimaging.html). This is necessary to digitally image with sufficient details the transition between features that are optically visible.\
+The Nyquist criterion (based on the [Nyquist–Shannon sampling theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem)) states that [the value for the digital lateral resolution (measuring point spacing) should be 2-3 times smaller than the value for optical lateral resolution](https://zeiss-campus.magnet.fsu.edu/articles/basics/digitalimaging.html) ($\delta_L$). This is necessary to digitally image with sufficient details the transition between features that are optically visible.\
 For example, if $\delta_L = 0.6 \ \mu m$, then the measuring point spacing should be 0.2-0.3 µm.
 
 If the digital lateral resolution is more than 3 $\times$ smaller than the optical lateral resolution, this will result in oversampling: adjacent pixels will have the same values, so the digital image will not contain more meaningful information but simply more information. This results in larger files than necessary and generally does not improve the quality of the image.\
@@ -195,7 +195,7 @@ While processing deserves a whole good-practice document on its own, I would jus
 
 ## Definitions
 
-Following the definitions of @aaron2021 \[p. 1\], *processing* "serves to digitally transform an acquired dataset by enhancing or isolating signals of interest and/or suppressing other signals and noise that will otherwise prevent accurate analysis". *Analysis* refers to "a vast set of diverse approaches to extract [...] meaningful, quantitative measurements from a dataset". Lastly, *pre-processing* includes the "steps that are required to be taken before image data can be properly processed \[...\]. Such steps generally do not serve to enhance particular features in an image per se, but rather correct for imperfections commonly encountered in imaging systems."\
+Following the definitions of @aaron2021 [p. 1], *processing* "serves to digitally transform an acquired dataset by enhancing or isolating signals of interest and/or suppressing other signals and noise that will otherwise prevent accurate analysis". *Analysis* refers to "a vast set of diverse approaches to extract \[...\] meaningful, quantitative measurements from a dataset". Lastly, *pre-processing* includes the "steps that are required to be taken before image data can be properly processed \[...\]. Such steps generally do not serve to enhance particular features in an image per se, but rather correct for imperfections commonly encountered in imaging systems."\
 Here are some examples in each category when considering surface texture analysis (dental microwear texture analysis or quantitative artifact microwear analysis): - pre-processing: topography reconstruction from a Z-stack, stitching... - processing: leveling, form removal, thresholding, wavelength filters... - analysis: texture analysis following ISO 25178, scale-sensitive fractal analysis, furrow analysis...
 
 In the remaining of this section, I will use the term processing to include both pre-processing and true processing. This makes the sentences easier to read and the discussion applies to both anyway.
@@ -219,7 +219,7 @@ Last but not least, it is important to **keep a very detailed record of the proc
 
 ## Raw vs. derived data
 
-I totally agree with Ben Marwick and colleagues that raw data should be kept raw and clearly separated from derived data [e.g. @marwickpilaar2018 and @marwicketal2018].
+I totally agree with Ben Marwick and colleagues that raw data should be kept raw and clearly separated from derived data [e.g. @marwickpilaar2018; @marwicketal2018].
 
 Still, it is not always clear to distinguish between the two, nor practicable to keep the raw(est) data. For example, the raw data of an EDF image or a 2.5D topographical model (= height map, e.g. from a confocal microscope) is a Z-stack. Z-stacks can be very large files so keeping all these Z-stacks requires a lot of storage space. While storage is not really limiting anymore, the environmental impacts of data centers and online repositories cannot be ignored [e.g. @samuel2020].
 
@@ -249,7 +249,7 @@ I recommend reading the documentation about the different [raster file formats](
 
 -   [TIFF](https://www.adobe.com/creativecloud/file-types/image/raster/tiff-file.html) (.tif or .tiff, same format but different extensions for historical reasons) is the format to choose if you want to save images at full resolution and with best quality, which in turn implies that TIFF files are large. Metadata can be saved together with the image when using this format (e.g. for SEM images).\
 -   [JPEG](https://www.adobe.com/creativecloud/file-types/image/raster/jpeg-file.html) (.jpg or .jpeg, same format but different extensions for historical reasons) is a widely used format for photos. Files are small and of generally good quality, but the lossy compression means that some details are lost. JPEG files can include metadata, especially the camera's [EXIF data](https://en.wikipedia.org/wiki/Exif), but is not recommended for scientific imaging [@cromey2013].\
--   [PNG](https://www.adobe.com/creativecloud/file-types/image/raster/png-file.html) is best knowned for their transparent backgrounds, but it is also a good format for any type of image thanks to its lossless compression. Files are smaller than TIFF but larger than JPEG. While many users tend to prefer JPEG, I think PNG could be better for many applications and should be preferred to JPEG [@cromey2013, @schmied2021, @schmied2023]. Compare the two formats [here](https://www.adobe.com/creativecloud/file-types/image/comparison/jpeg-vs-png.html).\
+-   [PNG](https://www.adobe.com/creativecloud/file-types/image/raster/png-file.html) is best knowned for their transparent backgrounds, but it is also a good format for any type of image thanks to its lossless compression. Files are smaller than TIFF but larger than JPEG. While many users tend to prefer JPEG, I think PNG could be better for many applications and should be preferred to JPEG [@cromey2013; @schmied2021; @schmied2023]. Compare the two formats [here](https://www.adobe.com/creativecloud/file-types/image/comparison/jpeg-vs-png.html).\
 -   I am not aware of any microscope camera that can save in [RAW](https://www.adobe.com/creativecloud/file-types/image/raw.html), but DSLR cameras can usually do it. So this format is worth considering for users who have a DSLR camera mounted on the phototube.
 
 ------------------------------------------------------------------------
@@ -260,7 +260,7 @@ All the background information of the previous sections aims at providing the re
 
 The importance of reporting for microscopy is not unique to archaeology/paleontology [see e.g. @calandra2019] and other fields also suffer from a lack of high-quality reporting [see e.g. @marqués2020 in biomedical research].
 
-A large community of researchers in life sciences are working on guidelines for reporting microscope data [@aaron2021] [e.g. @aaron2021, @hammer2021, @heddleston2021, @jambor2021, @ryan2021, @sarkans2021 and @schmied2023, as well as the [Open Microscopy Environment - OME](https://www.openmicroscopy.org/about/), the [European Light microscopy initiative - ELMI](https://elmi.embl.org/home/our-aims/), the [Society for Microscopy and Image Analysis - GerBI-GMB](https://gerbi-gmb.de/society/) and the [Quality Assessment and Reproducibility for Instruments & Images in Light Microscopy - QUAREP-LiMi](https://quarep.org/about/) communities]. The work they do is incredible, but unfortunately, it concerns mostly life sciences and some aspects are not relevant to archaeology, while some others relevant to archaeology are not addressed.
+A large community of researchers in life sciences are working on guidelines for reporting microscope data [e.g. @aaron2021; @hammer2021; @heddleston2021; @jambor2021; @ryan2021; @sarkans2021; @schmied2023, as well as the [Open Microscopy Environment - OME](https://www.openmicroscopy.org/about/), the [European Light microscopy initiative - ELMI](https://elmi.embl.org/home/our-aims/), the [Society for Microscopy and Image Analysis - GerBI-GMB](https://gerbi-gmb.de/society/) and the [Quality Assessment and Reproducibility for Instruments & Images in Light Microscopy - QUAREP-LiMi](https://quarep.org/about/) communities]. The work they do is incredible, but unfortunately, it concerns mostly life sciences and some aspects are not relevant to archaeology, while some others relevant to archaeology are not addressed.
 
 **"The underlying premise of image publication and ethics guidelines is that a digital image is data and that the data should not be manipulated inappropriately"** [@cromey2013, p. 5].
 
@@ -346,7 +346,7 @@ Author: Ivan Calandra
 
 [![CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-@soler2022
+License file, badge and image from @soler2022.
 
 ------------------------------------------------------------------------
 
