@@ -1,37 +1,84 @@
 # publish-micro-image
 Ivan Calandra
-2024-01-04 17:15:56
+2024-01-08 09:25:41
 
-- [Introduction](#introduction)
-- [Scale of observation](#scale-of-observation)
-- [Magnification](#magnification)
-  - [Optical magnification](#optical-magnification)
-  - [Digital magnification](#digital-magnification)
-  - [Banning magnification?](#banning-magnification)
-  - [Scale bar](#scale-bar)
-- [Resolution](#resolution)
-  - [Optical lateral resolution](#optical-lateral-resolution)
-  - [Digital lateral resolution](#digital-lateral-resolution)
-  - [Relationship between optical and digital lateral
+- [<span class="toc-section-number">1</span>
+  <span class="header-section-number">1</span>. Introduction](#introduction)
+- [<span class="toc-section-number">2</span>
+  <span class="header-section-number">2</span>. Scale of
+  observation](#scale-of-observation)
+- [<span class="toc-section-number">3</span>
+  <span class="header-section-number">3</span>. Magnification](#magnification)
+  - [<span class="toc-section-number">3.1</span>
+    <span class="header-section-number">3.1</span> Optical
+    magnification](#optical-magnification)
+  - [<span class="toc-section-number">3.2</span>
+    <span class="header-section-number">3.2</span> Digital
+    magnification](#digital-magnification)
+  - [<span class="toc-section-number">3.3</span>
+    <span class="header-section-number">3.3</span> Banning
+    magnification?](#banning-magnification)
+  - [<span class="toc-section-number">3.4</span>
+    <span class="header-section-number">3.4</span> Scale
+    bar](#scale-bar)
+- [<span class="toc-section-number">4</span>
+  <span class="header-section-number">4</span>. Resolution](#resolution)
+  - [<span class="toc-section-number">4.1</span>
+    <span class="header-section-number">4.1</span> Optical lateral
+    resolution](#optical-lateral-resolution)
+  - [<span class="toc-section-number">4.2</span>
+    <span class="header-section-number">4.2</span> Digital lateral
+    resolution](#digital-lateral-resolution)
+  - [<span class="toc-section-number">4.3</span>
+    <span class="header-section-number">4.3</span> Relationship between
+    optical and digital lateral
     resolutions](#relationship-between-optical-and-digital-lateral-resolutions)
-  - [Digital zoom](#digital-zoom)
-  - [Optical vertical resolution and depth of
+  - [<span class="toc-section-number">4.4</span>
+    <span class="header-section-number">4.4</span> Digital
+    zoom](#digital-zoom)
+  - [<span class="toc-section-number">4.5</span>
+    <span class="header-section-number">4.5</span> Optical vertical
+    resolution and depth of
     field](#optical-vertical-resolution-and-depth-of-field)
-  - [Digital vertical resolution](#digital-vertical-resolution)
-- [Processing](#processing)
-  - [Definitions](#definitions)
-  - [Recommendations](#recommendations)
-- [Saving](#saving)
-  - [Raw vs. derived data](#raw-vs.-derived-data)
-  - [File formats and software](#file-formats-and-software)
-  - [JPEG, PNG, TIFF, RAW](#jpeg-png-tiff-raw)
-- [Reporting](#reporting)
-  - [Minimum requirements](#minimum-requirements)
-  - [Reporting templates](#reporting-templates)
-- [Sharing](#sharing)
-- [How to contribute](#how-to-contribute)
-- [License](#license)
-- [References](#references)
+  - [<span class="toc-section-number">4.6</span>
+    <span class="header-section-number">4.6</span> Digital vertical
+    resolution](#digital-vertical-resolution)
+- [<span class="toc-section-number">5</span>
+  <span class="header-section-number">5</span>. Processing](#processing)
+  - [<span class="toc-section-number">5.1</span>
+    <span class="header-section-number">5.1</span>
+    Definitions](#definitions)
+  - [<span class="toc-section-number">5.2</span>
+    <span class="header-section-number">5.2</span>
+    Recommendations](#recommendations)
+- [<span class="toc-section-number">6</span>
+  <span class="header-section-number">6</span>. Saving](#saving)
+  - [<span class="toc-section-number">6.1</span>
+    <span class="header-section-number">6.1</span> Raw vs. derived
+    data](#raw-vs-derived-data)
+  - [<span class="toc-section-number">6.2</span>
+    <span class="header-section-number">6.2</span> File formats and
+    software](#file-formats-and-software)
+  - [<span class="toc-section-number">6.3</span>
+    <span class="header-section-number">6.3</span> JPEG, PNG, TIFF,
+    RAW](#jpeg-png-tiff-raw)
+- [<span class="toc-section-number">7</span>
+  <span class="header-section-number">7</span>. Reporting](#reporting)
+  - [<span class="toc-section-number">7.1</span>
+    <span class="header-section-number">7.1</span> Minimum
+    requirements](#minimum-requirements)
+  - [<span class="toc-section-number">7.2</span>
+    <span class="header-section-number">7.2</span> Reporting
+    templates](#reporting-templates)
+- [<span class="toc-section-number">8</span>
+  <span class="header-section-number">8</span>. Sharing](#sharing)
+- [<span class="toc-section-number">9</span>
+  <span class="header-section-number">9</span>. How to
+  contribute](#how-to-contribute)
+- [<span class="toc-section-number">10</span>
+  <span class="header-section-number">10</span>. License](#license)
+- [<span class="toc-section-number">11</span>
+  <span class="header-section-number">11</span>. References](#references)
 
 ------------------------------------------------------------------------
 
@@ -42,7 +89,7 @@ Ivan Calandra
 
 ------------------------------------------------------------------------
 
-# Introduction
+# <span class="header-section-number">1</span>. Introduction
 
 This good-practice document is directed at archaeologists and
 paleontologists working with microscopes, but anyone working with
@@ -68,7 +115,7 @@ that it can be accepted by a larger community.
 
 ------------------------------------------------------------------------
 
-# Scale of observation
+# <span class="header-section-number">2</span>. Scale of observation
 
 A microscope is obviously used to observe features of an object that are
 too small to be visible to the naked eye. To do so, a series of lenses
@@ -105,12 +152,12 @@ will therefore try to explain some concepts afterwards.
 
 ------------------------------------------------------------------------
 
-# Magnification
+# <span class="header-section-number">3</span>. Magnification
 
 Magnification is simply: the size of the magnified area divided by the
 real size of the imaged sample’s area.
 
-## Optical magnification
+## <span class="header-section-number">3.1</span> Optical magnification
 
 But let us first have a look at the optical magnification.  
 The optical magnification of a microscope image when observed through
@@ -123,7 +170,7 @@ For example, using a 20 $\times$ objective with 10 $\times$ oculars and
 2 $\times$ optical zoom, the total optical magnification is 400
 $\times$.
 
-## Digital magnification
+## <span class="header-section-number">3.2</span> Digital magnification
 
 Things get more complicated in the digital world. It all comes down to
 one single question: **what is THE size of the magnified area when
@@ -182,7 +229,7 @@ Also, the formula (2) shows that calculating the total digital
 magnification is not so easy in practice: the camera sensor diagonal and
 the viewing medium diagonal are not always known.
 
-## Banning magnification?
+## <span class="header-section-number">3.3</span> Banning magnification?
 
 So what now? **Should we all forget about magnification in digital
 microscopy?** Well, pretty much, in my opinion.
@@ -231,7 +278,7 @@ paper. This used to be the printing format for analog images in the days
 before digital SEMs. Note that other manufacturers might use different
 references so the magnifications might not be comparable, once again.
 
-## Scale bar
+## <span class="header-section-number">3.4</span> Scale bar
 
 So, if the digital magnification is useless, how can we know the size of
 a digital microscope image? The good old **scale bar**! The field of
@@ -264,7 +311,7 @@ magnification.**
 
 ------------------------------------------------------------------------
 
-# Resolution
+# <span class="header-section-number">4</span>. Resolution
 
 **In general, *resolution* refers to the level of details that can be
 observed. In other words, it defines the size of the smallest observable
@@ -280,7 +327,7 @@ Initiative, v1.2α](http://www.optassyst.de/fairesdatenblatt/) (the
 website is only in German, but the Fair Data Sheet itself has an English
 version). I will abbreviate it “FDS”.
 
-## Optical lateral resolution
+## <span class="header-section-number">4.1</span> Optical lateral resolution
 
 Due to aberrations from the optics and diffraction of the light, an
 optical system will be limited in its ability to distinguish points; the
@@ -322,7 +369,7 @@ complete illumination of the pupil) on planar objects. This value is
 usually not reached on textured surfaces”. In archaeology and
 paleontology, we usually deal with textured surfaces!
 
-## Digital lateral resolution
+## <span class="header-section-number">4.2</span> Digital lateral resolution
 
 The digital lateral resolution, or *measuring point spacing*, is the
 “sampling interval of measuring points in the measuring volume, both in
@@ -340,7 +387,7 @@ of measuring points in a single measurement* (FDS §2.1.2, also called
 $measuring \ point \ spacing = \frac{measuring \ area}{number \ of \ pixels}$
 (4)
 
-## Relationship between optical and digital lateral resolutions
+## <span class="header-section-number">4.3</span> Relationship between optical and digital lateral resolutions
 
 So far, so good, and not too complicated. The problem is that we now
 have two different values for the lateral resolution. Which one should
@@ -377,7 +424,7 @@ $\delta_L$ and measuring point spacing. In any case, the relationship
 could also be stated that way: “the digital lateral resolution should be
 2-3 $\times$ better than the value for optical lateral resolution”.
 
-## Digital zoom
+## <span class="header-section-number">4.4</span> Digital zoom
 
 Formula (2) includes the digital zoom in the calculation of the digital
 magnification, but it is not part of formula (4) for the digital lateral
@@ -410,7 +457,7 @@ the same field-of-view, is needed. This can be achieved by using a
 higher magnification objective and/or an optical zoom, or a camera with
 more pixels.
 
-## Optical vertical resolution and depth of field
+## <span class="header-section-number">4.5</span> Optical vertical resolution and depth of field
 
 The optical vertical, or axial, resolution is equal to the depth of
 field for a bright field (BF) microscope:
@@ -432,7 +479,7 @@ $\delta_A(conf) = \sqrt{(\frac{0.88 \lambda}{n- \sqrt{n^2-NA^2}})^2 + (\frac{n.P
 
 Here again, **the smaller** $\delta_A$, the better the resolution is.
 
-## Digital vertical resolution
+## <span class="header-section-number">4.6</span> Digital vertical resolution
 
 The digital vertical resolution is meaningless in case of a 2D image
 (even for extended depth of focus - EDF - images) but it is relevant for
@@ -464,7 +511,7 @@ If anyone knows more about it, please [contribute](#how-to-contribute)!
 
 ------------------------------------------------------------------------
 
-# Processing
+# <span class="header-section-number">5</span>. Processing
 
 Few images are published without some form of processing. Sometimes,
 processing is even necessary to create (e.g. EDF, stitching, topography
@@ -476,7 +523,7 @@ would just like to give some general advices here that will hopefully be
 applicable to most processing routines. But feel free to
 [contribute](#how-to-contribute) for more!
 
-## Definitions
+## <span class="header-section-number">5.1</span> Definitions
 
 Following the definitions of Aaron and Chew ([2021, 1](#ref-aaron2021)),
 *processing* “serves to digitally transform an acquired dataset by
@@ -505,7 +552,7 @@ In the remaining of this section, I will use the term processing to
 include both pre-processing and true processing. This makes the
 sentences easier to read and the discussion applies to both anyway.
 
-## Recommendations
+## <span class="header-section-number">5.2</span> Recommendations
 
 Even if we sometimes tend to assume that there is only one way to
 process an image, there are in fact often several methods or algorithms
@@ -551,9 +598,9 @@ al. ([2023](#ref-schmied2023)) are also very useful.
 
 ------------------------------------------------------------------------
 
-# Saving
+# <span class="header-section-number">6</span>. Saving
 
-## Raw vs. derived data
+## <span class="header-section-number">6.1</span> Raw vs. derived data
 
 I totally agree with Ben Marwick and colleagues that raw data should be
 kept raw and clearly separated from derived data (e.g. [Marwick and
@@ -592,7 +639,7 @@ general principles that apply in most (all?) cases. Make sure to:
 - **save in appropriate format(s)** (see section [File formats and
   software](#file-formats-and-software)).
 
-## File formats and software
+## <span class="header-section-number">6.2</span> File formats and software
 
 For long-term usability, accessibility and sustainability, proprietary
 formats (i.e. files that can only be opened with a paid software) should
@@ -631,7 +678,7 @@ starter](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-starter
 and [ZEN
 lite](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-lite.html)).
 
-## JPEG, PNG, TIFF, RAW
+## <span class="header-section-number">6.3</span> JPEG, PNG, TIFF, RAW
 
 Following up on the previous section, every one of us has wondered at
 least once which image format should be preferred and what the
@@ -673,7 +720,7 @@ on the Adobe website, which is, in my opinion, clear and detailed.
 
 ------------------------------------------------------------------------
 
-# Reporting
+# <span class="header-section-number">7</span>. Reporting
 
 All the background information of the previous sections aims at
 providing the required knowledge to use a microscope to reach the
@@ -713,7 +760,7 @@ to archaeology are not addressed.
 that a digital image is data and that the data should not be manipulated
 inappropriately”** ([Cromey 2013, 5](#ref-cromey2013)).
 
-## Minimum requirements
+## <span class="header-section-number">7.1</span> Minimum requirements
 
 Below is a list of what I think is necessary for pre-producible
 microscope images. This list should be adapted according to the
@@ -755,7 +802,7 @@ themselves, as well as using the checklists of Schmied et al.
 “minimal” requirements are met** (but aim for the “ideal”
 requirements!).
 
-## Reporting templates
+## <span class="header-section-number">7.2</span> Reporting templates
 
 Nevertheless, much more should be reported to follow the recommendations
 of e.g. Heddleston et al. ([2021](#ref-heddleston2021)). I have tried to
@@ -774,7 +821,7 @@ look / try it out / contribute already.
 
 ------------------------------------------------------------------------
 
-# Sharing
+# <span class="header-section-number">8</span>. Sharing
 
 A lot could be said about data sharing and Open Science. I will keep it
 brief here and focused on microscope images; more general and extensive
@@ -828,7 +875,7 @@ al. 2023](#ref-schmied2023)).
 
 ------------------------------------------------------------------------
 
-# How to contribute
+# <span class="header-section-number">9</span>. How to contribute
 
 I appreciate any comment from anyone (expert or novice) to improve this
 document, so do not be shy! There are three possibilities to contribute.
@@ -856,15 +903,10 @@ conduct](CONDUCT.md).
 
 ------------------------------------------------------------------------
 
-# License
+# <span class="header-section-number">10</span>. License
 
-<div>
-
-[![](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
-
-CC BY-NC-SA 4.0
-
-</div>
+[![CC BY-NC-SA
+4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 This work is licensed under a [Creative Commons
 Attribution-NonCommercial-ShareAlike 4.0 International
@@ -874,21 +916,17 @@ See also [License file](LICENSE) in the repository.
 
 Author: Ivan Calandra
 
-<div>
-
-[![](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
-
-CC BY-NC-SA 4.0
-
-</div>
+[![CC BY-NC-SA
+4.0](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 License file, badge and image from Soler ([2022](#ref-soler2022)).
 
 ------------------------------------------------------------------------
 
-# References
+# <span class="header-section-number">11</span>. References
 
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body hanging-indent"
+entry-spacing="0">
 
 <div id="ref-aaron2021" class="csl-entry">
 
