@@ -1,84 +1,37 @@
 # publish-micro-image
 Ivan Calandra
-2024-01-08 09:25:41
+, 2024-01-08, 10:52:48
 
-- [<span class="toc-section-number">1</span>
-  <span class="header-section-number">1</span>. Introduction](#introduction)
-- [<span class="toc-section-number">2</span>
-  <span class="header-section-number">2</span>. Scale of
-  observation](#scale-of-observation)
-- [<span class="toc-section-number">3</span>
-  <span class="header-section-number">3</span>. Magnification](#magnification)
-  - [<span class="toc-section-number">3.1</span>
-    <span class="header-section-number">3.1</span> Optical
-    magnification](#optical-magnification)
-  - [<span class="toc-section-number">3.2</span>
-    <span class="header-section-number">3.2</span> Digital
-    magnification](#digital-magnification)
-  - [<span class="toc-section-number">3.3</span>
-    <span class="header-section-number">3.3</span> Banning
-    magnification?](#banning-magnification)
-  - [<span class="toc-section-number">3.4</span>
-    <span class="header-section-number">3.4</span> Scale
-    bar](#scale-bar)
-- [<span class="toc-section-number">4</span>
-  <span class="header-section-number">4</span>. Resolution](#resolution)
-  - [<span class="toc-section-number">4.1</span>
-    <span class="header-section-number">4.1</span> Optical lateral
-    resolution](#optical-lateral-resolution)
-  - [<span class="toc-section-number">4.2</span>
-    <span class="header-section-number">4.2</span> Digital lateral
-    resolution](#digital-lateral-resolution)
-  - [<span class="toc-section-number">4.3</span>
-    <span class="header-section-number">4.3</span> Relationship between
-    optical and digital lateral
+- [Introduction](#introduction)
+- [Scale of observation](#scale-of-observation)
+- [Magnification](#magnification)
+  - [Optical magnification](#optical-magnification)
+  - [Digital magnification](#digital-magnification)
+  - [Banning magnification?](#banning-magnification)
+  - [Scale bar](#scale-bar)
+- [Resolution](#resolution)
+  - [Optical lateral resolution](#optical-lateral-resolution)
+  - [Digital lateral resolution](#digital-lateral-resolution)
+  - [Relationship between optical and digital lateral
     resolutions](#relationship-between-optical-and-digital-lateral-resolutions)
-  - [<span class="toc-section-number">4.4</span>
-    <span class="header-section-number">4.4</span> Digital
-    zoom](#digital-zoom)
-  - [<span class="toc-section-number">4.5</span>
-    <span class="header-section-number">4.5</span> Optical vertical
-    resolution and depth of
+  - [Digital zoom](#digital-zoom)
+  - [Optical vertical resolution and depth of
     field](#optical-vertical-resolution-and-depth-of-field)
-  - [<span class="toc-section-number">4.6</span>
-    <span class="header-section-number">4.6</span> Digital vertical
-    resolution](#digital-vertical-resolution)
-- [<span class="toc-section-number">5</span>
-  <span class="header-section-number">5</span>. Processing](#processing)
-  - [<span class="toc-section-number">5.1</span>
-    <span class="header-section-number">5.1</span>
-    Definitions](#definitions)
-  - [<span class="toc-section-number">5.2</span>
-    <span class="header-section-number">5.2</span>
-    Recommendations](#recommendations)
-- [<span class="toc-section-number">6</span>
-  <span class="header-section-number">6</span>. Saving](#saving)
-  - [<span class="toc-section-number">6.1</span>
-    <span class="header-section-number">6.1</span> Raw vs. derived
-    data](#raw-vs-derived-data)
-  - [<span class="toc-section-number">6.2</span>
-    <span class="header-section-number">6.2</span> File formats and
-    software](#file-formats-and-software)
-  - [<span class="toc-section-number">6.3</span>
-    <span class="header-section-number">6.3</span> JPEG, PNG, TIFF,
-    RAW](#jpeg-png-tiff-raw)
-- [<span class="toc-section-number">7</span>
-  <span class="header-section-number">7</span>. Reporting](#reporting)
-  - [<span class="toc-section-number">7.1</span>
-    <span class="header-section-number">7.1</span> Minimum
-    requirements](#minimum-requirements)
-  - [<span class="toc-section-number">7.2</span>
-    <span class="header-section-number">7.2</span> Reporting
-    templates](#reporting-templates)
-- [<span class="toc-section-number">8</span>
-  <span class="header-section-number">8</span>. Sharing](#sharing)
-- [<span class="toc-section-number">9</span>
-  <span class="header-section-number">9</span>. How to
-  contribute](#how-to-contribute)
-- [<span class="toc-section-number">10</span>
-  <span class="header-section-number">10</span>. License](#license)
-- [<span class="toc-section-number">11</span>
-  <span class="header-section-number">11</span>. References](#references)
+  - [Digital vertical resolution](#digital-vertical-resolution)
+- [Processing](#processing)
+  - [Definitions](#definitions)
+  - [Recommendations](#recommendations)
+- [Saving](#saving)
+  - [Raw vs. derived data](#raw-vs-derived-data)
+  - [File formats and software](#file-formats-and-software)
+  - [JPEG, PNG, TIFF, RAW](#jpeg-png-tiff-raw)
+- [Reporting](#reporting)
+  - [Minimum requirements](#minimum-requirements)
+  - [Reporting templates](#reporting-templates)
+- [Sharing](#sharing)
+- [How to contribute](#how-to-contribute)
+- [License](#license)
+- [References](#references)
 
 ------------------------------------------------------------------------
 
@@ -89,7 +42,7 @@ Ivan Calandra
 
 ------------------------------------------------------------------------
 
-# <span class="header-section-number">1</span>. Introduction
+# Introduction
 
 This good-practice document is directed at archaeologists and
 paleontologists working with microscopes, but anyone working with
@@ -115,7 +68,7 @@ that it can be accepted by a larger community.
 
 ------------------------------------------------------------------------
 
-# <span class="header-section-number">2</span>. Scale of observation
+# Scale of observation
 
 A microscope is obviously used to observe features of an object that are
 too small to be visible to the naked eye. To do so, a series of lenses
@@ -152,12 +105,12 @@ will therefore try to explain some concepts afterwards.
 
 ------------------------------------------------------------------------
 
-# <span class="header-section-number">3</span>. Magnification
+# Magnification
 
 Magnification is simply: the size of the magnified area divided by the
 real size of the imaged sample’s area.
 
-## <span class="header-section-number">3.1</span> Optical magnification
+## Optical magnification
 
 But let us first have a look at the optical magnification.  
 The optical magnification of a microscope image when observed through
@@ -170,7 +123,7 @@ For example, using a 20 $\times$ objective with 10 $\times$ oculars and
 2 $\times$ optical zoom, the total optical magnification is 400
 $\times$.
 
-## <span class="header-section-number">3.2</span> Digital magnification
+## Digital magnification
 
 Things get more complicated in the digital world. It all comes down to
 one single question: **what is THE size of the magnified area when
@@ -229,28 +182,31 @@ Also, the formula (2) shows that calculating the total digital
 magnification is not so easy in practice: the camera sensor diagonal and
 the viewing medium diagonal are not always known.
 
-## <span class="header-section-number">3.3</span> Banning magnification?
+## Banning magnification?
 
 So what now? **Should we all forget about magnification in digital
 microscopy?** Well, pretty much, in my opinion.
 
-If the analyst has observed and analyzed while looking through the
+**If the analyst has observed and analyzed while looking through the
 ocular, the optical magnification is very relevant and should be
-reported. However, the image published is a digital one. This implies
-that the analyst and the readers/audience will observe the sample at
-different magnifications (and resolutions as well, see the next
-section). In some cases, the readers/audience might not be able to see
-what the analyst is referring to. This might result in misunderstanding
-and potentially even disbelief in respect to the analyst. Even when the
+reported** (see section [Reporting](#reporting)). However, the image
+published is a digital one. This implies that the analyst and the
+readers/audience will observe the sample at different magnifications
+(and resolutions as well, see section [Resolution](#resolution)). In
+some cases, the readers/audience might not be able to see what the
+analyst is referring to. This might result in misunderstanding and
+potentially even disbelief in respect to the analyst. Even when the
 analyst analyzed the digital image directly, the viewing medium diagonal
 might change for each person anyway (laptop screen vs. desktop screen
-vs. projected screen…).
+vs. projected screen vs. printed…).
 
 As a side note, the field of view of a digital image is usually smaller
 (to avoid [vignetting](https://en.wikipedia.org/wiki/Vignetting)) than
-the field of view of the image as seen through the oculars. This is
-another source of differences when the analyst observed through the
-ocular but reports/publishes a digital image.
+the field of view of the image as seen through the oculars, and the
+contrast and clarity when looking through the oculars is usually much
+better than any digital image. These are other sources of differences
+when the analyst observed through the ocular but reports/publishes a
+digital image.
 
 There is another reason for avoiding the digital magnification. When I
 was tasked to compare different digital microscopes (*i.e.* microscopes
@@ -270,15 +226,16 @@ $\frac{20 \times 2 \times 1 \times 444.5 \times 1}{11} \approx 1616 \times$
 So this makes a significant difference!
 
 There might be one case where the digital magnification might be useful,
-namely in SEM imaging. In this case, the digital magnification is given
-relative to a *reference*. For example, in the case of our Zeiss EVO 25,
-the magnification is given relative to the Polaroid 545 format (other
-formats can be selected), *i.e.* as if printed on 4 $\times$ 5” polaroid
-paper. This used to be the printing format for analog images in the days
-before digital SEMs. Note that other manufacturers might use different
-references so the magnifications might not be comparable, once again.
+namely in SEM imaging. In this case, only the digital magnification is
+availble, but it is given relative to a *reference*. For example, in the
+case of our Zeiss EVO 25, the magnification is given relative to the
+Polaroid 545 format (other formats can be selected), *i.e.* as if
+printed on 4 $\times$ 5” polaroid paper. This used to be the printing
+format for analog images in the days before digital SEMs. Note that
+other manufacturers might use different references so the magnifications
+might not be comparable, once again.
 
-## <span class="header-section-number">3.4</span> Scale bar
+## Scale bar
 
 So, if the digital magnification is useless, how can we know the size of
 a digital microscope image? The good old **scale bar**! The field of
@@ -311,7 +268,7 @@ magnification.**
 
 ------------------------------------------------------------------------
 
-# <span class="header-section-number">4</span>. Resolution
+# Resolution
 
 **In general, *resolution* refers to the level of details that can be
 observed. In other words, it defines the size of the smallest observable
@@ -327,7 +284,7 @@ Initiative, v1.2α](http://www.optassyst.de/fairesdatenblatt/) (the
 website is only in German, but the Fair Data Sheet itself has an English
 version). I will abbreviate it “FDS”.
 
-## <span class="header-section-number">4.1</span> Optical lateral resolution
+## Optical lateral resolution
 
 Due to aberrations from the optics and diffraction of the light, an
 optical system will be limited in its ability to distinguish points; the
@@ -369,7 +326,7 @@ complete illumination of the pupil) on planar objects. This value is
 usually not reached on textured surfaces”. In archaeology and
 paleontology, we usually deal with textured surfaces!
 
-## <span class="header-section-number">4.2</span> Digital lateral resolution
+## Digital lateral resolution
 
 The digital lateral resolution, or *measuring point spacing*, is the
 “sampling interval of measuring points in the measuring volume, both in
@@ -387,7 +344,7 @@ of measuring points in a single measurement* (FDS §2.1.2, also called
 $measuring \ point \ spacing = \frac{measuring \ area}{number \ of \ pixels}$
 (4)
 
-## <span class="header-section-number">4.3</span> Relationship between optical and digital lateral resolutions
+## Relationship between optical and digital lateral resolutions
 
 So far, so good, and not too complicated. The problem is that we now
 have two different values for the lateral resolution. Which one should
@@ -410,11 +367,18 @@ the optical lateral resolution, this will result in oversampling:
 adjacent pixels will have the same values, so the digital image will not
 contain more meaningful information but simply more information. This
 results in larger files than necessary and generally does not improve
-the quality of the image.  
+the quality of the image. On the contrary, it can even lead to worse
+images because each pixel will record less signal (i.e. lower
+signal-to-noise ratio or SNR, [Pawley 2006](#ref-pawley2006)).  
 If the digital lateral resolution is less than 2 $\times$ smaller than
 the optical lateral resolution, this will result in undersampling: the
 transition between features that are optically visible will not be
 visible on the digital image.
+
+There are many considerations to take into account in the analog to
+digital conversion process, but as Pawley ([2006, 70](#ref-pawley2006))
+wrote: “**If you don’t want to worry about any of this, stick to
+Nyquist!**”
 
 Note that in the section [Optical lateral
 resolution](#optical-lateral-resolution), I argued that we should avoid
@@ -422,9 +386,9 @@ the terms “larger” and “smaller” when talking about resolutions. But in
 this section, it is really about the relationship between the values of
 $\delta_L$ and measuring point spacing. In any case, the relationship
 could also be stated that way: “the digital lateral resolution should be
-2-3 $\times$ better than the value for optical lateral resolution”.
+2-3 $\times$ better than the optical lateral resolution”.
 
-## <span class="header-section-number">4.4</span> Digital zoom
+## Digital zoom
 
 Formula (2) includes the digital zoom in the calculation of the digital
 magnification, but it is not part of formula (4) for the digital lateral
@@ -457,7 +421,7 @@ the same field-of-view, is needed. This can be achieved by using a
 higher magnification objective and/or an optical zoom, or a camera with
 more pixels.
 
-## <span class="header-section-number">4.5</span> Optical vertical resolution and depth of field
+## Optical vertical resolution and depth of field
 
 The optical vertical, or axial, resolution is equal to the depth of
 field for a bright field (BF) microscope:
@@ -479,7 +443,7 @@ $\delta_A(conf) = \sqrt{(\frac{0.88 \lambda}{n- \sqrt{n^2-NA^2}})^2 + (\frac{n.P
 
 Here again, **the smaller** $\delta_A$, the better the resolution is.
 
-## <span class="header-section-number">4.6</span> Digital vertical resolution
+## Digital vertical resolution
 
 The digital vertical resolution is meaningless in case of a 2D image
 (even for extended depth of focus - EDF - images) but it is relevant for
@@ -511,7 +475,7 @@ If anyone knows more about it, please [contribute](#how-to-contribute)!
 
 ------------------------------------------------------------------------
 
-# <span class="header-section-number">5</span>. Processing
+# Processing
 
 Few images are published without some form of processing. Sometimes,
 processing is even necessary to create (e.g. EDF, stitching, topography
@@ -523,7 +487,7 @@ would just like to give some general advices here that will hopefully be
 applicable to most processing routines. But feel free to
 [contribute](#how-to-contribute) for more!
 
-## <span class="header-section-number">5.1</span> Definitions
+## Definitions
 
 Following the definitions of Aaron and Chew ([2021, 1](#ref-aaron2021)),
 *processing* “serves to digitally transform an acquired dataset by
@@ -541,10 +505,9 @@ Here are some examples in each category when considering surface texture
 analysis (dental microwear texture analysis or quantitative artifact
 microwear analysis):
 
-- pre-processing: topography reconstruction from a Z-stack, stitching…
-
-- processing: leveling, form removal, thresholding, wavelength filters…
-
+- pre-processing: topography reconstruction from a Z-stack, stitching…  
+- processing: leveling, form removal, thresholding, wavelength
+  filters…  
 - analysis: texture analysis following ISO 25178, scale-sensitive
   fractal analysis, furrow analysis…
 
@@ -552,7 +515,7 @@ In the remaining of this section, I will use the term processing to
 include both pre-processing and true processing. This makes the
 sentences easier to read and the discussion applies to both anyway.
 
-## <span class="header-section-number">5.2</span> Recommendations
+## Recommendations
 
 Even if we sometimes tend to assume that there is only one way to
 process an image, there are in fact often several methods or algorithms
@@ -598,9 +561,9 @@ al. ([2023](#ref-schmied2023)) are also very useful.
 
 ------------------------------------------------------------------------
 
-# <span class="header-section-number">6</span>. Saving
+# Saving
 
-## <span class="header-section-number">6.1</span> Raw vs. derived data
+## Raw vs. derived data
 
 I totally agree with Ben Marwick and colleagues that raw data should be
 kept raw and clearly separated from derived data (e.g. [Marwick and
@@ -630,16 +593,16 @@ about what data is raw and what is derived. Nevertheless, there are some
 general principles that apply in most (all?) cases. Make sure to:
 
 - **save the rawest data possible**, usually the acquired, unprocessed
-  image;
+  image;  
 - **save every derived data that is included in the final analyis**
   (i.e. input data of the results), especially if the processing/analyes
-  are not fully automatized;
+  are not fully automatized;  
 - **save all the metadata** associated with the raw data (see section
-  [File formats and software](#file-formats-and-software));
+  [File formats and software](#file-formats-and-software));  
 - **save in appropriate format(s)** (see section [File formats and
   software](#file-formats-and-software)).
 
-## <span class="header-section-number">6.2</span> File formats and software
+## File formats and software
 
 For long-term usability, accessibility and sustainability, proprietary
 formats (i.e. files that can only be opened with a paid software) should
@@ -648,7 +611,8 @@ preferred**. The DANS maintains a [list of preferred and non-preferred
 formats](https://dans.knaw.nl/en/file-formats/). **For microscopy
 images, the [OME-TIFF
 format](https://docs.openmicroscopy.org/ome-model/6.3.1/ome-tiff/index.html)
-has become the standard.**  
+has become the standard.**
+
 Most microscope manufacturers offer software packages to acquire images;
 in some cases, these software packages are even necessary to operate the
 microscopes. Not all of these software packages can save in an open
@@ -678,7 +642,7 @@ starter](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-starter
 and [ZEN
 lite](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-lite.html)).
 
-## <span class="header-section-number">6.3</span> JPEG, PNG, TIFF, RAW
+## JPEG, PNG, TIFF, RAW
 
 Following up on the previous section, every one of us has wondered at
 least once which image format should be preferred and what the
@@ -720,7 +684,7 @@ on the Adobe website, which is, in my opinion, clear and detailed.
 
 ------------------------------------------------------------------------
 
-# <span class="header-section-number">7</span>. Reporting
+# Reporting
 
 All the background information of the previous sections aims at
 providing the required knowledge to use a microscope to reach the
@@ -760,13 +724,13 @@ to archaeology are not addressed.
 that a digital image is data and that the data should not be manipulated
 inappropriately”** ([Cromey 2013, 5](#ref-cromey2013)).
 
-## <span class="header-section-number">7.1</span> Minimum requirements
+## Minimum requirements
 
 Below is a list of what I think is necessary for pre-producible
 microscope images. This list should be adapted according to the
 equipment/software used.
 
-| **Number** | **Category**                | **What?**                                                                         | **Why?**                                                                                 | **How? (examples)**                                                                                                                                                                                                    |
+| **Number** | **Category**                | **What**                                                                          | **Why**                                                                                  | **How? (examples)**                                                                                                                                                                                                    |
 |------------|-----------------------------|-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1          | Observation/analysis method | Observation/analysis through oculars or directly on the digital image?            | To know how the analyst performed the analysis                                           | “The features were observed and analyzed through the oculars. The images reported are therefore not equivalent to what has been observed during analysis.”                                                             |
 | 2          | Microscope                  | Manufacturer and model of the microscope                                          | To account for all (unknown) settings that are part of the microscope’s design           | “AxioScope.A1 (Carl Zeiss Microscopy GmbH)”                                                                                                                                                                            |
@@ -775,22 +739,21 @@ equipment/software used.
 | 5          | Light                       | Type + wavelength of the light source                                             | To calculate the optical resolutions                                                     | “Violet LED 405 nm”                                                                                                                                                                                                    |
 | 6          | Light                       | Light source intensity                                                            | To be able to repeat the acquisition                                                     | “60%”                                                                                                                                                                                                                  |
 | 7          | Light                       | Exposure time                                                                     | To be able to repeat the acquisition                                                     | “100 ms”                                                                                                                                                                                                               |
-| 8          | Optics                      | Objective specifications                                                          | To calculate magnifications and resolutions                                              | “Objective Zeiss C Epiplan-Apochromat Mag. = 50 $\times$ / NA = 0.95 / WD = 0.22 mm”                                                                                                                                   |
+| 8          | Optics                      | Objective specifications                                                          | To calculate the optical magnification (if applicable, see \#1) and optical resolutions  | “Objective Zeiss C Epiplan-Apochromat Mag. = 50 $\times$ / NA = 0.95 / WD = 0.22 mm”                                                                                                                                   |
 | 9          | Optics                      | Oculars magnification, if applicable (see \#1)                                    | To calculate the optical magnification                                                   | “10 $\times$ oculars”                                                                                                                                                                                                  |
-| 10         | Optics                      | Optical zoom, if applicable                                                       | To calculate magnifications                                                              | “2 $\times$ optical zoom”                                                                                                                                                                                              |
-| 11         | Camera                      | Digital zoom, if applicable                                                       | To calculate the digital magnification                                                   | “2 $\times$ digital zoom”                                                                                                                                                                                              |
-| 12         | Camera                      | Measuring point spacing + field of view + number of pixels (at least two of them) | To calculate the digital lateral resolution                                              | “100 $\times$ 100 µm for 1000 $\times$ 1000 pixels” or “1000 $\times$ 1000 pixels, measuring point spacing = 0.1 µm”                                                                                                   |
-| 13         | Camera                      | Scale bar                                                                         | To visualize the size of the imaged region                                               | “Scale bar = 100 µm”                                                                                                                                                                                                   |
-| 14         | Confocal                    | Pinhole diameter, if applicable                                                   | To calculate the optical resolutions                                                     | “PH = 54 µm (1 AU)”                                                                                                                                                                                                    |
-| 15         | Confocal                    | Step size + z-range, if applicable                                                | To be able to repeat the measurement                                                     | “40-50 µm with 0.2 µm steps”                                                                                                                                                                                           |
-| 16         | Confocal                    | Temperature + humidity during topography scanning                                 | T & H can influence the fine-scale measurements of topography                            | “Scans were acquired at 20 \< T \< 22 °C and 50 \< rH \< 70 %”                                                                                                                                                         |
-| 17         | Confocal                    | Location of the equipment                                                         | An environment without vibrations is necessary for fine-scale measurements of topography | “The confocal microscope is located in the basement and placed on a passive anti-vibration table, itself placed on a concrete based decoupled from the rest of the floor”                                              |
-| 18         | Confocal                    | Any other equipment-specific setting                                              | To be able to repeat the measurement                                                     | “Master gain = 220 V”                                                                                                                                                                                                  |
-| 19         | Software                    | Versions of acquisition, processing and analysis software packages                | Different versions might produce different results                                       | “ZEN blue 3.5 Hotfix 7 (Carl Zeiss Microscopy GmbH) with module Shuttle-and-Find” or “ConfoMap 9.2.10042 with module Scale-sensitive Analysis”                                                                         |
-| 20         | Pre-processing              | Stitching, if applicable                                                          | To be able to repeat the processing                                                      | “2 $\times$ 2 tile regions were acquired, with shading correction (to avoid seeing the separations between single images), 5% minimal overlap and 10% maximal shift, ‘optimized’ comparer and ‘best’ global optimizer. |
-| 21         | Pre-processing              | Extended depth of focus (EDF), if applicable                                      | To be able to repeat the processing                                                      | “Z-stacks were processed to EDF images with the wavelets method and without z-stack alignment”                                                                                                                         |
-| 22         | Processing/Analysis         | Image enhancements / filters / image analysis settings, if applicable             | To be able to repeat the processing                                                      | “The contour were enhanced with settings A and B; and brightness, contrast and gamma were adjusted to C, D and E respectively”                                                                                         |
-| 23         | Processing/Analysis         | Workflow and settings of the surface texture analysis, if applicable              | To be able to repeat the processing                                                      | “The surface texture analysis was performed with the following template \[add analysis details and link to template\]”                                                                                                 |
+| 10         | Optics                      | Optical zoom, if applicable (see \#1)                                             | To calculate the optical magnification                                                   | “2 $\times$ optical zoom”                                                                                                                                                                                              |
+| 11         | Camera                      | Measuring point spacing + field of view + number of pixels (at least two of them) | To calculate the digital lateral resolution                                              | “100 $\times$ 100 µm for 1000 $\times$ 1000 pixels” or “1000 $\times$ 1000 pixels, measuring point spacing = 0.1 µm”                                                                                                   |
+| 12         | Camera                      | Scale bar                                                                         | To visualize the size of the imaged region                                               | “Scale bar = 100 µm”                                                                                                                                                                                                   |
+| 13         | Confocal                    | Pinhole diameter, if applicable                                                   | To calculate the optical resolutions                                                     | “PH = 54 µm (1 AU)”                                                                                                                                                                                                    |
+| 14         | Confocal                    | Step size + z-range, if applicable                                                | To be able to repeat the measurement                                                     | “40-50 µm with 0.2 µm steps”                                                                                                                                                                                           |
+| 15         | Confocal                    | Temperature + humidity during topography scanning, if possible                    | T & H can influence the fine-scale measurements of topography                            | “Scans were acquired at 20 \< T \< 22 °C and 50 \< rH \< 70 %”                                                                                                                                                         |
+| 16         | Confocal                    | Location of the equipment                                                         | An environment without vibrations is necessary for fine-scale measurements of topography | “The confocal microscope is located in the basement and placed on a passive anti-vibration table, itself placed on a concrete based decoupled from the rest of the floor”                                              |
+| 17         | Confocal                    | Any other equipment-specific setting                                              | To be able to repeat the measurement                                                     | “Master gain = 220 V”                                                                                                                                                                                                  |
+| 18         | Software                    | Versions of acquisition, processing and analysis software packages                | Different versions might produce different results                                       | “ZEN blue 3.5 Hotfix 7 (Carl Zeiss Microscopy GmbH) with module Shuttle-and-Find” or “ConfoMap 9.2.10042 with module Scale-sensitive Analysis (Digital Surf)”                                                          |
+| 19         | Pre-processing              | Stitching, if applicable                                                          | To be able to repeat the processing                                                      | “2 $\times$ 2 tile regions were acquired, with shading correction (to avoid seeing the separations between single images), 5% minimal overlap and 10% maximal shift, ‘optimized’ comparer and ‘best’ global optimizer” |
+| 20         | Pre-processing              | Extended depth of focus (EDF), if applicable                                      | To be able to repeat the processing                                                      | “Z-stacks were processed to EDF images with the wavelets method and without z-stack alignment”                                                                                                                         |
+| 21         | Processing/Analysis         | Image enhancements / filters / image analysis settings, if applicable             | To be able to repeat the processing                                                      | “The contour were enhanced with settings A and B; and brightness, contrast and gamma were adjusted to C, D and E respectively”                                                                                         |
+| 22         | Processing/Analysis         | Workflow and settings of the surface texture analysis, if applicable              | To be able to repeat the processing                                                      | “The surface texture analysis was performed with the following template \[add analysis details and link to template\]”                                                                                                 |
 
 From my point of view, **all of these pieces of information should be
 published together with every microscope acquisition**.
@@ -802,7 +765,7 @@ themselves, as well as using the checklists of Schmied et al.
 “minimal” requirements are met** (but aim for the “ideal”
 requirements!).
 
-## <span class="header-section-number">7.2</span> Reporting templates
+## Reporting templates
 
 Nevertheless, much more should be reported to follow the recommendations
 of e.g. Heddleston et al. ([2021](#ref-heddleston2021)). I have tried to
@@ -821,7 +784,7 @@ look / try it out / contribute already.
 
 ------------------------------------------------------------------------
 
-# <span class="header-section-number">8</span>. Sharing
+# Sharing
 
 A lot could be said about data sharing and Open Science. I will keep it
 brief here and focused on microscope images; more general and extensive
@@ -853,10 +816,12 @@ most compelling images to our project leaders, lab group, or
 collaborators?”
 
 **In addition to detailed reporting** (see section
-[Reporting](#reporting)), **I would therefore recommend:** 1. **to keep
-showing a sample as representative as possible in the journal article,
-but** 2. **to additionally upload all images with their metadata to an
-online repository** .
+[Reporting](#reporting)), **I would therefore recommend:**
+
+1.  **to keep showing a sample as representative as possible in the
+    journal article, but**  
+2.  **to additionally upload all images with their metadata to an online
+    repository**.
 
 I would like to stress that the data should be uploaded to a trustworthy
 online repository (e.g. [Zenodo](https://zenodo.org/),
@@ -875,7 +840,7 @@ al. 2023](#ref-schmied2023)).
 
 ------------------------------------------------------------------------
 
-# <span class="header-section-number">9</span>. How to contribute
+# How to contribute
 
 I appreciate any comment from anyone (expert or novice) to improve this
 document, so do not be shy! There are three possibilities to contribute.
@@ -903,7 +868,7 @@ conduct](CONDUCT.md).
 
 ------------------------------------------------------------------------
 
-# <span class="header-section-number">10</span>. License
+# License
 
 [![CC BY-NC-SA
 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
@@ -923,7 +888,7 @@ License file, badge and image from Soler ([2022](#ref-soler2022)).
 
 ------------------------------------------------------------------------
 
-# <span class="header-section-number">11</span>. References
+# References
 
 <div id="refs" class="references csl-bib-body hanging-indent"
 entry-spacing="0">
