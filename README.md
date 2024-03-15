@@ -1,6 +1,6 @@
 # publish-micro-image
 Ivan Calandra
-, 2024-01-08, 10:52:48
+, 2024-03-15, 17:32:02
 
 - [Introduction](#introduction)
 - [Scale of observation](#scale-of-observation)
@@ -594,9 +594,9 @@ general principles that apply in most (all?) cases. Make sure to:
 
 - **save the rawest data possible**, usually the acquired, unprocessed
   image;  
-- **save every derived data that is included in the final analyis**
-  (i.e. input data of the results), especially if the processing/analyes
-  are not fully automatized;  
+- **save every derived data that is included in the final analysis**
+  (i.e. input data of the results), especially if the
+  processing/analyses are not fully automatized;  
 - **save all the metadata** associated with the raw data (see section
   [File formats and software](#file-formats-and-software));  
 - **save in appropriate format(s)** (see section [File formats and
@@ -694,7 +694,7 @@ want to see on the sample, it is equally important that the
 reader/audience that will be presented - or even will assess - the work
 is able to know what can be observed in terms of scale on the
 reported/published/shared images. This is also important for
-*repeatability* and *reproducibilty* (and *pre-producibility* *sensu*
+*repeatability* and *reproducibility* (and *pre-producibility* *sensu*
 [Stark 2018](#ref-stark2018)).
 
 The importance of reporting for microscopy is not unique to
@@ -825,13 +825,19 @@ collaborators?”
 
 I would like to stress that the data should be uploaded to a trustworthy
 online repository (e.g. [Zenodo](https://zenodo.org/),
-[OSF](https://osf.io/), [Figshare](https://figshare.com/)) rather than
+[OSF](https://osf.io/), [Figshare](https://figshare.com/)), rather than
 as online supplementary information (SI) to the article. This is because
 SI might be behind a paywall, just like the article. Even when it is
 not, publishers might have restrictions about file formats and names.
 And since everyone does mistakes, it is easier to correct them if you
 have access to the repository rather than relying on the publisher to do
-it (which can take a long time or might even never happen).
+it (which can take a long time or might even never happen).  
+Ideally, data should be uploaded to a discipline-specific repository
+rather than a generalist repository like Zenodo or OSF. But I am not
+aware of any archaeology-specific repository that is commonly used. I
+have heard about for example The Digital Archaeological Record
+([tDAR](https://core.tdar.org)) but it seems to be mostly used for
+excavation data. Please [contribute](#how-to-contribute)!
 
 Here again, the discussion about raw/derived data and file formats is
 important (see section [Saving](#saving)): both raw and derived data
