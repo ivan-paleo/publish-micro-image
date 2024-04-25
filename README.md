@@ -1,6 +1,6 @@
 # publish-micro-image
 Ivan Calandra
-, 2024-03-15, 17:32:02
+, 2024-04-25, 15:37:59
 
 - [Introduction](#introduction)
 - [Scale of observation](#scale-of-observation)
@@ -9,6 +9,7 @@ Ivan Calandra
   - [Digital magnification](#digital-magnification)
   - [Banning magnification?](#banning-magnification)
   - [Scale bar](#scale-bar)
+  - [Summary](#summary)
 - [Resolution](#resolution)
   - [Optical lateral resolution](#optical-lateral-resolution)
   - [Digital lateral resolution](#digital-lateral-resolution)
@@ -257,14 +258,26 @@ microscope images with proper scaling information; this is not much!** I
 do not expect that archaeology is any different, although I am not aware
 of such a survey for archaeology.
 
-------------------------------------------------------------------------
+## Summary
 
-**In summary, magnification can be understood as an aid to see the
-*resolution*: resolution will define what can be seen or not** (see
-below)**, while increasing the magnification will make the visualization
-of the observable details easier. This is why, in my opinion, talking
-about *resolution* is much more useful and relevant than
-magnification.**
+**Magnification can be understood as an aid to see the *resolution*:
+resolution will define what can be seen or not** (see below)**, while
+increasing the magnification will make the visualization of the
+observable details easier. This is why, in my opinion, talking about
+*resolution* is much more useful and relevant than magnification.**
+
+**Scale is an important part of any observation. Magnification is often,
+unfortunately, used as a proxy for scale. However, magnification is
+quite decoupled from scale. Scale can be properly described by field of
+view (FOV, i.e. the size of the region observed) and resolution
+(i.e. the level of details visible on the optical and digital images).
+Magnification informs only on the FOV, but even for that, it is not very
+useful when most microscope now allow for stitching in order to increase
+the FOV at constant magnification and resolution.**
+
+As a side note for use-wear analysts, the two approaches to use-wear
+analysis are called *high-power* and *low-power*, not
+*high-magnification* and *low-magnification*!
 
 ------------------------------------------------------------------------
 
