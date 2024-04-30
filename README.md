@@ -1,6 +1,6 @@
 # publish-micro-image
 Ivan Calandra
-, 2024-04-25, 15:37:59
+, 2024-04-30, 16:34:41
 
 - [Introduction](#introduction)
 - [Scale of observation](#scale-of-observation)
@@ -9,7 +9,6 @@ Ivan Calandra
   - [Digital magnification](#digital-magnification)
   - [Banning magnification?](#banning-magnification)
   - [Scale bar](#scale-bar)
-  - [Summary](#summary)
 - [Resolution](#resolution)
   - [Optical lateral resolution](#optical-lateral-resolution)
   - [Digital lateral resolution](#digital-lateral-resolution)
@@ -19,6 +18,8 @@ Ivan Calandra
   - [Optical vertical resolution and depth of
     field](#optical-vertical-resolution-and-depth-of-field)
   - [Digital vertical resolution](#digital-vertical-resolution)
+- [Scale, magnification, resolution -
+  summary](#scale-magnification-resolution---summary)
 - [Processing](#processing)
   - [Definitions](#definitions)
   - [Recommendations](#recommendations)
@@ -51,7 +52,7 @@ microscope images might learn a few things here.
 
 Microscopes now deliver digital images. “Digital images are data”
 ([Cromey 2013](#ref-cromey2013)). However, digital images are different
-to analog images and to what the observer/analyst sees through the
+from analog images and from what the observer/analyst sees through the
 oculars. Therefore, digital images have specific properties that must be
 reported in publications, so that other researchers have the necessary
 details to assess the published images and also so that they can
@@ -88,7 +89,7 @@ needed.
 Finding the size(s) of the features is often done directly during
 observation: increasing the magnification until the features of interest
 are visible. This is a valid approach if the microscope used has the
-appropriate hardware (objectives and optical zoom) to resolve the
+appropriate hardware (objectives, zoom, camera, etc.) to resolve the
 features of interest. But it can also happen that the features of
 interest are smaller or larger than what is permitted by the hardware at
 hand. Moreover, when dealing with digital images, some other issues
@@ -99,7 +100,7 @@ microscope(s) available to the analyst.
 But how do we know what the microscope’s hardware can achieve in terms
 of scale? Most publications and reports talk about *magnification*. But
 what is it really and what does it mean? In the next section, I will
-argue that magnification is (almost) useless in digital microscope
+argue that magnification is pretty much useless in digital microscope
 imaging and actually only confuses the analyst. Resolution is much more
 important, but it is unfortunately still cryptic to many analysts; I
 will therefore try to explain some concepts afterwards.
@@ -135,7 +136,7 @@ single size for a digital image because it depends on the viewing
 medium: increase the size of the viewing medium and the magnification
 will increase as well, even though the image is the same. Does that mean
 that increasing the size of the viewing medium will improve the
-resolution? Unfortunately, no.
+resolution? Unfortunately, no, as we will see below.
 
 Let us see how the digital magnification is calculated. The problem with
 a digital image (as opposed to an analog image) is that many components
@@ -177,7 +178,7 @@ the reported magnifications are ‘original magnifications’ to highlight
 the fact that the images in the PDF have other (digital) magnifications.
 The problem is that this acquisition setting can be misleading for the
 non-expert reader. This example demonstrates that the concept of digital
-magnification is troublesome!
+magnification is troublesome, to say the least!
 
 Also, the formula (2) shows that calculating the total digital
 magnification is not so easy in practice: the camera sensor diagonal and
@@ -226,15 +227,15 @@ $\frac{20 \times 2 \times 1 \times 444.5 \times 1}{11} \approx 1616 \times$
 
 So this makes a significant difference!
 
-There might be one case where the digital magnification might be useful,
-namely in SEM imaging. In this case, only the digital magnification is
-availble, but it is given relative to a *reference*. For example, in the
-case of our Zeiss EVO 25, the magnification is given relative to the
-Polaroid 545 format (other formats can be selected), *i.e.* as if
-printed on 4 $\times$ 5” polaroid paper. This used to be the printing
-format for analog images in the days before digital SEMs. Note that
-other manufacturers might use different references so the magnifications
-might not be comparable, once again.
+There is another similar example, namely in SEM imaging. When using an
+SEM, only the digital magnification is availble, but it is given
+relative to a *reference*. For example, in the case of our Zeiss EVO 25,
+the magnification is given relative to the Polaroid 545 format (other
+formats can be selected), *i.e.* as if printed on 4 $\times$ 5” polaroid
+paper. This used to be the printing format for analog images in the days
+before digital SEMs. Note that other manufacturers might use different
+references so the magnifications might not be comparable, once again,
+and I am not sure all users know about this reference.
 
 ## Scale bar
 
@@ -257,27 +258,6 @@ In sum, **only about half of the papers in these fields publish
 microscope images with proper scaling information; this is not much!** I
 do not expect that archaeology is any different, although I am not aware
 of such a survey for archaeology.
-
-## Summary
-
-**Magnification can be understood as an aid to see the *resolution*:
-resolution will define what can be seen or not** (see below)**, while
-increasing the magnification will make the visualization of the
-observable details easier. This is why, in my opinion, talking about
-*resolution* is much more useful and relevant than magnification.**
-
-**Scale is an important part of any observation. Magnification is often,
-unfortunately, used as a proxy for scale. However, magnification is
-quite decoupled from scale. Scale can be properly described by field of
-view (FOV, i.e. the size of the region observed) and resolution
-(i.e. the level of details visible on the optical and digital images).
-Magnification informs only on the FOV, but even for that, it is not very
-useful when most microscope now allow for stitching in order to increase
-the FOV at constant magnification and resolution.**
-
-As a side note for use-wear analysts, the two approaches to use-wear
-analysis are called *high-power* and *low-power*, not
-*high-magnification* and *low-magnification*!
 
 ------------------------------------------------------------------------
 
@@ -330,8 +310,8 @@ it becomes apparent that **the smaller** $\delta_L$, the better the
 resolving power of the microscope (*i.e.* closer points will be
 distinguishable). This is what we usually refer to as “*higher*
 resolution”, even though the value for $\delta_L$ is *smaller*.
-Confusing, right? This is why I prefer to talk about “better/worse”
-resolution rather than “smaller/larger”.
+Confusing, right? This is why **I prefer to talk about “better/worse”
+resolution rather than “smaller/larger”**.
 
 The NOTE 3 of the FDS §2.2.8 states that “the optical \[lateral\]
 resolution can be achieved only under ideal conditions (including
@@ -344,10 +324,9 @@ paleontology, we usually deal with textured surfaces!
 The digital lateral resolution, or *measuring point spacing*, is the
 “sampling interval of measuring points in the measuring volume, both in
 X and in Y direction” (FDS §2.2.7). This is also referred to as the
-*pixel size* (though it should be *pixel pitch* because pixel size can
-also refer to the size of the photodiodes on the detector/camera, which
-is a fixed value independent of the field of view) or *spatial
-sampling*.
+*pixel size* (although *pixel size* or *pixel pitch* can also refer to
+the size of the photodiodes on the detector/camera, which is a fixed
+value independent of the field of view) or *spatial sampling*.
 
 The measuring point spacing is calculated by dividing the *measuring
 area* (FDS §2.2.1, also called *field of view*) by the *maximum number
@@ -488,6 +467,36 @@ If anyone knows more about it, please [contribute](#how-to-contribute)!
 
 ------------------------------------------------------------------------
 
+# Scale, magnification, resolution - summary
+
+**Magnification and resolution are different concepts and are not
+interchangeable. Resolution is given in a unit of length** (e.g. µm)**,
+while magnification is without unit** (“$\times$”).
+
+***Magnification* can be understood as an aid to see the *resolution*:
+resolution will define what can be seen or not, while increasing the
+magnification will make the visualization of the observable details
+easier. This is why, in my opinion, talking about *resolution* is much
+more useful and relevant than magnification, especially in the digital
+world.**
+
+***Scale* is a fundamental concept for any observation. Magnification is
+often, unfortunately, used as a proxy for scale. However, magnification
+is quite decoupled from scale. Scale can be properly described by field
+of view** (FOV, i.e. the size of the region observed) **and resolution**
+(i.e. the level of details visible on the optical and digital images)**.
+Magnification informs only on the FOV, but even for that, it is not very
+useful when most microscopes now allow for stitching in order to
+increase the FOV at constant magnification and resolution.**
+
+As a side note for use-wear analysts, the two approaches to use-wear
+analysis are called *high-power* and *low-power*, not
+*high-magnification* and *low-magnification*!
+
+**In summary, forget about magnification and learn about resolution!**
+
+------------------------------------------------------------------------
+
 # Processing
 
 Few images are published without some form of processing. Sometimes,
@@ -610,8 +619,9 @@ general principles that apply in most (all?) cases. Make sure to:
 - **save every derived data that is included in the final analysis**
   (i.e. input data of the results), especially if the
   processing/analyses are not fully automatized;  
-- **save all the metadata** associated with the raw data (see section
-  [File formats and software](#file-formats-and-software));  
+- **save all the metadata** associated with both the raw and derived
+  data (see section [File formats and
+  software](#file-formats-and-software));  
 - **save in appropriate format(s)** (see section [File formats and
   software](#file-formats-and-software)).
 
@@ -635,6 +645,8 @@ This is why, if your acquisition software cannot natively save in an
 open format, ***I*** **would recommend to save the image in the
 proprietary format** (in order to save all the metadata) **and to
 additionally export to an open format** (for long-term accessibility).
+Sometimes, it is also possible to export the metadata into an open
+format (e.g. JSON, XML, CSV or TXT).
 
 Following on this discussion, it is therefore important to favor
 open-source software packages over paid ones. Nevertheless, open-source
@@ -699,6 +711,10 @@ on the Adobe website, which is, in my opinion, clear and detailed.
 
 # Reporting
 
+**“The underlying premise of image publication and ethics guidelines is
+that a digital image is data and that the data should not be manipulated
+inappropriately”** ([Cromey 2013, 5](#ref-cromey2013)).
+
 All the background information of the previous sections aims at
 providing the required knowledge to use a microscope to reach the
 desired scale of observation and to save all the acquired data and
@@ -733,10 +749,6 @@ is incredible, but unfortunately, it concerns mostly life sciences and
 some aspects are not relevant to archaeology, while some others relevant
 to archaeology are not addressed.
 
-**“The underlying premise of image publication and ethics guidelines is
-that a digital image is data and that the data should not be manipulated
-inappropriately”** ([Cromey 2013, 5](#ref-cromey2013)).
-
 ## Minimum requirements
 
 Below is a list of what I think is necessary for pre-producible
@@ -770,6 +782,18 @@ equipment/software used.
 
 From my point of view, **all of these pieces of information should be
 published together with every microscope acquisition**.
+
+I would like to stress that most of these metadata are generated and
+saved automatically together with the image data (at least when you use
+the appropriate format) so that there is no extra work needed to compile
+the image metadata beyond sharing. I therefore do not see a reason why
+we should not report them.  
+For example, I have published some SEM images in Zeiss’ original, full
+resolution, open format that includes all the metadata (TIFF) on Zenodo,
+as a supplement to a paper (Holst et al. 2024). Anyone can open them and
+access the metadata using ImageJ/Fiji. Unfortunately, it was not so
+simple for the EDS data, which are published in the Bruker proprietary
+format. See details here: https://doi.org/10.5281/zenodo.10074758
 
 Additionally, I recommend **following the guidelines of Jambor et al.
 ([2021](#ref-jambor2021)) to improve the quality of the images
@@ -806,18 +830,22 @@ discussions can be found in e.g. Marwick and Pilaar Birch
 and Karoune and Plomp ([2022](#ref-karoune2022)).
 
 **In my opinion, publishing only a few, supposedly representative images
-of the whole dataset is not enough** because of the following
-reasons: 1. The sample might be representative in some aspects but not
-in others. 2. To be honest, in most cases, only the “nicest” images are
-published and the least informative/relevant are not; this implies a
-strong bias and the true signal might just be lost by this selective
-sampling/reporting. 3. Images published in a journal article are usually
-small and of reduced quality, so the published images might not even
-show what can be seen on the full-scale image. 4. Without seeing all
-images in full resolution, how can anyone assess whether the data
-support the conclusions? 5. It would be a shame to keep all these images
-for yourself. 6. Why should we show only a small part of the extensive
-work we did? Let us do ourselves a favor and show how hard we work!
+of the whole dataset is not enough** because of the following reasons:
+
+1.  The sample might be representative in some aspects but not in
+    others.  
+2.  To be honest, in most cases, only the “nicest” images are published
+    and the least informative/relevant are not; this implies a strong
+    bias and the true signal might just be lost by this selective
+    sampling/reporting.  
+3.  Images published in a journal article are usually small and of
+    reduced quality, so the published images might not even show what
+    can be seen on the full-scale image.  
+4.  Without seeing all images in full resolution, how can anyone assess
+    whether the data support the conclusions?  
+5.  It would be a shame to keep all these images for yourself.  
+6.  Why should we show only a small part of the extensive work we did?
+    Let us do ourselves a favor and show how hard we work!
 
 Or as Cromey ([2013, 3](#ref-cromey2013)) puts it: “If we only show
 other people the pictures we want them to see, then the viewers will
