@@ -1,6 +1,6 @@
 # publish-micro-image
 Ivan Calandra
-, 2024-04-30, 16:34:41
+, 2024-07-04, 16:02:58
 
 - [Introduction](#introduction)
 - [Scale of observation](#scale-of-observation)
@@ -818,6 +818,14 @@ This App is still in development and is part of the repository
 on GitHub. It is not yet available publicly; contact me (see section
 [How to contribute](#how-to-contribute)) if you would like to have a
 look / try it out / contribute already.
+
+To complement this, I have prepared templates specific to the
+instruments we have at the IMPALA in the folder
+[templates](/Templates/). The templates have been converted from
+Markdown to DOCX format using the extension
+[vscode-pandoc](https://marketplace.visualstudio.com/items?itemName=DougFinke.vscode-pandoc).  
+Feel free to [contribute](#how-to-contribute) templates for other
+instruments!
 
 ------------------------------------------------------------------------
 
