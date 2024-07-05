@@ -38,6 +38,9 @@ This template is split into two parts:
 In the first part, I provide a "fill-in-the-blanks" text that can be pasted into the method section of a paper. In the second, I will show that extensive metadata can be reported and shared without any effort, when the data are shared in appropriate formats.
 
 While this template is specifically targeted at images from the ZEISS SEM, I believe that it can be adapted quite easily for images acquired with other SEMs.
+
+This template is available as a markdown file (this file) as well as a [DOCX file](/Templates/ZEISS_EVO25.docx).
+
   
 <br> 
 

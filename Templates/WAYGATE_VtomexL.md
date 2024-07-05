@@ -16,6 +16,7 @@ By Ivan Calandra
         - [General](#general)
         - [CT data](#ct-data)
         - [CT metadata](#ct-metadata)
+        - [README](#readme)
 
 <!-- /TOC -->
 
@@ -23,7 +24,8 @@ By Ivan Calandra
 
 # Introduction
 
-This template explain what I think is important to report and how to report this information for X-ray computed tomography (CT) data acquired with the WAYGATE TECHNOLOGIES Phoenix V|tome|x L.  
+This template explain what I think is important to report and how to report this information for X-ray computed tomography (CT) data acquired with the WAYGATE TECHNOLOGIES Phoenix V|tome|x L. Although it is not a microscope, we do have a CT scanner at the IMPALA and I wanted to have such a template for this instrument as well.  
+  
 The template is meant as an **easy and quick way to report extensive information (metadata) about CT data**.
 
 This template is split into two parts:
@@ -34,6 +36,8 @@ This template is split into two parts:
 In the first part, I provide a "fill-in-the-blanks" text that can be pasted into the method section of a paper. In the second, I will show that extensive metadata can be reported and shared without any effort, when the data are shared in appropriate formats.
 
 While this template is specifically targeted at images from the Phoenix V|tome|x, I believe that it can be adapted quite easily for images acquired with other CTs.
+
+This template is available as a markdown file (this file) as well as a [DOCX file](/Templates/WAYGATE_VtomexL.docx).
   
 <br> 
 

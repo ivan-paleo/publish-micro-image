@@ -39,6 +39,8 @@ In the first part, I provide a "fill-in-the-blanks" text that can be pasted into
 
 While this template is specifically targeted at images from the ZEISS light microscopes, I believe that it can be adapted quite easily for images acquired with other optical microscopes.
 
+This template is available as a markdown file (this file) as well as a [DOCX file](/Templates/ZEISS_Optical-microscopes.docx).
+
 <br>
 
 # What and how to report
