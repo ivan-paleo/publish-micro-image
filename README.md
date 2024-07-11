@@ -1,6 +1,6 @@
 # publish-micro-image
 Ivan Calandra
-, 2024-07-04, 16:02:58
+, 2024-07-11, 14:44:44
 
 - [Introduction](#introduction)
 - [Scale of observation](#scale-of-observation)
@@ -812,12 +812,9 @@ make it easy for the users of the **Im**aging **P**latform **a**t
 a [Shiny App](https://shiny.rstudio.com/) guides the users to fill in
 the required information and exports the report to an XLSX file that can
 be shared together with the images (see section [Sharing](#sharing)).
-
 This App is still in development and is part of the repository
 [reporting-templates](https://github.com/ivan-paleo/reporting-templates)
-on GitHub. It is not yet available publicly; contact me (see section
-[How to contribute](#how-to-contribute)) if you would like to have a
-look / try it out / contribute already.
+on GitHub.
 
 To complement this, I have prepared templates specific to the
 instruments we have at the IMPALA in the folder

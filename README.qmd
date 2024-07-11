@@ -323,9 +323,7 @@ Additionally, I recommend **following the guidelines of @jambor2021 to improve t
 
 ## Reporting templates
 
-Nevertheless, much more should be reported to follow the recommendations of e.g. @heddleston2021. I have tried to make it easy for the users of the **Im**aging **P**latform **a**t **L**EIZ**A** ([IMPALA](https://www.leiza.de/forschung/infrastrukturen/labore/impala)): a [Shiny App](https://shiny.rstudio.com/) guides the users to fill in the required information and exports the report to an XLSX file that can be shared together with the images (see section [Sharing](#sharing)).
-
-This App is still in development and is part of the repository [reporting-templates](https://github.com/ivan-paleo/reporting-templates) on GitHub. It is not yet available publicly; contact me (see section [How to contribute](#how-to-contribute)) if you would like to have a look / try it out / contribute already.  
+Nevertheless, much more should be reported to follow the recommendations of e.g. @heddleston2021. I have tried to make it easy for the users of the **Im**aging **P**latform **a**t **L**EIZ**A** ([IMPALA](https://www.leiza.de/forschung/infrastrukturen/labore/impala)): a [Shiny App](https://shiny.rstudio.com/) guides the users to fill in the required information and exports the report to an XLSX file that can be shared together with the images (see section [Sharing](#sharing)). This App is still in development and is part of the repository [reporting-templates](https://github.com/ivan-paleo/reporting-templates) on GitHub.  
 
 To complement this, I have prepared templates specific to the instruments we have at the IMPALA in the folder [templates](/Templates/). The templates have been converted from Markdown to DOCX format using the extension [vscode-pandoc](https://marketplace.visualstudio.com/items?itemName=DougFinke.vscode-pandoc).  
 Feel free to [contribute](#how-to-contribute) templates for other instruments!
