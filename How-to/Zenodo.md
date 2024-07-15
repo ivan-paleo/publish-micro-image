@@ -52,7 +52,7 @@ An account is necessary so first [sign up](https://zenodo.org/signup/), or [sign
 The [help page](https://help.zenodo.org/docs/deposit/create-new-upload/) details the steps nicely so I will not repeat them here, but I will focus here on some extra considerations.
 
 ## Community
-Please select the *TraCEr-IMPALA_Monrepos-LEIZA* community, so that all uploads related to either TraCEr or IMPALA can be linked.
+Please select the [*TraCEr-IMPALA_Monrepos-LEIZA*](https://zenodo.org/communities/tracer-monrepos/) community, so that all uploads related to either TraCEr or IMPALA can be linked.
 
 ## Files
 It is not possible to upload folders, only files. So if the folder structure is important, ZIP the folders and upload them as if they were files. The drawback with this approach is that it will not be possible to download each file within the ZIP archive individually.
@@ -66,7 +66,7 @@ When you do that, the DOI will be reserved, even before the upload is [published
 ## Other metadata
 1. Title: I recommend to use the title of the manuscript, appended with the type of data in the upload, as the title of the upload, e.g. "Title [microscope data]".
 2. Creators/Contributors: Add all authors, either as *Creators* or *Contributors*.
-3. License: an open license is necessary, but there are many. My favorite is "Creative Commons Attribution Share Alike 4.0 International" (CC BY-SA 4.0) because it "forces" users of your data to share their data in open access as well.
+3. License: an open license is necessary, but there are many. My favorite is "Creative Commons Attribution Share Alike 4.0 International" ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)) because it "forces" users of your data to share their data in open access as well.
 4. Related works: in case this upload relates to other works, specify their identifiers here. Related works could be other uploads related to the same paper/project (e.g. different types of data), a published pre-print, a database (web interface)...
 
 ## Visibility
