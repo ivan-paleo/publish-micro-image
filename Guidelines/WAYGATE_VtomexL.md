@@ -37,7 +37,7 @@ In the first part, I provide a "fill-in-the-blanks" text that can be pasted into
 
 While this template is specifically targeted at images from the Phoenix V|tome|x, I believe that it can be adapted quite easily for images acquired with other CTs.
 
-This template is available as a markdown file (this file) as well as a [DOCX file](/Templates/WAYGATE_VtomexL.docx).
+This template is available as a markdown file (this file) as well as a [DOCX file](/Guidelines/WAYGATE_VtomexL.docx).
   
 <br> 
 
@@ -46,7 +46,7 @@ This template is available as a markdown file (this file) as well as a [DOCX fil
 ## Method section of a paper
 I suggest to use the following text snippets. Parts in square brackets must be adjusted using the text within the brackets as examples or list to choose from. The rest of the text should of course also be adapted to the study.   
 
-Settings and their values can alternatively be presented as tables, either in the main text (recommended) or as supplementary material. The report(s), or parts of it (them), from the Shiny App [reporting templates](https://github.com/ivan-paleo/reporting-templates) can be used for this.  
+Settings and their values can alternatively be presented as tables, either in the main text (recommended) or as supplementary material. The report(s), or parts of it (them), from the Shiny App [imaging-reports](https://github.com/ivan-paleo/imaging-reports) can be used for this.  
 
 "The objects were scanned with a Phoenix V|tome|x L CT-scanner (Baker Hughes Waygate Technologies) at the IMPALA. The [*microfocus* or *minofocus*] tube was used at [110] kV and [250] μA, yielding [27.5] W. The focal spot size is roughly equal to the power, i.e. [27.5] μm. Voxel size was geometrically set to [22] μm. Such values for power and voxel size are in an optimal relationship with each other to ensure adequate levels of geometric unsharpness. Acquisitions and reconstructions were performed in datos|x. All acquisition and reconstruction settings can be retrieved from the PCA and PCR files, respectively, available for each scan on Zenodo ([*DOI*]). These files can be opened with any text editor."
 

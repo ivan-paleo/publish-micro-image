@@ -40,7 +40,7 @@ In the first part, I provide a "fill-in-the-blanks" text that can be pasted into
 
 While this template is specifically targeted at images from the ZEISS light microscopes, I believe that it can be adapted quite easily for images acquired with other optical microscopes.
 
-This template is available as a markdown file (this file) as well as a [DOCX file](/Templates/ZEISS_Optical-microscopes.docx).
+This template is available as a markdown file (this file) as well as a [DOCX file](/Guidelines/ZEISS_Optical-microscopes.docx).
 
 <br>
 
@@ -49,7 +49,7 @@ This template is available as a markdown file (this file) as well as a [DOCX fil
 ## Method section of a paper
 I suggest to use the following text snippets. Parts in square brackets must be adjusted using the text within the brackets as examples or list to choose from. The rest of the text should of course also be adapted to the study.  
 
-Settings and their values can alternatively be presented as tables, either in the main text (recommended) or as supplementary material. The report(s), or parts of it (them), from the Shiny App [reporting templates](https://github.com/ivan-paleo/reporting-templates) can be used for this. 
+Settings and their values can alternatively be presented as tables, either in the main text (recommended) or as supplementary material. The report(s), or parts of it (them), from the Shiny App [imaging-reports](https://github.com/ivan-paleo/imaging-reports) can be used for this. 
 
 ### Widefield documentation
 "[*Objects* or *Features*] were documented with a [*stereo-*, *light*, *digital* or *confocal*] microscope at the IMPALA, using the [objective(s) manufacturer and name(s) including nominal magnification(s) and numerical aperture(s)] and the [*Axiocam 105 color*, *Axiocam 305 color* or *built-in*] camera. [*EDF*, *stitched*, etc.] [*brightfield*, *darkfield*, *polarized*, etc.] images were acquired."
@@ -90,6 +90,6 @@ See [https://doi.org/10.5281/zenodo.6645445](https://doi.org/10.5281/zenodo.6645
 
 ### Correlative microscopy
 - Upload ZEN Connect project(s) (project-name.a5proj).
-- Upload images as CZI (all microscopes, see [Widefield images](#widefield-images)) and/or TIF (SEM only, see [SEM images](/Templates/ZEISS_EVO25.md#sem-images)), ideally in the ZEN connect data folder (project-name_data).
+- Upload images as CZI (all microscopes, see [Widefield images](#widefield-images)) and/or TIF (SEM only, see [SEM images](/Guidelines/ZEISS_EVO25.md#sem-images)), ideally in the ZEN connect data folder (project-name_data).
 - Optionally, upload the image export(s) as PNG.
 - Specify in the README: "ZEN Connect projects were created with Zeiss' ZEN desk v. [*3.5*] (blue edition, [https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-desk.html](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-desk.html)) software with the module ZEN Connect ([https://www.zeiss.com/microscopy/en/products/software/zeiss-zen/zen-connect-toolkit.html](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen/zen-connect-toolkit.html))."

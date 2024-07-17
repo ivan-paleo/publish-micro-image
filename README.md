@@ -1,6 +1,6 @@
 # publish-micro-image
 Ivan Calandra
-, 2024-07-11, 14:44:44
+, 2024-07-17, 17:41:54
 
 - [Introduction](#introduction)
 - [Scale of observation](#scale-of-observation)
@@ -27,10 +27,10 @@ Ivan Calandra
   - [Raw vs. derived data](#raw-vs-derived-data)
   - [File formats and software](#file-formats-and-software)
   - [JPEG, PNG, TIFF, RAW](#jpeg-png-tiff-raw)
-- [Reporting](#reporting)
-  - [Minimum requirements](#minimum-requirements)
-  - [Reporting templates](#reporting-templates)
-- [Sharing](#sharing)
+- [Reporting and sharing](#reporting-and-sharing)
+  - [Minimum reporting requirements](#minimum-reporting-requirements)
+  - [Sharing](#sharing)
+  - [Instrument-specific guidelines](#instrument-specific-guidelines)
 - [How to contribute](#how-to-contribute)
 - [License](#license)
 - [References](#references)
@@ -191,16 +191,17 @@ microscopy?** Well, pretty much, in my opinion.
 
 **If the analyst has observed and analyzed while looking through the
 ocular, the optical magnification is very relevant and should be
-reported** (see section [Reporting](#reporting)). However, the image
-published is a digital one. This implies that the analyst and the
-readers/audience will observe the sample at different magnifications
-(and resolutions as well, see section [Resolution](#resolution)). In
-some cases, the readers/audience might not be able to see what the
-analyst is referring to. This might result in misunderstanding and
-potentially even disbelief in respect to the analyst. Even when the
-analyst analyzed the digital image directly, the viewing medium diagonal
-might change for each person anyway (laptop screen vs. desktop screen
-vs. projected screen vs. printed…).
+reported** (see section [Reporting and
+sharing](#reporting-and-sharing)). However, the image published is a
+digital one. This implies that the analyst and the readers/audience will
+observe the sample at different magnifications (and resolutions as well,
+see section [Resolution](#resolution)). In some cases, the
+readers/audience might not be able to see what the analyst is referring
+to. This might result in misunderstanding and potentially even disbelief
+in respect to the analyst. Even when the analyst analyzed the digital
+image directly, the viewing medium diagonal might change for each person
+anyway (laptop screen vs. desktop screen vs. projected screen
+vs. printed…).
 
 As a side note, the field of view of a digital image is usually smaller
 (to avoid [vignetting](https://en.wikipedia.org/wiki/Vignetting)) than
@@ -547,7 +548,8 @@ Lastly, “\[a\]s images are numerical data, image processing invariably
 changes these data and thus needs to be transparently documented”
 ([Schmied et al. 2023, 7](#ref-schmied2023)). This is why it is
 important to **be as precise as possible when reporting about the
-acquisition and processing** (see section [Reporting](#reporting)).
+acquisition and processing** (see section [Reporting and
+sharing](#reporting-and-sharing)).
 
 It is also crucial to **process all images of a dataset in the same
 way**. This might seem obvious, but different processing methods might
@@ -709,7 +711,7 @@ on the Adobe website, which is, in my opinion, clear and detailed.
 
 ------------------------------------------------------------------------
 
-# Reporting
+# Reporting and sharing
 
 **“The underlying premise of image publication and ethics guidelines is
 that a digital image is data and that the data should not be manipulated
@@ -749,7 +751,7 @@ is incredible, but unfortunately, it concerns mostly life sciences and
 some aspects are not relevant to archaeology, while some others relevant
 to archaeology are not addressed.
 
-## Minimum requirements
+## Minimum reporting requirements
 
 Below is a list of what I think is necessary for pre-producible
 microscope images. This list should be adapted according to the
@@ -786,14 +788,9 @@ published together with every microscope acquisition**.
 I would like to stress that most of these metadata are generated and
 saved automatically together with the image data (at least when you use
 the appropriate format) so that there is no extra work needed to compile
-the image metadata beyond sharing. I therefore do not see a reason why
-we should not report them.  
-For example, I have published some SEM images in Zeiss’ original, full
-resolution, open format that includes all the metadata (TIFF) on Zenodo,
-as a supplement to a paper (Holst et al. 2024). Anyone can open them and
-access the metadata using ImageJ/Fiji. Unfortunately, it was not so
-simple for the EDS data, which are published in the Bruker proprietary
-format. See details here: https://doi.org/10.5281/zenodo.10074758
+the image metadata beyond sharing (see section [Instrument-specific
+guidelines](#instrument-specific-guidelines)). I therefore do not see a
+reason why we should not report them.
 
 Additionally, I recommend **following the guidelines of Jambor et al.
 ([2021](#ref-jambor2021)) to improve the quality of the images
@@ -802,36 +799,12 @@ themselves, as well as using the checklists of Schmied et al.
 “minimal” requirements are met** (but aim for the “ideal”
 requirements!).
 
-## Reporting templates
-
-Nevertheless, much more should be reported to follow the recommendations
-of e.g. Heddleston et al. ([2021](#ref-heddleston2021)). I have tried to
-make it easy for the users of the **Im**aging **P**latform **a**t
-**L**EIZ**A**
-([IMPALA](https://www.leiza.de/forschung/infrastrukturen/labore/impala)):
-a [Shiny App](https://shiny.rstudio.com/) guides the users to fill in
-the required information and exports the report to an XLSX file that can
-be shared together with the images (see section [Sharing](#sharing)).
-This App is still in development and is part of the repository
-[reporting-templates](https://github.com/ivan-paleo/reporting-templates)
-on GitHub.
-
-To complement this, I have prepared templates specific to the
-instruments we have at the IMPALA in the folder
-[templates](/Templates/). The templates have been converted from
-Markdown to DOCX format using the extension
-[vscode-pandoc](https://marketplace.visualstudio.com/items?itemName=DougFinke.vscode-pandoc).  
-Feel free to [contribute](#how-to-contribute) templates for other
-instruments!
-
-------------------------------------------------------------------------
-
-# Sharing
+## Sharing
 
 A lot could be said about data sharing and Open Science. I will keep it
 brief here and focused on microscope images; more general and extensive
 discussions can be found in e.g. Marwick and Pilaar Birch
-([2018](#ref-marwickpilaar2018)), Gomes et al. ([2022](#ref-gomes2022))
+([2018](#ref-marwickpilaar2018)), Gomes et al. ([2022](#ref-gomes2022)),
 and Karoune and Plomp ([2022](#ref-karoune2022)).
 
 **In my opinion, publishing only a few, supposedly representative images
@@ -843,9 +816,10 @@ of the whole dataset is not enough** because of the following reasons:
     and the least informative/relevant are not; this implies a strong
     bias and the true signal might just be lost by this selective
     sampling/reporting.  
-3.  Images published in a journal article are usually small and of
-    reduced quality, so the published images might not even show what
-    can be seen on the full-scale image.  
+3.  Images published in a journal article or in a book are usually small
+    and of reduced quality (in the PDF at least), so the published
+    images might not even show what can be seen on the full-resolution
+    image.  
 4.  Without seeing all images in full resolution, how can anyone assess
     whether the data support the conclusions?  
 5.  It would be a shame to keep all these images for yourself.  
@@ -861,8 +835,7 @@ right? What would happen to the quality of science if we only showed our
 most compelling images to our project leaders, lab group, or
 collaborators?”
 
-**In addition to detailed reporting** (see section
-[Reporting](#reporting)), **I would therefore recommend:**
+**I would therefore recommend:**
 
 1.  **to keep showing a sample as representative as possible in the
     journal article, but**  
@@ -871,13 +844,13 @@ collaborators?”
 
 I would like to stress that the data should be uploaded to a trustworthy
 online repository (e.g. [Zenodo](https://zenodo.org/),
-[OSF](https://osf.io/), [Figshare](https://figshare.com/)), rather than
-as online supplementary information (SI) to the article. This is because
-SI might be behind a paywall, just like the article. Even when it is
-not, publishers might have restrictions about file formats and names.
-And since everyone does mistakes, it is easier to correct them if you
-have access to the repository rather than relying on the publisher to do
-it (which can take a long time or might even never happen).  
+[OSF](https://osf.io/) or [Figshare](https://figshare.com/)), rather
+than as online supplementary information (SI) to the article. This is
+because SI might be behind a paywall, just like the article. Even when
+it is not, publishers might have restrictions about file formats and
+names. And since everyone does mistakes, it is easier to correct them if
+you have access to the repository rather than relying on the publisher
+to do it (which can take a long time or might even never happen).  
 Ideally, data should be uploaded to a discipline-specific repository
 rather than a generalist repository like Zenodo or OSF. But I am not
 aware of any archaeology-specific repository that is commonly used. I
@@ -889,6 +862,41 @@ Here again, the discussion about raw/derived data and file formats is
 important (see section [Saving](#saving)): both raw and derived data
 should be shared in formats that include all the metadata ([Schmied et
 al. 2023](#ref-schmied2023)).
+
+I propose step-by-step instructions to upload files to Zenodo in the
+folder “How-to” (see [Zenodo.md](/How-to/Zenodo.md)).
+
+## Instrument-specific guidelines
+
+I have tried to make it easy for the users of the **Im**aging
+**P**latform **a**t **L**EIZ**A**
+([IMPALA](https://www.leiza.de/forschung/infrastrukturen/labore/impala)):
+a [Shiny App](https://shiny.rstudio.com/) guides the users to fill in
+the required information and exports the report to an XLSX or ODS file
+that can be shared together with the images (see section
+[Sharing](#sharing)). This App is still in development and is part of
+the repository
+[imaging-reports](https://github.com/ivan-paleo/imaging-reports) on
+GitHub.
+
+To complement this, I have prepared guidelines specific to the
+instruments we have at the IMPALA in the folder
+[Guidelines](/Guidelines/). The guidelines include text snippets that
+can be copy/pasted/edited for the method section of a publication and
+have been converted from Markdown to DOCX format using the extension
+[vscode-pandoc](https://marketplace.visualstudio.com/items?itemName=DougFinke.vscode-pandoc).
+They also explain in details what type of data should be shared and
+how.  
+Feel free to [contribute](#how-to-contribute) guidelines for other
+instruments!
+
+**Neither the reports nor the text snippets are meant to be used for
+every acquisition. Instead, they serve to summarize the acquisition and
+analysis processes and should be used only once for each
+publication/project.**  
+**But this works well only in combination with the detailed metadata
+shared together with the data themselves**, as detailed in the
+guidelines (see also section [Sharing](#sharing)).
 
 ------------------------------------------------------------------------
 
