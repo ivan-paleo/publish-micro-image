@@ -52,7 +52,7 @@ A new window opens with import options. In what concerns metadata, there are two
 If you choose the former, the most important information has the keys `Information` and `Scaling` (quite at the end of the list).
 
 ><p align="center" width="100%">
->    <img src="screenshots/Fiji_bio-format_import.png"><br>
+>    <img src="../screenshots/Fiji_bio-format_import.png"><br>
 >    <i>Bio-Format import options.</i>
 ></p>
 
