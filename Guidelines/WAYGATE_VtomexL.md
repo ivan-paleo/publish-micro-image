@@ -55,6 +55,9 @@ Settings and their values can alternatively be presented as tables, either in th
 ## Data & Metadata
 ### General
 The data should be uploaded on an open repository (e.g. Zenodo) in original formats to preserve the metadata as well as in open formats for reusability. Add a [README file](#readme) to the upload.  
+
+Follow the instructions in the how-to's to [upload to Zenodo](/How-to/Zenodo.md).
+
 Even though many settings are included in the files as metadata, some of these settings should also be listed in the main text (see [Method section of a paper](#method-section-of-a-paper)).  
 
 ### CT data

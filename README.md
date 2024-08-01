@@ -1,6 +1,6 @@
 # publish-micro-image
 Ivan Calandra
-, 2024-07-17, 17:41:54
+, 2024-08-01, 15:47:25
 
 - [Introduction](#introduction)
 - [Scale of observation](#scale-of-observation)
@@ -657,13 +657,15 @@ projects often have difficulties to keep running and being developed
 software packages are often less user-friendly, and are slower to add
 new functionalities and to adapt to OS upgrades. So, open-source is not
 always better.  
-Still, [Fiji and ImageJ](https://imagej.net/) is a great open-source
+Still, [Fiji/ImageJ](https://imagej.net/) is a great open-source
 solution for image analysis with a 25-year-long history (meaning it is
 likely to survive).
 [Bio-Formats](https://www.openmicroscopy.org/bio-formats/) is an
 important “software tool for reading and writing image data using
-standardized, open formats”, which is incorporated into ImageJ. Some
-microscope manufacturers also offer a free viewer or a free light
+standardized, open formats”, which is incorporated into ImageJ. Check
+the [how-to ImageJ2-Fiji](/How-to/ImageJ2-Fiji.md) for details on how to
+read Zeiss files and access their metadata with this software.  
+Some microscope manufacturers also offer a free viewer or a free light
 version (e.g. Zeiss’ [ZEN
 starter](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-starter.html)
 and [ZEN
@@ -863,8 +865,8 @@ important (see section [Saving](#saving)): both raw and derived data
 should be shared in formats that include all the metadata ([Schmied et
 al. 2023](#ref-schmied2023)).
 
-I propose step-by-step instructions to upload files to Zenodo in the
-folder “How-to” (see [Zenodo.md](/How-to/Zenodo.md)).
+I propose step-by-step instructions to upload files to Zenodo in [how-to
+Zenodo](/How-to/Zenodo.md).
 
 ## Instrument-specific guidelines
 
