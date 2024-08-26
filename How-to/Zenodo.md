@@ -52,14 +52,29 @@ In general, I recommend to create a new record when you are sure that you will n
 ## Community
 Please select the [*TraCEr-IMPALA_Monrepos-LEIZA*](https://zenodo.org/communities/tracer-monrepos/) community, so that all records related to either TraCEr or IMPALA can be linked.
 
+><p align="center" width="100%">
+>    <img src="../screenshots/Zenodo_community_TraCEr-IMPALA.png"><br>
+>    <i>Zenodo community "TraCEr-IMPALA_Monrepos-LEIZA".</i>
+></p>
+
 ## Files
 It is not possible to upload folders, only files. So if the folder structure is important, ZIP the folders and upload them as if they were files. The drawback with this approach is that it will not be possible to download each file within the ZIP archive individually.
 
 **You should always have a README to explain what the files are.** Make sure you tick the box *Preview* for the README file so that it will be the file displayed directly by default when someone opens the record.
 
+><p align="center" width="100%">
+>    <img src="../screenshots/Zenodo_preview-file.png"><br>
+>    <i>Tick to preview the README file.</i>
+></p>
+
 ## DOI
 Zenodo can reserve a DOI: under *Basic information > Digital object identifier*, if you specify that you do not have a DOI already, you get the option to *Get a DOI now!* (see [here](https://help.zenodo.org/docs/deposit/describe-records/reserve-doi/) for details).  
 When you do that, the DOI will be reserved, even before the record is [published](#publish). That means that **you can already use the DOI e.g. in your manuscript or in files in the record itself**.
+
+><p align="center" width="100%">
+>    <img src="../screenshots/Zenodo_DOI.png"><br>
+>    <i>Reserve a DOI.</i>
+></p>
 
 ## Other metadata
 1. Title: I recommend to use the title of the manuscript, appended with the type of data in the record, e.g. "Manuscript title [microscope data]".
@@ -71,6 +86,11 @@ When you do that, the DOI will be reserved, even before the record is [published
 The visibility can be *Restricted* if you want to avoid people accessing your data before the manuscript is published. In that case, make sure you get a link for the reviewers and editors (see section [share](#share)).
 
 **Latest when the manuscript is published, make sure that the visibility is set to *Public*.**
+
+><p align="center" width="100%">
+>    <img src="../screenshots/Zenodo_visibility.png"><br>
+>    <i>Choose whether access to the record should be public or restricted.</i>
+></p>
 
 ## Publish
 Before publishing, you can *Preview* the record to check that everything is fine.  
@@ -84,7 +104,12 @@ If you do need to change the files, refer to the section [Edit data](#edit-data)
 ## Share
 If the record is public, do not share it with its URL (https://zenodo.org/records/...) but rather with its DOI (https://doi.org/10.5281/zenodo...). To get the DOI, the easiest is to click on the DOI badge (in the *Details* section in the column on the right side) and copy/paste the *Target URL*.
 
-**As long as the record is restricted, share it with a link. This is the link that must be forwarded to the reviewers/editors.** Follow the instructions [here](https://help.zenodo.org/docs/share/link-sharing/).  
+><p align="center" width="100%">
+>    <img src="../screenshots/Zenodo_badge.png"><br>
+>    <i>Get the DOI of a record.</i>
+></p>
+
+**As long as the record is restricted, share it with a link. This is the link that must be forwarded to the reviewers/editors.** You can also share with users, for example your colleagues, but this is not a viable option for reviewers obviously. Follow the instructions [here](https://help.zenodo.org/docs/share/link-sharing/).  
 
 
 # Edit an existing record
@@ -107,6 +132,10 @@ The procedure is explained [here](https://help.zenodo.org/docs/deposit/manage-ve
 
 Each version has its own DOI. But there is also an "all-version" DOI, as explained [here](https://support.zenodo.org/help/en-gb/1-upload-deposit/97-what-is-doi-versioning). This all-version DOI can be very useful if you want to be sure that users will always be directed to the latest version. But for example in publications, **it is often important to cite a specific version**, for example in publications because this specific version has been used as a basis for the publication, not any of the earlier versions nor any of the possible later versions.
 
+><p align="center" width="100%">
+>    <img src="../screenshots/Zenodo_versions.png"><br>
+>    <i>All-version DOI.</i>
+></p>
 
 # Share your GitHub repositories
 GitHub is a useful platform for hosting and versioning of code, e.g. R or Python analysis. However, **GitHub is not meant for long-term archiving, unlike Zenodo.** So both are complementary and should be used in combination.   
@@ -120,16 +149,28 @@ Note that there are alternatives to GitHub, for example [GitLab](https://about.g
 First, from Zenodo, [connect your GitHub account with your Zenodo account](https://help.zenodo.org/docs/profile/linking-accounts/).
 
 2. Make your GitHub repository public:  
-On GitHub, if necessary, [change the visibility of the repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility) to public. If it is private, Zenodo cannot have access to it.
+On GitHub, if necessary, [change the visibility of the repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility#changing-a-repositorys-visibility) to public. If it is private, Zenodo cannot have access to it.
 
 3. Activate archiving of the repository:  
-On Zenodo, click the profile menu in the header and select *GitHub*. Click on *Sync now* in the upper right corner. Finally, flip the switch for the repository you want to automatically archive.
+On Zenodo, click the profile menu in the header and select *GitHub*. 
+
+><p align="center" width="100%">
+>    <img src="../screenshots/Zenodo_GitHub.png"><br>
+>    <i>Menu "GitHub" on Zenodo.</i>
+></p>
+
+Click on *Sync now* in the upper right corner. Finally, flip the switch for the repository you want to automatically archive.
+
+><p align="center" width="100%">
+>    <img src="../screenshots/Zenodo_GitHub-sync.png"><br>
+>    <i>Sync GitHub repositories with Zenodo.</i>
+></p>
 
 4. Create a new release:  
-On GitHub, [create a new release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) of your repository.
+On GitHub, [create a new release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository#creating-a-release) of your repository.
 
 5. Get a DOI automatically:  
-On Zenodo, click again on *Sync now* in the upper right corner. The new release for the repository should now have a DOI badge; just click on it to open the record. Note that it can take some time to create the record if the GitHub repository is large.
+On Zenodo, click again on *Sync now* in the GitHub menu (see #3 above). The new release for the repository should now have a DOI badge; just click on it to open the record (see section [Share](#share)). Note that it can take some time to create the record if the GitHub repository is large.
 
 6. Edit the metadata:  
 The metadata will be imported from GitHub, but some adjustments/additions might be needed (see section [Edit metadata](#edit-metadata)).
