@@ -53,7 +53,7 @@ In general, I recommend to create a new record when you are sure that you will n
 Please select the [*TraCEr-IMPALA_Monrepos-LEIZA*](https://zenodo.org/communities/tracer-monrepos/) community, so that all records related to either TraCEr or IMPALA can be linked.
 
 ><p align="center" width="100%">
->    <img src="../screenshots/Zenodo_community_TraCEr-IMPALA.png"><br>
+>    <img src="../Screenshots/Zenodo_community_TraCEr-IMPALA.png"><br>
 >    <i>Zenodo community "TraCEr-IMPALA_Monrepos-LEIZA".</i>
 ></p>
 
@@ -63,7 +63,7 @@ It is not possible to upload folders, only files. So if the folder structure is 
 **You should always have a README to explain what the files are.** Make sure you tick the box *Preview* for the README file so that it will be the file displayed directly by default when someone opens the record.
 
 ><p align="center" width="100%">
->    <img src="../screenshots/Zenodo_preview-file.png"><br>
+>    <img src="../Screenshots/Zenodo_preview-file.png"><br>
 >    <i>Tick to preview the README file.</i>
 ></p>
 
@@ -72,7 +72,7 @@ Zenodo can reserve a DOI: under *Basic information > Digital object identifier*,
 When you do that, the DOI will be reserved, even before the record is [published](#publish). That means that **you can already use the DOI e.g. in your manuscript or in files in the record itself**.
 
 ><p align="center" width="100%">
->    <img src="../screenshots/Zenodo_DOI.png"><br>
+>    <img src="../Screenshots/Zenodo_DOI.png"><br>
 >    <i>Reserve a DOI.</i>
 ></p>
 
@@ -88,7 +88,7 @@ The visibility can be *Restricted* if you want to avoid people accessing your da
 **Latest when the manuscript is published, make sure that the visibility is set to *Public*.**
 
 ><p align="center" width="100%">
->    <img src="../screenshots/Zenodo_visibility.png"><br>
+>    <img src="../Screenshots/Zenodo_visibility.png"><br>
 >    <i>Choose whether access to the record should be public or restricted.</i>
 ></p>
 
@@ -105,7 +105,7 @@ If you do need to change the files, refer to the section [Edit data](#edit-data)
 If the record is public, do not share it with its URL (https://zenodo.org/records/...) but rather with its DOI (https://doi.org/10.5281/zenodo...). To get the DOI, the easiest is to click on the DOI badge (in the *Details* section in the column on the right side) and copy/paste the *Target URL*.
 
 ><p align="center" width="100%">
->    <img src="../screenshots/Zenodo_badge.png"><br>
+>    <img src="../Screenshots/Zenodo_badge.png"><br>
 >    <i>Get the DOI of a record.</i>
 ></p>
 
@@ -133,7 +133,7 @@ The procedure is explained [here](https://help.zenodo.org/docs/deposit/manage-ve
 Each version has its own DOI. But there is also an "all-version" DOI, as explained [here](https://support.zenodo.org/help/en-gb/1-upload-deposit/97-what-is-doi-versioning). This all-version DOI can be very useful if you want to be sure that users will always be directed to the latest version. But for example in publications, **it is often important to cite a specific version**, for example in publications because this specific version has been used as a basis for the publication, not any of the earlier versions nor any of the possible later versions.
 
 ><p align="center" width="100%">
->    <img src="../screenshots/Zenodo_versions.png"><br>
+>    <img src="../Screenshots/Zenodo_versions.png"><br>
 >    <i>All-version DOI.</i>
 ></p>
 
@@ -155,14 +155,14 @@ On GitHub, if necessary, [change the visibility of the repository](https://docs.
 On Zenodo, click the profile menu in the header and select *GitHub*. 
 
 ><p align="center" width="100%">
->    <img src="../screenshots/Zenodo_GitHub.png"><br>
+>    <img src="../Screenshots/Zenodo_GitHub.png"><br>
 >    <i>Menu "GitHub" on Zenodo.</i>
 ></p>
 
 Click on *Sync now* in the upper right corner. Finally, flip the switch for the repository you want to automatically archive.
 
 ><p align="center" width="100%">
->    <img src="../screenshots/Zenodo_GitHub-sync.png"><br>
+>    <img src="../Screenshots/Zenodo_GitHub-sync.png"><br>
 >    <i>Sync GitHub repositories with Zenodo.</i>
 ></p>
 

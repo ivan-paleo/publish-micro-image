@@ -50,7 +50,7 @@ To open and run ImageJ2/Fiji, simply open the file `ImageJ*.exe` (Windows).
 In ImageJ2/Fiji, go to `Plugins` > `Bio-Formats` > `Bio-Formats Importer` and select the CZI file you want to open. 
 
 ><p align="center" width="100%">
->    <img src="../screenshots/Fiji_bio-formats_import.png"><br>
+>    <img src="../Screenshots/Fiji_bio-formats_import.png"><br>
 >    <i>Bio-Formats Importer.</i>
 ></p>
 
@@ -58,14 +58,14 @@ A new window opens with import options. In what concerns metadata, there are two
 If you choose the former, the most important information has the keys `Information` and `Scaling` (quite at the end of the list).
 
 ><p align="center" width="100%">
->    <img src="../screenshots/Fiji_bio-formats_import-options.png"><br>
+>    <img src="../Screenshots/Fiji_bio-formats_import-options.png"><br>
 >    <i>Bio-Formats import options.</i>
 ></p>
 
 When opening files like this, **the image will be scaled automatically**, that is, the pixel size (and therefore the image size in µm) will be extracted from the metadata. A scale bar can easily be added with `Analyze` > `Tools` > `Scale Bar...`.
 
 ><p align="center" width="100%">
->    <img src="../screenshots/Fiji_scale-bar.png"><br>
+>    <img src="../Screenshots/Fiji_scale-bar.png"><br>
 >    <i>Add a scale bar.</i>
 ></p>
 
@@ -74,7 +74,7 @@ In ImageJ2/Fiji, open the TIFF image for which you want to access the metadata.
 Then, go to `EM tool` > `SEM Zeiss metadata Scale`. 
 
 ><p align="center" width="100%">
->    <img src="../screenshots/Fiji_EM-tool.png"><br>
+>    <img src="../Screenshots/Fiji_EM-tool.png"><br>
 >    <i>Access metadata from a Zeiss SEM TIFF file.</i>
 ></p>
 
