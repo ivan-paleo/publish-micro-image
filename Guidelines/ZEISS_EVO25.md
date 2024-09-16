@@ -72,7 +72,7 @@ See [https://doi.org/10.1016/j.jasrep.2024.104572](https://doi.org/10.1016/j.jas
 ### General
 The data should be uploaded on an open repository (e.g. Zenodo) in original formats to preserve the metadata as well as in open formats for reusability. Add a README file to the upload.  
 
-Follow the instructions in the how-to's to [upload to Zenodo](/How-to/Zenodo.md) and to [read CZI or TIFF files with ImageJ2/Fiji](/How-to/ImageJ2-Fiji.md).
+Follow the instructions in the how-to's to [upload to Zenodo](/How-tos/Zenodo.md) and to [read CZI or TIFF files with ImageJ2/Fiji](/How-tos/ImageJ2-Fiji.md).
 
 Even though many settings are included in the files as metadata, some of these settings should also be listed in the main text (see [Method section of a paper](#method-section-of-a-paper)).  
 

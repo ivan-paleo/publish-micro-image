@@ -1,6 +1,6 @@
 # publish-micro-image
 Ivan Calandra
-, 2024-08-01, 15:47:25
+, 2024-09-16, 17:01:45
 
 - [Introduction](#introduction)
 - [Scale of observation](#scale-of-observation)
@@ -663,8 +663,8 @@ likely to survive).
 [Bio-Formats](https://www.openmicroscopy.org/bio-formats/) is an
 important “software tool for reading and writing image data using
 standardized, open formats”, which is incorporated into ImageJ. Check
-the [how-to ImageJ2-Fiji](/How-to/ImageJ2-Fiji.md) for details on how to
-read Zeiss files and access their metadata with this software.  
+the [how-to ImageJ2-Fiji](/How-tos/ImageJ2-Fiji.md) for details on how
+to read Zeiss files and access their metadata with this software.  
 Some microscope manufacturers also offer a free viewer or a free light
 version (e.g. Zeiss’ [ZEN
 starter](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-starter.html)
@@ -866,7 +866,7 @@ should be shared in formats that include all the metadata ([Schmied et
 al. 2023](#ref-schmied2023)).
 
 I propose step-by-step instructions to upload files to Zenodo in [how-to
-Zenodo](/How-to/Zenodo.md).
+Zenodo](/How-tos/Zenodo.md).
 
 ## Instrument-specific guidelines
 
