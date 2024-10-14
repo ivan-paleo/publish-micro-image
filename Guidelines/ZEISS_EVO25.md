@@ -70,7 +70,7 @@ See [https://doi.org/10.1016/j.jasrep.2024.104572](https://doi.org/10.1016/j.jas
 
 ## Data & Metadata
 ### General
-The data should be uploaded on an open repository (e.g. Zenodo) in original formats to preserve the metadata as well as in open formats for reusability. Add a README file to the upload.  
+The data should be uploaded on an open repository (e.g. Zenodo) in original formats to preserve the metadata as well as in open formats for reusability. Add a README file (in TXT format) to the upload.  
 
 Follow the instructions in the how-to's to [upload to Zenodo](/How-tos/Zenodo.md) and to [read CZI or TIFF files with ImageJ2/Fiji](/How-tos/ImageJ2-Fiji.md).
 
@@ -81,13 +81,13 @@ See [https://doi.org/10.5281/zenodo.10074758](https://doi.org/10.5281/zenodo.100
 ### SEM images
 - Upload the full-resolution, uncompressed and unedited SEM images in TIF format.
 - Also upload the overview images (*_registration.png) showing the location of images on the object (red rectangle).
-- Specify in the README: "SEM images were acquired with the software SmartSEM v. [6.08] from Zeiss ([https://www.zeiss.com/microscopy/en/products/software/zeiss-smartsem.html](https://www.zeiss.com/microscopy/en/products/software/zeiss-smartsem.html)). All metadata (acquisition settings) are included in the TIF-files and can be retrieved using e.g. the IMBalENce plugin for ImageJ/Fiji ([https://imagej.net/plugins/imbalence](https://imagej.net/plugins/imbalence))."
+- Specify in the README (in TXT format): "SEM images were acquired with the software SmartSEM v. [6.08] from Zeiss ([https://www.zeiss.com/microscopy/en/products/software/zeiss-smartsem.html](https://www.zeiss.com/microscopy/en/products/software/zeiss-smartsem.html)). All metadata (acquisition settings) are included in the TIF-files and can be retrieved using e.g. the IMBalENce plugin for ImageJ/Fiji ([https://imagej.net/plugins/imbalence](https://imagej.net/plugins/imbalence))."
 
 ### EDS data
 - Upload files in original Bruker formats (SPX, PRF, RTO, RTL or BCF).
 - Export spectra data to XLSX and upload them.
 - Upload BSD images, showing the location of EDS spectra for each measurement point in case of measurements in the Objects workspace, in PNG format. These should be the same images as the BSD images from the SEM but at lower resolution and with less metadata.
-- Specify in the README:
+- Specify in the README (in TXT format):
   - "EDX data were acquired and processed with the software Esprit v. [2.3.0.997] from Bruker ([https://www.bruker.com/en/products-and-solutions/elemental-analyzers/eds-wds-ebsd-SEM-Micro-XRF/software-esprit-family.html](https://www.bruker.com/en/products-and-solutions/elemental-analyzers/eds-wds-ebsd-SEM-Micro-XRF/software-esprit-family.html))."
   - "The individual spectra were exported to XLSX format for compatibility. The amount of metadata is limited."
   - Explain what each data type is.
@@ -97,4 +97,4 @@ See [https://doi.org/10.5281/zenodo.10074758](https://doi.org/10.5281/zenodo.100
 - Upload ZEN Connect project(s) (project-name.a5proj).
 - Upload images as CZI (all microscopes, see [Widefield images](/Guidelines/ZEISS_Optical-microscopes.md#widefield-images)) and/or TIF (SEM only, see [SEM images](#sem-images)), ideally in the ZEN connect data folder (project-name_data).
 - Optionally, upload the image export(s) as PNG.
-- Specify in the README: "ZEN Connect projects were created with Zeiss' ZEN desk v. [*3.5*] (blue edition, [https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-desk.html](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-desk.html)) software with the module ZEN Connect ([https://www.zeiss.com/microscopy/en/products/software/zeiss-zen/zen-connect-toolkit.html](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen/zen-connect-toolkit.html))."
+- Specify in the README (in TXT format): "ZEN Connect projects were created with Zeiss' ZEN desk v. [*3.5*] (blue edition, [https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-desk.html](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-desk.html)) software with the module ZEN Connect ([https://www.zeiss.com/microscopy/en/products/software/zeiss-zen/zen-connect-toolkit.html](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen/zen-connect-toolkit.html))."

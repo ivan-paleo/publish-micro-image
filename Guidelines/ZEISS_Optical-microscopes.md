@@ -72,7 +72,7 @@ Also add details about image processing: e.g. about EDF/stitching (widefield), t
 
 ## Data & Metadata
 ### General
-The data should be uploaded on an open repository (e.g. Zenodo) in original formats to preserve the metadata as well as in open formats for reusability. Add a README file to the upload.  
+The data should be uploaded on an open repository (e.g. Zenodo) in original formats to preserve the metadata as well as in open formats for reusability. Add a README file (in TXT format) to the upload.  
 
 Follow the instructions in the how-to's to [upload to Zenodo](/How-tos/Zenodo.md) and to [read CZI files with ImageJ2/Fiji](/How-tos/ImageJ2-Fiji.md).
 
@@ -80,14 +80,14 @@ Even though many settings are included in the files as metadata, some of these s
 
 ### Widefield images
 - Upload the full-resolution, uncompressed images in CZI format (Zeiss' original and open format). It is recommended to share the pre-processed (e.g. EDF, stitched) images because of the size of the raw images (especially z-stacks). 
-- Also upload the overview/preivew images showing the location of images on the object. Alternatively, share the CZI files of the images calibrated with Shuttle-and-Find (correlative microscopy).
-- Specify in the README: "[*Raw* or *Pre-processed*] images were acquired with the software [*ZEN core*, *ZEN blue*, or *Smartzoom*] [version number] from Zeiss. All metadata (acquisition settings) are included in the CZI-files and can be retrieved using e.g. the Bio-Formats plugin for ImageJ/Fiji ([https://docs.openmicroscopy.org/bio-formats/5.8.2/users/imagej/installing.html](https://docs.openmicroscopy.org/bio-formats/5.8.2/users/imagej/installing.html)) or Zeiss ZEN software ([https://www.zeiss.com/microscopy/en/products/software/zeiss-zen.html](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen.html))."
+- Also upload the overview/preview images showing the location of images on the object. Alternatively, share the CZI files of the images calibrated with Shuttle-and-Find (correlative microscopy).
+- Specify in the README (in TXT format): "[*Raw* or *Pre-processed*] images were acquired with the software [*ZEN core*, *ZEN blue*, or *Smartzoom*] [version number] from Zeiss. All metadata (acquisition settings) are included in the CZI-files and can be retrieved using e.g. the Bio-Formats plugin for ImageJ/Fiji ([https://docs.openmicroscopy.org/bio-formats/5.8.2/users/imagej/installing.html](https://docs.openmicroscopy.org/bio-formats/5.8.2/users/imagej/installing.html)) or Zeiss ZEN software ([https://www.zeiss.com/microscopy/en/products/software/zeiss-zen.html](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen.html))."
 
 ### Topography & surface texture analysis data
 - Upload MNT files of the surface texture analysis with Mountains.
 - Alternatively or complementarily, upload the SUR files resulting from the topography analysis in ZEN.
 - Export the MNT files to PDF and upload them too.
-- Specify in the README: "Height maps were acquired with the software ZEN blue [version number] from Zeiss. Each surface has been processed in batch with a template in ConfoMap v. [8.2.10044] (a derivative of MountainsMap by Digital Surf, [https://www.digitalsurf.com/software-solutions/profilometry/](https://www.digitalsurf.com/software-solutions/profilometry/)). The result of the analysis on each surface is saved in MNT format (including all original and processed surfaces, their metadata, as well as results) and exported to a PDF file. Ultimately, the results are collated into CSV file(s)."
+- Specify in the README (in TXT format): "Height maps were acquired with the software ZEN blue [version number] from Zeiss. Each surface has been processed in batch with a template in ConfoMap v. [8.2.10044] (a derivative of MountainsMap by Digital Surf, [https://www.digitalsurf.com/software-solutions/profilometry/](https://www.digitalsurf.com/software-solutions/profilometry/)). The result of the analysis on each surface is saved in MNT format (including all original and processed surfaces, their metadata, as well as results) and exported to a PDF file. Ultimately, the results are collated into CSV file(s)."
 
 See [https://doi.org/10.5281/zenodo.6645445](https://doi.org/10.5281/zenodo.6645445) for an example (although the information was added as a description rather than a README file).
 
@@ -95,4 +95,4 @@ See [https://doi.org/10.5281/zenodo.6645445](https://doi.org/10.5281/zenodo.6645
 - Upload ZEN Connect project(s) (project-name.a5proj).
 - Upload images as CZI (all microscopes, see [Widefield images](#widefield-images)) and/or TIF (SEM only, see [SEM images](/Guidelines/ZEISS_EVO25.md#sem-images)), ideally in the ZEN connect data folder (project-name_data).
 - Optionally, upload the image export(s) as PNG.
-- Specify in the README: "ZEN Connect projects were created with Zeiss' ZEN desk v. [*3.5*] (blue edition, [https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-desk.html](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-desk.html)) software with the module ZEN Connect ([https://www.zeiss.com/microscopy/en/products/software/zeiss-zen/zen-connect-toolkit.html](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen/zen-connect-toolkit.html))."
+- Specify in the README (in TXT format): "ZEN Connect projects were created with Zeiss' ZEN desk v. [*3.5*] (blue edition, [https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-desk.html](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-desk.html)) software with the module ZEN Connect ([https://www.zeiss.com/microscopy/en/products/software/zeiss-zen/zen-connect-toolkit.html](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen/zen-connect-toolkit.html))."
