@@ -78,6 +78,6 @@ Then, go to `EM tool` > `SEM Zeiss metadata Scale`.
 >    <i>Access metadata from a Zeiss SEM TIFF file.</i>
 ></p>
 
-A new window with the metadata opens.
+A new window with some of the metadata opens. In order to access all metadata, go to `EM tool` > `SEM metadata pro`.
 
 When using the function `SEM Zeiss metadata Scale`, **the image will be scaled automatically**, that is, the pixel size (and therefore the image size in µm) will be extracted from the metadata. A scale bar can easily be added with `Analyze` > `Tools` > `Scale Bar...` (see section [Import CZI files](#import-czi-files)).

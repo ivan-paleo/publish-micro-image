@@ -81,7 +81,7 @@ See [https://doi.org/10.5281/zenodo.10074758](https://doi.org/10.5281/zenodo.100
 ### SEM images
 - Upload the full-resolution, uncompressed and unedited SEM images in TIF format.
 - Also upload the overview images (*_registration.png) showing the location of images on the object (red rectangle).
-- Specify in the README (in TXT format): "SEM images were acquired with the software SmartSEM v. [6.08] from Zeiss ([https://www.zeiss.com/microscopy/en/products/software/zeiss-smartsem.html](https://www.zeiss.com/microscopy/en/products/software/zeiss-smartsem.html)). All metadata (acquisition settings) are included in the TIF-files and can be retrieved using e.g. the IMBalENce plugin for ImageJ/Fiji ([https://imagej.net/plugins/imbalence](https://imagej.net/plugins/imbalence))."
+- Specify in the README (in TXT format): "SEM images were acquired with the software SmartSEM v. [6.08] from Zeiss ([https://www.zeiss.com/microscopy/en/products/software/zeiss-smartsem.html](https://www.zeiss.com/microscopy/en/products/software/zeiss-smartsem.html)). All metadata (acquisition settings) are included in the TIF-files and can be retrieved using e.g. the IMBalENce plugin for ImageJ/Fiji ([https://imagej.net/plugins/imbalence](https://imagej.net/plugins/imbalence)). Instructions to do so are given here: [https://github.com/ivan-paleo/publish-micro-image/blob/main/How-tos/ImageJ2-Fiji.md](https://github.com/ivan-paleo/publish-micro-image/blob/main/How-tos/ImageJ2-Fiji.md)."
 
 ### EDS data
 - Upload files in original Bruker formats (SPX, PRF, RTO, RTL or BCF).
