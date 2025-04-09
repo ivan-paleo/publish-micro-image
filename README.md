@@ -1,6 +1,6 @@
 # publish-micro-image
 Ivan Calandra
-, 2024-09-16, 17:01:45
+, 2025-04-09, 17:44:16
 
 - [Introduction](#introduction)
 - [Scale of observation](#scale-of-observation)
@@ -12,12 +12,12 @@ Ivan Calandra
 - [Resolution](#resolution)
   - [Optical lateral resolution](#optical-lateral-resolution)
   - [Digital lateral resolution](#digital-lateral-resolution)
-  - [Relationship between optical and digital lateral
-    resolutions](#relationship-between-optical-and-digital-lateral-resolutions)
   - [Digital zoom](#digital-zoom)
   - [Optical vertical resolution and depth of
     field](#optical-vertical-resolution-and-depth-of-field)
   - [Digital vertical resolution](#digital-vertical-resolution)
+  - [Relationship between optical and digital
+    resolutions](#relationship-between-optical-and-digital-resolutions)
 - [Scale, magnification, resolution -
   summary](#scale-magnification-resolution---summary)
 - [Processing](#processing)
@@ -337,50 +337,6 @@ of measuring points in a single measurement* (FDS §2.1.2, also called
 $measuring \ point \ spacing = \frac{measuring \ area}{number \ of \ pixels}$
 (4)
 
-## Relationship between optical and digital lateral resolutions
-
-So far, so good, and not too complicated. The problem is that we now
-have two different values for the lateral resolution. Which one should
-we care about? Both, of course! But **what should the relationship
-between optical and digital lateral resolutions be?**
-
-The Nyquist criterion (based on the [Nyquist–Shannon sampling
-theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem))
-states that the value for the digital lateral resolution (measuring
-point spacing) should be 2-3 times smaller (approx. 2.8 times smaller
-according to [Pawley 2006](#ref-pawley2006)) than the value for optical
-lateral resolution ($\delta_L$). This is necessary to digitally image
-with sufficient details the transition between features that are
-optically visible.  
-For example, if $\delta_L = 0.6 \ \mu m$, then the measuring point
-spacing should be 0.2-0.3 µm.
-
-If the digital lateral resolution is more than 3 $\times$ smaller than
-the optical lateral resolution, this will result in oversampling:
-adjacent pixels will have the same values, so the digital image will not
-contain more meaningful information but simply more information. This
-results in larger files than necessary and generally does not improve
-the quality of the image. On the contrary, it can even lead to worse
-images because each pixel will record less signal (i.e. lower
-signal-to-noise ratio or SNR, [Pawley 2006](#ref-pawley2006)).  
-If the digital lateral resolution is less than 2 $\times$ smaller than
-the optical lateral resolution, this will result in undersampling: the
-transition between features that are optically visible will not be
-visible on the digital image.
-
-There are many considerations to take into account in the analog to
-digital conversion process, but as Pawley ([2006, 70](#ref-pawley2006))
-wrote: “**If you don’t want to worry about any of this, stick to
-Nyquist!**”
-
-Note that in the section [Optical lateral
-resolution](#optical-lateral-resolution), I argued that we should avoid
-the terms “larger” and “smaller” when talking about resolutions. But in
-this section, it is really about the relationship between the values of
-$\delta_L$ and measuring point spacing. In any case, the relationship
-could also be stated that way: “the digital lateral resolution should be
-2-3 $\times$ better than the optical lateral resolution”.
-
 ## Digital zoom
 
 Formula (2) includes the digital zoom in the calculation of the digital
@@ -466,6 +422,60 @@ Unfortunately, I do not know how to calculate the digital vertical
 resolution of a z-stack.  
 If anyone knows more about it, please [contribute](#how-to-contribute)!
 
+## Relationship between optical and digital resolutions
+
+So far, so good, and not too complicated. The problem is that we now
+have two different values for the lateral resolution and two others for
+the vertical resolution. Which one(s) should we care about? All, of
+course! But **what should the relationship between optical and digital
+resolutions be?**
+
+The Nyquist criterion (based on the [Nyquist–Shannon sampling
+theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem))
+states that the value for the digital resolution should be 2-3 times
+smaller (approx. 2.8 times smaller according to [Pawley
+2006](#ref-pawley2006)) than the value for optical resolution. This is
+necessary to digitally image with sufficient details the transition
+between features that are optically visible.
+
+This relationship holds true for both the lateral and the vertical
+resolutions.  
+In case of the lateral resolution, the relationship is between the
+measuring point spacing and the optical lateral resolution.  
+For example, if $\delta_L = 0.6 \ \mu m$, then the measuring point
+spacing should be 0.2-0.3 µm, ideally 0.21 µm.  
+In case of the vertical resolution, the relationship is between the step
+size and the optical vertical resolution (*i.e* depth of field in
+widefield or optical slice thickness in confocal).  
+For example, if $\delta_A = 0.6 \ \mu m$, then the step size should be
+0.2-0.3 µm, ideally 0.21 µm.
+
+If the digital resolution is more than 3 $\times$ smaller than the
+optical resolution, this will result in oversampling: adjacent pixels
+will have the same values, so the digital image will not contain more
+information but simply more data. This results in larger files than
+necessary and generally does not improve the quality of the image. On
+the contrary, it can even lead to worse images because each pixel will
+record less signal (i.e. lower signal-to-noise ratio or SNR, [Pawley
+2006](#ref-pawley2006)).  
+If the digital resolution is less than 2 $\times$ smaller than the
+optical resolution, this will result in undersampling: the transition
+between features that are optically visible will not be visible on the
+digital image.
+
+There are many considerations to take into account in the analog to
+digital conversion process, but as Pawley ([2006, 70](#ref-pawley2006))
+wrote: “**If you don’t want to worry about any of this, stick to
+Nyquist!**”
+
+Note that in the section [Optical lateral
+resolution](#optical-lateral-resolution), I argued that we should avoid
+the terms “larger” and “smaller” when talking about resolutions. But in
+this section, it is really about the relationship between the values of
+$\delta_L$ and measuring point spacing, or $\delta_A$ and step size. In
+any case, the relationship could also be stated that way: “the digital
+resolution should be 2-3 $\times$ better than the optical resolution”.
+
 ------------------------------------------------------------------------
 
 # Scale, magnification, resolution - summary
@@ -495,6 +505,14 @@ analysis are called *high-power* and *low-power*, not
 *high-magnification* and *low-magnification*!
 
 **In summary, forget about magnification and learn about resolution!**
+
+When planning your microscope documentation, it is important to choose
+the equipment according to your imaging needs: what is the size of the
+smaller features that your are trying to document? Based on that, what
+resolution would you need and in-turn, which microscope and objective?  
+There are of course many other considerations (sample size, sample
+topography, objective working distance, etc.), but thinking about the
+needs in resolution is a good start!
 
 ------------------------------------------------------------------------
 
@@ -751,7 +769,11 @@ and Reproducibility for Instruments & Images in Light Microscopy -
 QUAREP-LiMi](https://quarep.org/about/) communities). The work they do
 is incredible, but unfortunately, it concerns mostly life sciences and
 some aspects are not relevant to archaeology, while some others relevant
-to archaeology are not addressed.
+to archaeology are not addressed.  
+Nevertheless, the Bare Minimal Microscopy Reporting Requirements
+Checklist by the QUAREP ([Montero Llopis et al.
+2025](#ref-monterollopisQUAREPBareMinimal2025)) offer a good starting
+point.
 
 ## Minimum reporting requirements
 
@@ -1072,6 +1094,15 @@ Marwick, Ben, and Suzanne E. Pilaar Birch. 2018. “A Standard for the
 Scholarly Citation of Archaeological Data as an Incentive to Data
 Sharing.” *Advances in Archaeological Practice* 6 (2): 125–43.
 <https://doi.org/gf5vpk>.
+
+</div>
+
+<div id="ref-monterollopisQUAREPBareMinimal2025" class="csl-entry">
+
+Montero Llopis, Paula, Chloë van Oostende-Triplet, Luis Acevedo, Sergiy
+Avilov, Cristina Bertocchi, Ulrike Boehm, Lisa Cameron, et al. 2025.
+“QUAREP - Bare Minimal Microscopy Reporting Requirements Checklist.”
+*Zenodo*, March. <https://doi.org/10.5281/zenodo.14977578>.
 
 </div>
 

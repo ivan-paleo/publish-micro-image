@@ -47,7 +47,7 @@ To open and run ImageJ2/Fiji, simply open the file `ImageJ*.exe` (Windows).
 
 # Read files
 ## Import CZI files
-In ImageJ2/Fiji, go to `Plugins` > `Bio-Formats` > `Bio-Formats Importer` and select the CZI file you want to open. 
+In ImageJ2/Fiji, go to `Plugins` > `Bio-Formats` > `Bio-Formats Importer` and select the CZI file you want to open. Or simply drag and drop the file into the Fiji window.
 
 ><p align="center" width="100%">
 >    <img src="../Screenshots/Fiji_bio-formats_import.png"><br>
