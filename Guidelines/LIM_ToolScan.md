@@ -41,13 +41,18 @@ This template is available as a markdown file (this file) as well as a [DOCX fil
 <br>
 
 # What and how to report
+Sample preparation is a very important part of any documentation/observation/analysis. I nevertheless left it out here because it is a whole topic in itself. Here, I mention only the information that need to be reported about the microscope images themselves.  
+Many settings are important (see [Minimum Reporting Requirements in the README](/README.md#minimum-reporting-requirements)) but only a few should be reported in the method section of a paper; the rest must be reported but not necessarily in the method.
+
+These recommendations follow and adapt the Bare Minimal Microscopy Reporting Requirements Checklist (Montero Llopis et al. 2025; see [reference in the README](/README.md#references)).
 
 ## Method section of a paper
 I suggest to use the following text snippets. Parts in square brackets must be adjusted using the text within the brackets as examples or list to choose from. The rest of the text should of course also be adapted to the study.  
 
 Settings and their values can alternatively be presented as tables, either in the main text (recommended) or as supplementary material. The report(s), or parts of it (them), from the Shiny App [imaging-reports](https://github.com/ivan-paleo/imaging-reports) can be used for this. 
 
-"[*Objects* or *Features*] were documented with a ToolScan R360 (Laboratory Imaging, LIM) toolmarks document system at the IMPALA in [*flat*, *cylindrical* or *general*] objects mode. [Image types, e.g. *3D*, *textured*, *stitched*] images were acquired, with the [*laser*, *auto focus* or *manual*] focusing method and [*full (50 µm)* or *half (25 µm)*] focus steps.  
+"[*Objects* or *Features*] were documented with a ToolScan R360 (Laboratory Imaging, LIM) toolmarks document system at the IMPALA in [*flat*, *cylindrical* or *general*] objects mode. [Image types, e.g. *3D*, *textured*, *stitched*, *RTI*] images were acquired, with a 1.48x/0.093 objective, the [*laser*, *auto focus* or *manual*] focusing method and [*full (50 µm)* or *half (25 µm)*] focus steps.  
+The acquisitions were done using the software LUCIA Forensic v. [*8.20b1428*] by LIM.  
 All data in original (ND2) and open ([*TIFF* or *PNG*]) formats, together with their metadata (acquisition settings), can be found on Zenodo ([*DOI*])."
 
 Also add details about any subsequent image processing. See recommendations in the repo's [README](/README.md#processing).

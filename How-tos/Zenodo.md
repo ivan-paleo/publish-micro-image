@@ -37,7 +37,7 @@ Therefore, I hope these instructions will help make it easier to every user.
 While most steps are very general, some points are specific to LEIZA's IMPALA and/or TraCEr lab. Adapt as necessary!
 
 Also note that I present only Zenodo. Not because it is the only alternative or because it is better, but simply because this is the tool I have been using for some years now. I like it, it does what I need and I find it quite simple.  
-But you might want to have a look at some alternatives, e.g. [OSF](https://osf.io/),  [Figshare](https://figshare.com/) or [Dryad](https://datadryad.org/stash).
+But you might want to have a look at some alternatives, e.g. [OSF](https://osf.io/),  [Figshare](https://figshare.com/) or [Dryad](https://datadryad.org/stash). OSF in particular is great if you want to structure the files associated to a project.
 
 
 # Register at Zenodo
