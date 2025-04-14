@@ -297,34 +297,36 @@ Nevertheless, the Bare Minimal Microscopy Reporting Requirements Checklist by th
 
 ## Minimum reporting requirements
 
-Below is a list of what I think is necessary for pre-producible microscope images. This list should be adapted according to the equipment/software used.
+Below is a list of what I think is necessary for pre-producible microscope images, following and adapating the Bare Minimal Microscopy Reporting Requirements Checklist [@monterollopisQUAREPBareMinimal2025]. This list should be adapted according to the equipment/software used.
 
-| **Number** | **Category** | **What** | **Why** | **How? (examples)** 
-|---------------|---------------|---------------|---------------|---------------|
-| 1 | Observation/analysis method | Observation/analysis through oculars or directly on the digital image? | To know how the analyst performed the analysis | "The features were observed and analyzed through the oculars. The images reported are therefore not equivalent to what has been observed during analysis." |
-| 2 | Microscope | Manufacturer and model of the microscope | To account for all (unknown) settings that are part of the microscope's design |"AxioScope.A1 (Carl Zeiss Microscopy GmbH)" |
-| 3 | Technique | Imaging technique / contrast  | To interpret the image according to the technique(s) used | "Confocal microscopy" or "bright field" or "DIC" |
-| 4 | Light | Illumination | To interpret the image according to the illumination(s) used | "Ringlight illumination" or "Coaxial illumination" |
-| 5 | Light | Type + wavelength of the light source | To calculate the optical resolutions | "Violet LED 405 nm" |
-| 6 | Light | Light source intensity | To be able to repeat the acquisition  | "60%" |
-| 7 | Light | Exposure time | To be able to repeat the acquisition | "100 ms" |
-| 8 | Optics | Objective specifications | To calculate the optical magnification (if applicable, see #1) and optical resolutions | "Objective Zeiss C Epiplan-Apochromat Mag. = 50 $\times$ / NA = 0.95 / WD = 0.22 mm" |
-| 9 | Optics | Oculars magnification, if applicable (see #1) | To calculate the optical magnification | "10 $\times$ oculars" |
-| 10 | Optics | Optical zoom, if applicable (see #1) | To calculate the optical magnification | "2 $\times$ optical zoom" |
-| 11 | Camera | Measuring point spacing + field of view + number of pixels (at least two of them) | To calculate the digital lateral resolution | "100 $\times$ 100 µm for 1000 $\times$ 1000 pixels" or "1000 $\times$ 1000 pixels, measuring point spacing = 0.1 µm" |
-| 12 | Camera | Scale bar | To visualize the size of the imaged region | "Scale bar = 100 µm" |
-| 13 | Confocal | Pinhole diameter, if applicable | To calculate the optical resolutions | "PH = 54 µm (1 AU)" |
-| 14 | Confocal | Step size + z-range, if applicable | To be able to repeat the measurement | "40-50 µm with 0.2 µm steps" |
-| 15 | Confocal | Temperature + humidity during topography scanning, if possible | T & H can influence the fine-scale measurements of topography | "Scans were acquired at 20 < T < 22 °C and 50 < rH < 70 %" |
-| 16 | Confocal | Location of the equipment | An environment without vibrations is necessary for fine-scale measurements of topography | "The confocal microscope is located in the basement and placed on a passive anti-vibration table, itself placed on a concrete based decoupled from the rest of the floor" |
-| 17 | Confocal | Any other equipment-specific setting | To be able to repeat the measurement | "Master gain = 220 V" |
-| 18 | Software | Versions of acquisition, processing and analysis software packages | Different versions might produce different results | "ZEN blue 3.5 Hotfix 7 (Carl Zeiss Microscopy GmbH) with module Shuttle-and-Find" or "ConfoMap 9.2.10042 with module Scale-sensitive Analysis (Digital Surf)" |
-| 19 | Pre-processing | Stitching, if applicable | To be able to repeat the processing | "2 $\times$ 2 tile regions were acquired, with shading correction (to avoid seeing the separations between single images), 5% minimal overlap and 10% maximal shift, 'optimized' comparer and 'best' global optimizer" |
-| 20 | Pre-processing | Extended depth of focus (EDF), if applicable | To be able to repeat the processing | "Z-stacks were processed to EDF images with the wavelets method and without z-stack alignment" |
-| 21 | Processing/Analysis | Image enhancements / filters / image analysis settings, if applicable | To be able to repeat the processing | "The contour were enhanced with settings A and B; and brightness, contrast and gamma were adjusted to C, D and E respectively" |
-| 22 | Processing/Analysis | Workflow and settings of the surface texture analysis, if applicable | To be able to repeat the processing | "The surface texture analysis was performed with the following template [add analysis details and link to template]" |
-
-From my point of view, **all of these pieces of information should be published together with every microscope acquisition**.  
+| **Number** | **Category** | **What** | **Why** | **How? (examples)** | **Importance** |
+|---------------|---------------|---------------|---------------|---------------|---------------|
+| 1 | Specimen set-up | Sample preparation | The way the sample is prepared and mounted influences the result | "The samples were prepared and cleaned using the following protocol: ..." | Mandatory |
+| 2 | Specimen set-up | Sample mounting | The way the sample is prepared and mounted influences the result | "The sample was mounted on a 2-axis goniometer using magnets and the region of interest was positioned as horizontally as possible" | Mandatory |
+| 3 | Observation/analysis set-up | Observation/analysis through oculars or directly on the digital image? | To know how the analyst performed the analysis | "The features were observed and analyzed through the oculars. The images reported are therefore not equivalent to what has been observed during analysis" | Mandatory |
+| 4 | Hardware set-up | Description of the microscope stand (manufacturer, model, inverted/upright) | To account for all (unknown) settings that are part of the microscope's design |"Upright AxioScope.A1 for reflected light (Carl Zeiss Microscopy GmbH)" | Mandatory |
+| 5 | Hardware set-up | Objective specifications (magnification [Mag], numerical aperture [NA], working distance [WD]) | To calculate the optical magnification (if applicable, see #1) and optical resolutions | "Objective Zeiss C Epiplan-Apochromat Mag = 50 $\times$ / NA = 0.95 / WD = 0.22 mm" | Mandatory (except WD) |
+| 6 | Hardware set-up | Eyepiece specifications (magnification and field number)  | To calculate the optical magnification | "10 $\times$/23 eyepieces" | Mandatory if applicable (see #3) |
+| 7 | Hardware set-up | Optical zoom | To calculate the optical magnification | "2 $\times$ optical zoom" | Mandatory if applicable |
+| 8 | Hardware set-up | Imaging technique / contrast  | To interpret the image according to the technique(s) used | "Confocal microscopy" or "bright field" or "DIC" | Mandatory |
+| 9 | Hardware set-up | Illumination | To interpret the image according to the illumination(s) used | "Ringlight illumination" or "Coaxial illumination" | Mandatory |
+| 10 | Hardware set-up | Type + wavelength of the light source | To calculate the optical resolutions | "Violet laser 405 nm" | Mandatory |
+| 11 | Hardware set-up | Detection system (type, manufacturer, model) | To be able to repeat the acquisition | "Axiocam 305 color (Carl Zeiss Microscopy GmbH)" | Mandatory |
+| 12 | Hardware set-up | Location of the equipment | An environment without vibrations is necessary for fine-scale measurements of topography | "The confocal microscope is located in the basement and placed on a passive anti-vibration table, itself placed on a concrete based decoupled from the rest of the floor" | Optional |
+| 13 | Acquisition set-up | Light source intensity | To be able to repeat the acquisition  | "60%" | Mandatory |
+| 14 | Acquisition set-up | Exposure time (camera) or dwell time (point detector) | To be able to repeat the acquisition | "Exposure time = 100 ms" or "Dwell time = 2 µs" | Mandatory |
+| 15 | Acquisition set-up | Measuring point spacing, field of view & number of pixels | To calculate the digital lateral resolution | "100 $\times$ 100 µm for 1000 $\times$ 1000 pixels" or "1000 $\times$ 1000 pixels, measuring point spacing = 0.1 µm" | At least 2 out of the 3 values (e.g. measuring point spacing & field of view, or field of view & number of pixels)
+| 16 | Acquisition set-up | Pinhole diameter (LSCM) | To calculate the optical resolutions | "PH = 54 µm (1 AU)" | Mandatory if applicable |
+| 17 | Acquisition set-up | Step size and z-range of z-stack | To be able to repeat the measurement | "40-50 µm with 0.2 µm steps" | Mandatory if applicable |
+| 18 | Acquisition set-up | Temperature & humidity during topography scanning | T & H can influence the fine-scale measurements of topography | "Scans were acquired at 20 < T < 22 °C and 50 < rH < 70 %" | Optional |
+| 19 | Acquisition set-up | All other equipment-specific settings | To be able to repeat the measurement | "Master gain = 220 V" | Mandatory if applicable |
+| 20 | Acquisition set-up | Tiling settings | To be able to repeat the processing | "2 $\times$ 2 tile regions were acquired" | Mandatory if applicable |
+| 21 | (Pre-)processing & analysis set-up | Stitching settings | To be able to repeat the processing | "Tile regions were stitched with shading correction (to avoid seeing the separations between single images), 5% minimal overlap and 10% maximal shift, 'optimized' comparer and 'best' global optimizer" | Mandatory if applicable |
+| 22 | (Pre-)processing & analysis set-up | Extended depth of focus (EDF) settings | To be able to repeat the processing | "Z-stacks were processed to EDF images with the wavelets method and without z-stack alignment" | Mandatory if applicable |
+| 23 | (Pre-)processing & analysis set-up | Image enhancements / filters / image analysis settings | To be able to repeat the processing | "The contour were enhanced with settings A and B; and brightness, contrast and gamma were adjusted to C, D and E respectively" | Mandatory if applicable |
+| 24 | (Pre-)processing & analysis set-up | Workflow and settings of the surface texture analysis | To be able to repeat the processing | "The surface texture analysis was performed with the following template [add analysis details and link to template]" | Mandatory if applicable |
+| 25 | Software set-up | Versions of acquisition, (pre-)processing and analysis software packages | Different versions might produce different results | "ZEN blue 3.5 Hotfix 7 (Carl Zeiss Microscopy GmbH) with module Shuttle-and-Find" or "ConfoMap 9.2.10042 with module Scale-sensitive Analysis (Digital Surf)" | Mandatory |
+From my point of view, **all of these pieces of information should be published together with every microscope acquisition**, even though I have listed some as "optional".  
 
 I would like to stress that most of these metadata are generated and saved automatically together with the image data (at least when you use the appropriate format) so that there is no extra work needed to compile the image metadata beyond sharing (see section [Instrument-specific guidelines](#instrument-specific-guidelines)). I therefore do not see a reason why we should not report them.   
 
