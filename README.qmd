@@ -21,7 +21,6 @@ bibliography: references.bib
 ---
 
 # Introduction
-
 This good-practice document is directed at archaeologists and paleontologists working with microscopes, but anyone working with microscope images might learn a few things here.
 
 Microscopes now deliver digital images. "Digital images are data" [@cromey2013]. However, digital images are different from analog images and from what the observer/analyst sees through the oculars. Therefore, digital images have specific properties that must be reported in publications, so that other researchers have the necessary details to assess the published images and also so that they can repeat/reproduce these images.
@@ -33,7 +32,6 @@ As a disclaimer, **this document only presents my opinion**, at least for now. Y
 ---
 
 # Scale of observation
-
 A microscope is obviously used to observe features of an object that are too small to be visible to the naked eye. To do so, a series of lenses magnifies the object so that the analyst sees more details. But which scale(s) is (are) appropriate and how to reach this (these) scale(s) with a microscope?
 
 So, the first question the analyst should ask is: **What is the size of the features of interest?** It is important to consider the range of sizes: the size of the smallest features is important, but so is the size of the largest. This is because the larger this range, the less likely it is that all these sizes can be observed with a single set of settings. In other words, if features of different sizes are of interest, several acquisitions at different scales will probably be needed.  
@@ -44,11 +42,9 @@ But how do we know what the microscope's hardware can achieve in terms of scale?
 ---
 
 # Magnification
-
 Magnification is simply: the size of the magnified area divided by the real size of the imaged sample's area.
 
 ## Optical magnification
-
 But let us first have a look at the optical magnification.  
 The optical magnification of a microscope image when observed through the oculars is straightforward to calculate:
 
@@ -57,7 +53,6 @@ $optical \ mag. = objective \ magnification \times ocular \ magnification \times
 For example, using a 20 $\times$ objective with 10 $\times$ oculars and 2 $\times$ optical zoom, the total optical magnification is 400 $\times$.
 
 ## Digital magnification
-
 Things get more complicated in the digital world. It all comes down to one single question: **what is THE size of the magnified area when stored on a digital image?** Is it the size of the screen when you acquire the image? Is it the size of the screen when you view the image? Is it the size printed on paper, or projected to a screen? There is no single size for a digital image because it depends on the viewing medium: increase the size of the viewing medium and the magnification will increase as well, even though the image is the same. Does that mean that increasing the size of the viewing medium will improve the resolution? Unfortunately, no, as we will see below.
 
 Let us see how the digital magnification is calculated. The problem with a digital image (as opposed to an analog image) is that many components come into play to magnify the sample: all the optical (objective, optical zoom and camera adaptor) and digital (camera sensor, viewing medium and digital zoom) components must be considered. Note that the oculars are not relevant anymore because the light goes to the camera without passing through the oculars.  
@@ -76,7 +71,6 @@ An example I like to show is the figure 8a of @pedergnana2020 (the paper can be 
 Also, the formula (2) shows that calculating the total digital magnification is not so easy in practice: the camera sensor diagonal and the viewing medium diagonal are not always known.
 
 ## Banning magnification?
-
 So what now? **Should we all forget about magnification in digital microscopy?** Well, pretty much, in my opinion.
 
 **If the analyst has observed and analyzed while looking through the ocular, the optical magnification is very relevant and should be reported** (see section [Reporting and sharing](#reporting-and-sharing)). However, the image published is a digital one. This implies that the analyst and the readers/audience will observe the sample at different magnifications (and resolutions as well, see section [Resolution](#resolution)). In some cases, the readers/audience might not be able to see what the analyst is referring to. This might result in misunderstanding and potentially even disbelief in respect to the analyst. Even when the analyst analyzed the digital image directly, the viewing medium diagonal might change for each person anyway (laptop screen vs. desktop screen vs. projected screen vs. printed...).
@@ -93,7 +87,6 @@ So this makes a significant difference!
 There is another similar example, namely in SEM imaging. When using an SEM, only the digital magnification is availble, but it is given relative to a *reference*. For example, in the case of our Zeiss EVO 25, the magnification is given relative to the Polaroid 545 format (other formats can be selected), *i.e.* as if printed on 4 $\times$ 5" polaroid paper. This used to be the printing format for analog images in the days before digital SEMs. Note that other manufacturers might use different references so the magnifications might not be comparable, once again, and I am not sure all users know about this reference.
 
 ## Scale bar
-
 So, if the digital magnification is useless, how can we know the size of a digital microscope image? The good old **scale bar**! The field of view, *i.e* the size of the imaged area of the sample, or rulers or anything similar will do the trick too.
 
 One would expect that everybody knows that a scale bar (or some form of scaling) must be provided with each image. Yet, "[a]pproximately half of papers in physiology (49%) and cell biology (55%) and 28% of plant science papers provided scale bars with dimensions (in the figure or legend) for all images in the paper [...]. Approximately one-third of papers in each field contained incomplete scale information, such as reporting magnification or presenting scale information for a subset of images. Twenty-four percent of physiology papers, 10% of cell biology papers, and 29% of plant sciences papers contained no scale information on any image" [@jambor2021, p. 3].  
@@ -103,7 +96,6 @@ In sum, **only about half of the papers in these fields publish microscope image
 ---
 
 # Resolution
-
 **In general, *resolution* refers to the level of details that can be observed. In other words, it defines the size of the smallest observable features.**
 
 There is not one single resolution but many different, complementary definitions of resolution. First, it is important, once again, to differentiate between optical and digital resolutions. And second, there are lateral (XY) and vertical (Z) resolutions.
@@ -111,7 +103,6 @@ There is not one single resolution but many different, complementary definitions
 Most terms and definitions here refer to the [Fair Data Sheet Initiative, v1.2α](http://www.optassyst.de/fairesdatenblatt/) (the website is only in German, but the Fair Data Sheet itself has an English version). I will abbreviate it "FDS".
 
 ## Optical lateral resolution {#optical-lateral-resolution}
-
 Due to aberrations from the optics and diffraction of the light, an optical system will be limited in its ability to distinguish points; the image will become blurry at the smallest scales. These effects are the basis for the calculation of the optical lateral resolution as defined by the [Rayleigh criterion](https://en.wikipedia.org/wiki/Angular_resolution).
 
 The calculated optical lateral resolution is the "minimum theoretical distance between two adjacent, barely distinguishable features of an object" (FDS §2.2.8). In other words, if two points are closer from each other than the optical lateral resolution, then it is not possible to distinguish them (*i.e.* they will look like one point only). They will appear as two separate points only if they are further from each other than the optical lateral resolution.
@@ -127,7 +118,6 @@ From formula (3) and the definition of the optical lateral resolution, it become
 The NOTE 3 of the FDS §2.2.8 states that "the optical [lateral] resolution can be achieved only under ideal conditions (including complete illumination of the pupil) on planar objects. This value is usually not reached on textured surfaces". In archaeology and paleontology, we usually deal with textured surfaces!
 
 ## Digital lateral resolution
-
 The digital lateral resolution, or *measuring point spacing*, is the "sampling interval of measuring points in the measuring volume, both in X and in Y direction" (FDS §2.2.7). This is also referred to as the *pixel size* (although *pixel size* or *pixel pitch* can also refer to the size of the photodiodes on the detector/camera, which is a fixed value independent of the field of view) or *spatial sampling*.
 
 The measuring point spacing is calculated by dividing the *measuring area* (FDS §2.2.1, also called *field of view*) by the *maximum number of measuring points in a single measurement* (FDS §2.1.2, also called *frame size* or *number of pixels*):
@@ -135,7 +125,6 @@ The measuring point spacing is calculated by dividing the *measuring area* (FDS 
 $measuring \ point \ spacing = \frac{measuring \ area}{number \ of \ pixels}$ (4)
 
 ## Digital zoom
-
 Formula (2) includes the digital zoom in the calculation of the digital magnification, but it is not part of formula (4) for the digital lateral resolution. So what happens when zooming in *digitally*?
 
 Let us start with an original image 100 $\times$ 100 µm with 1000 $\times$ 1000 pixels. This results in a measuring point spacing of 0.1 µm.  
@@ -148,7 +137,6 @@ All this to say that the **digital zoom obviously changes the digital magnificat
 Still, it seems that zooming in digitally helps to see more details. This is just because the details are displayed larger on the screen, not because they are better resolved. For a better digital resolution, a smaller field-of-view for the same number of pixels, or more pixels for the same field-of-view, is needed. This can be achieved by using a higher magnification objective and/or an optical zoom, or a camera with more pixels.
 
 ## Optical vertical resolution and depth of field
-
 The optical vertical, or axial, resolution is equal to the depth of field for a bright field (BF) microscope:
 
 $\delta_A(BF) = depth \ of \ field = \frac{n.\lambda}{NA^2}$ (5)
@@ -164,7 +152,6 @@ $\delta_A(conf) = \sqrt{(\frac{0.88 \lambda}{n- \sqrt{n^2-NA^2}})^2 + (\frac{n.P
 Here again, **the smaller** $\delta_A$, the better the resolution is.
 
 ## Digital vertical resolution
-
 The digital vertical resolution is meaningless in case of a 2D image (even for extended depth of focus - EDF - images) but it is relevant for 2.5 and 3D images.
 
 The digital vertical resolution of a 2.5D image acquired from a confocal microscope is better than the step size (*i.e.* the distance between the individual images, or slices, of a stack) because of the way it is processed [see @artigas2011].  
@@ -174,7 +161,6 @@ Unfortunately, I do not know how to calculate the digital vertical resolution of
 If anyone knows more about it, please [contribute](#how-to-contribute)!
 
 ## Relationship between optical and digital resolutions
-
 So far, so good, and not too complicated. The problem is that we now have two different values for the lateral resolution and two others for the vertical resolution. Which one(s) should we care about? All, of course! But **what should the relationship between optical and digital resolutions be?**
 
 The Nyquist criterion (based on the [Nyquist–Shannon sampling theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem)) states that the value for the digital resolution should be 2-3 times smaller [approx. 2.8 times smaller according to @pawley2006] than the value for optical resolution. This is necessary to digitally image with sufficient details the transition between features that are optically visible.  
@@ -195,8 +181,7 @@ Note that in the section [Optical lateral resolution](#optical-lateral-resolutio
 ---
 
 # Scale, magnification, resolution - summary
-
-**Magnification and resolution are different concepts and are not interchangeable. Resolution is given in a unit of length** (e.g. µm)**, while magnification is without unit** ("$\times$").
+**Magnification and resolution are different concepts and are not interchangeable. Resolution is given in a unit of length** (e.g. µm)**, while magnification is without unit** (" $\times$ ").
 
 ***Magnification* can be understood as an aid to see the *resolution*: resolution will define what can be seen or not, while increasing the magnification will make the visualization of the observable details easier. This is why, in my opinion, talking about *resolution* is much more useful and relevant than magnification, especially in the digital world.**
 
@@ -212,12 +197,10 @@ There are of course many other considerations (sample size, sample topography, o
 ---
 
 # Processing
-
 Few images are published without some form of processing. Sometimes, processing is even necessary to create (e.g. EDF, stitching, topography reconstruction) or analyze (e.g. contrast/brightness, wavelength filters) the image. Even the raw data output by every instrument are processed to some degree.  
 While processing deserves a whole good-practice document on its own, I would just like to give some general advices here that will hopefully be applicable to most processing routines. But feel free to [contribute](#how-to-contribute) for more!
 
 ## Definitions
-
 Following the definitions of @aaron2021 [p. 1], *processing* "serves to digitally transform an acquired dataset by enhancing or isolating signals of interest and/or suppressing other signals and noise that will otherwise prevent accurate analysis". *Analysis* refers to "a vast set of diverse approaches to extract [...] meaningful, quantitative measurements from a dataset". Lastly, *pre-processing* includes the "steps that are required to be taken before image data can be properly processed [...]. Such steps generally do not serve to enhance particular features in an image per se, but rather correct for imperfections commonly encountered in imaging systems."
 
 Here are some examples in each category when considering surface texture analysis (dental microwear texture analysis or quantitative artifact microwear analysis):
@@ -229,7 +212,6 @@ Here are some examples in each category when considering surface texture analysi
 In the remaining of this section, I will use the term processing to include both pre-processing and true processing. This makes the sentences easier to read and the discussion applies to both anyway.
 
 ## Recommendations
-
 Even if we sometimes tend to assume that there is only one way to process an image, there are in fact often several methods or algorithms to do so, and there are always various settings to adjust. Additionally, some processing happens before you get the raw data from the instrument. Lastly, "[a]s images are numerical data, image processing invariably changes these data and thus needs to be transparently documented" [@schmied2023, p. 7]. This is why it is important to **be as precise as possible when reporting about the acquisition and processing** (see section [Reporting and sharing](#reporting-and-sharing)).
 
 It is also crucial to **process all images of a dataset in the same way**. This might seem obvious, but different processing methods might produce results that might appear identical/similar even if they actually are different. Processing all images in the same way ensures that all images are comparable at least within a dataset. Of course, this is true only if **the images were acquired in the same way**!  
@@ -246,7 +228,6 @@ Last but not least, it is important to **keep a very detailed record of the proc
 # Saving {#saving}
 
 ## Raw vs. derived data
-
 I totally agree with Ben Marwick and colleagues that raw data should be kept raw and clearly separated from derived data [e.g. @marwickpilaar2018; @marwicketal2018].
 
 Still, it is not always clear to distinguish between the two, nor practicable to keep the raw(est) data. For example, the raw data of an EDF image or a 2.5D topographical model (= height map, e.g. from a confocal microscope) is a Z-stack. Z-stacks can be very large files so keeping all these Z-stacks requires a lot of storage space. While storage is not really limiting anymore, the environmental impacts of data centers and online repositories cannot be ignored [e.g. @samuel2020].
@@ -261,7 +242,6 @@ All this to say that the decision should be made on a case-by-case basis about w
 - **save in appropriate format(s)** (see section [File formats and software](#file-formats-and-software)).
 
 ## File formats and software {#file-formats-and-software}
-
 For long-term usability, accessibility and sustainability, proprietary formats (i.e. files that can only be opened with a paid software) should be avoided and **stable, open, non-proprietary formats should be preferred**. The DANS maintains a [list of preferred and non-preferred formats](https://dans.knaw.nl/en/file-formats/). **For microscopy images, the [OME-TIFF format](https://docs.openmicroscopy.org/ome-model/6.3.1/ome-tiff/index.html) has become the standard.**  
 
 Most microscope manufacturers offer software packages to acquire images; in some cases, these software packages are even necessary to operate the microscopes. Not all of these software packages can save in an open format, even less so in OME-TIFF. Unfortunately, metadata sometimes get lost when the image is not saved in the native, proprietary format.  
@@ -272,7 +252,6 @@ Still, [Fiji/ImageJ](https://imagej.net/) is a great open-source solution for im
 Some microscope manufacturers also offer a free viewer or a free light version (e.g. Zeiss' [ZEN starter](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-starter.html) and [ZEN lite](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-lite.html)).
 
 ## JPEG, PNG, TIFF, RAW
-
 Following up on the previous section, every one of us has wondered at least once which image format should be preferred and what the differences are between JPG, JPEG, PNG, TIF and TIFF. Here, I will try to give an overview and general recommendations. This section concerns only raster image formats, as microscope images are always raster images.
 
 I recommend reading the documentation about the different [raster file formats](https://www.adobe.com/creativecloud/file-types/image/raster.html) on the Adobe website, which is, in my opinion, clear and detailed.
@@ -285,7 +264,6 @@ I recommend reading the documentation about the different [raster file formats](
 ---
 
 # Reporting and sharing {#reporting-and-sharing}
-
 **"The underlying premise of image publication and ethics guidelines is that a digital image is data and that the data should not be manipulated inappropriately"** [@cromey2013, p. 5].
 
 All the background information of the previous sections aims at providing the required knowledge to use a microscope to reach the desired scale of observation and to save all the acquired data and metadata. While it is important for the analyst to see what he/she/they want to see on the sample, it is equally important that the reader/audience that will be presented - or even will assess - the work is able to know what can be observed in terms of scale on the reported/published/shared images. This is also important for *repeatability* and *reproducibility* [and *pre-producibility* *sensu* @stark2018].
@@ -296,7 +274,6 @@ A large community of researchers in life sciences are working on guidelines for 
 Nevertheless, the Bare Minimal Microscopy Reporting Requirements Checklist by the QUAREP [@monterollopisQUAREPBareMinimal2025] offers a good starting point.
 
 ## Minimum reporting requirements
-
 Below is a list of what I think is necessary for pre-producible microscope images, following and adapating the Bare Minimal Microscopy Reporting Requirements Checklist [@monterollopisQUAREPBareMinimal2025]. This list should be adapted according to the equipment/software used.
 
 | **Number** | **Category** | **What** | **Why** | **How? (examples)** | **Importance** |
@@ -333,7 +310,6 @@ I would like to stress that most of these metadata are generated and saved autom
 Additionally, I recommend **following the guidelines of @jambor2021 to improve the quality of the images themselves, as well as using the checklists of @schmied2023 to make sure that at least the relevant "minimal" requirements are met** (but aim for the "ideal" requirements!).
 
 ## Sharing {#sharing}
-
 A lot could be said about data sharing and Open Science. I will keep it brief here and focused on microscope images; more general and extensive discussions can be found in e.g. @marwickpilaar2018, @gomes2022, and @karoune2022.
 
 **In my opinion, publishing only a few, supposedly representative images of the whole dataset is not enough** because of the following reasons: 
@@ -360,7 +336,6 @@ Here again, the discussion about raw/derived data and file formats is important 
 I propose step-by-step instructions to upload files to Zenodo in [how-to Zenodo](/How-tos/Zenodo.md).
 
 ## Instrument-specific guidelines
-
 I have tried to make it easy for the users of the **Im**aging **P**latform **a**t **L**EIZ**A** ([IMPALA](https://www.leiza.de/forschung/infrastrukturen/labore/impala)): a [Shiny App](https://shiny.rstudio.com/) guides the users to fill in the required information and exports the report to an XLSX or ODS file that can be shared together with the images (see section [Sharing](#sharing)). This App is still in development and is part of the repository [imaging-reports](https://github.com/ivan-paleo/imaging-reports) on GitHub.  
 
 To complement this, I have prepared guidelines specific to the instruments we have at the IMPALA in the folder [Guidelines](/Guidelines/). The guidelines include text snippets that can be copy/pasted/edited for the method section of a publication and have been converted from Markdown to DOCX format using the extension [vscode-pandoc](https://marketplace.visualstudio.com/items?itemName=DougFinke.vscode-pandoc). They also explain in details what type of data should be shared and how.  
@@ -372,7 +347,6 @@ Feel free to [contribute](#how-to-contribute) guidelines for other instruments!
 ---
 
 # How to contribute {#how-to-contribute}
-
 I appreciate any comment from anyone (expert or novice) to improve this document, so do not be shy! There are three possibilities to contribute.
 
 1.  Submit an issue: If you notice any problem or have a question, submit an [issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues). You can do so [here](https://github.com/ivan-paleo/publish-micro-image/issues).  
@@ -388,7 +362,6 @@ By participating in this project, you agree to abide by our [code of conduct](CO
 ---
 
 # License
-
 [![CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).

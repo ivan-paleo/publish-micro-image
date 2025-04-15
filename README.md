@@ -1,6 +1,6 @@
 # publish-micro-image
 Ivan Calandra
-, 2025-04-14, 12:02:10
+, 2025-04-15, 09:00:36
 
 - [Introduction](#introduction)
 - [Scale of observation](#scale-of-observation)
@@ -482,7 +482,7 @@ resolution should be 2-3 $\times$ better than the optical resolution”.
 
 **Magnification and resolution are different concepts and are not
 interchangeable. Resolution is given in a unit of length** (e.g. µm)**,
-while magnification is without unit** (“$\times$”).
+while magnification is without unit** (” $\times$ “).
 
 ***Magnification* can be understood as an aid to see the *resolution*:
 resolution will define what can be seen or not, while increasing the
