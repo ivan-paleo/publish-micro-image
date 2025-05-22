@@ -121,7 +121,7 @@ The metadata can be changed *ad libitum*. See [here](https://help.zenodo.org/doc
 All fields can be edited as necessary, but I would like to highlight some specific cases that are often forgotten, yet are important for making the record "findable" (according to the FAIR principles):  
 1. Change the visibility to Public, latest once the associated manuscript is published (see section [Visibility](#visibility)).  
 2. Add the publication's DOI as a related work (see section [Other metadata](#other-metadata)).  
-3. Add the publication's details (journal's title, volume, page numbers; book title; etc.) under *Publishing information*.
+3. In most cases, you should **not** add the publication's details (journal's title, volume, page numbers; book title; etc.) under *Publishing information*. This section is meant for the dataset in case the dataset that has been uploaded to Zenodo has been published somewhere else. **This section does not refer to an article associated to the Zenodo record.**
 
 ## Edit data
 It can happen, for example during the revision stage, that you need to change the data (files) that you have uploaded. It can be because you rerun the analysis (and got different results) or because you analyzed differently.
