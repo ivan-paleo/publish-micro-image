@@ -97,9 +97,13 @@ See [https://doi.org/10.5281/zenodo.10074758](https://doi.org/10.5281/zenodo.100
 - Specify in the README (in TXT format): "SEM images were acquired with the software [*SmartSEM v.6.08* or *SmartSEM Touch v2.01*] from Zeiss ([https://www.zeiss.com/microscopy/en/products/software/zeiss-smartsem.html](https://www.zeiss.com/microscopy/en/products/software/zeiss-smartsem.html)). All metadata (acquisition settings) are included in the TIFF-files and can be retrieved using e.g. the IMBalENce plugin for ImageJ/Fiji ([https://imagej.net/plugins/imbalence](https://imagej.net/plugins/imbalence)). Instructions to do so are given here: [https://github.com/ivan-paleo/publish-micro-image/blob/main/How-tos/ImageJ2-Fiji.md](https://github.com/ivan-paleo/publish-micro-image/blob/main/How-tos/ImageJ2-Fiji.md)."
 
 ### EDS data
-- Upload files in original Bruker formats (SPX, PRF, RTO, RTL or BCF).
-- Export spectra data to XLSX and upload them.
-- Upload BSD images, showing the location of EDS spectra for each measurement point in case of measurements in the Objects workspace, in PNG format. These should be the same images as the BSD images from the SEM but at lower resolution and with less metadata.
+- Upload the project files in original Bruker format (RTX), except if you only have hypermaps.
+- Upload hypermaps files in original Bruker format (BCF) if applicable.
+- Export all spectra, including the map's sum spectrum if applicable, to XLSX and upload them.
+- Save BSD images, showing the location of EDS spectra for each measurement point in case of measurements in the Objects workspace, in PNG format and upload them. These should be the same images as the BSD images from the SEM but at lower resolution and with less metadata.
+- Save all charts of the quantified spectra, including the map's sum spectrum if applicable, in PNG format and upload them.
+- Export all quantified results of the spectra, and of the map's sum spectrum if applicable, to XLSX and upload the files.
+- Export the quantified map images in PNG format, if applicable, and upload them.
 - Specify in the README (in TXT format):
   - "EDS data were acquired and processed with the software Esprit v. 2.3.0.997 from Bruker ([https://www.bruker.com/en/products-and-solutions/elemental-analyzers/eds-wds-ebsd-SEM-Micro-XRF/software-esprit-family.html](https://www.bruker.com/en/products-and-solutions/elemental-analyzers/eds-wds-ebsd-SEM-Micro-XRF/software-esprit-family.html))."
   - "The individual spectra were exported to XLSX format for compatibility. The amount of metadata is limited."
