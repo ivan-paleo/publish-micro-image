@@ -1,6 +1,6 @@
 # publish-micro-image
 Ivan Calandra
-, 2026-08-17, 13:54:05
+, 2026-08-17, 13:56:26
 
 - [Introduction](#introduction)
 - [Scale of observation](#scale-of-observation)
@@ -938,10 +938,10 @@ microscope, metallographic microscope, etc. I could not find a good and
 clear terminology on that, so I suggest some thing here. Again, feel
 free to [contribute](#how-to-contribute).
 
-- Confocal microscope: microscope with “scanned illumination with a fine
-  pattern (e.g., diffraction-limited point) and detection through an
-  aperture mask matching the illumination pattern in a conjugate field
-  plane, which rejects out-of-focus light.” ([Nikon
+- **Confocal microscope**: microscope with “scanned illumination with a
+  fine pattern (e.g., diffraction-limited point) and detection through
+  an aperture mask matching the illumination pattern in a conjugate
+  field plane, which rejects out-of-focus light.” ([Nikon
   MicroscopyU](https://www.microscopyu.com/glossary/confocal-microscopy)).
   There are various types: laser-scanning confocal microscope (LSCM,
   e.g. [Olympus/Evident
@@ -956,8 +956,8 @@ free to [contribute](#how-to-contribute).
   e.g. [Sensofar S
   neox](https://www.sensofar.com/metrology/industry-research/sneox/))
   (see [Artigas 2011](#ref-artigas2011)).
-- Digital microscope: a light microscope on which observations are made
-  exclusively digitally, i.e. on the screen without eyepieces (see
+- **Digital microscope**: a light microscope on which observations are
+  made exclusively digitally, i.e. on the screen without eyepieces (see
   definition on
   [Wikipedia](https://en.wikipedia.org/wiki/Digital_microscope)).
   Examples are
@@ -969,36 +969,36 @@ free to [contribute](#how-to-contribute).
   and
   [Olympus/Evident](https://evidentscientific.com/en/products/digital/dsx2000)
   microscopes.  
-- Light microscope: microscope that uses (visible) light; synonym of
-  optical microscope (see [Nikon
+- **Light microscope**: microscope that uses (visible) light; synonym of
+  **optical microscope** (see [Nikon
   MicroscopyU](https://www.microscopyu.com/glossary/light-microscope)
   and [Wikipedia](https://en.wikipedia.org/wiki/Optical_microscope)).
   According to this definition, stereo, digital, wide-field, zoom and
   confocal microscopes are all light microscopes. All but digital
-  microscopes are compound microscopes (see [Nikon
+  microscopes are **compound microscopes** (see [Nikon
   MicroscopyU](https://www.microscopyu.com/glossary/compound-microscope));
   digital microscopes can be, but are not necessarily, compound
   microscopes.  
-- Scanning electron microscope (SEM): this is not a light microscope
+- **Scanning electron microscope** (SEM): this is not a light microscope
   because it uses a beam of focused electrons to image the sample/object
   (see
   [Wikipedia](https://www.microscopyu.com/glossary/spinning-disk-confocal-microscopy)).  
-- Stereomicroscope: “a light microscope which utilizes separate optical
-  paths for each eyepiece, with a slight angle between the observation
-  directions. This allows for stereo observation, where the object has a
-  more three-dimensional appearance.” ([Nikon
+- **Stereomicroscope**: “a light microscope which utilizes separate
+  optical paths for each eyepiece, with a slight angle between the
+  observation directions. This allows for stereo observation, where the
+  object has a more three-dimensional appearance.” ([Nikon
   MicroscopyU](https://www.microscopyu.com/glossary/stereomicroscope))  
-- Widefield microscope: “Fundamentally, widefield means the entire
+- **Widefield microscope**: “Fundamentally, widefield means the entire
   specimen or sample is exposed to the light source.”
   ([Leica](https://www.leica-microsystems.com/science-lab/microscopy-basics/introduction-to-widefield-microscopy/)).
   This terms is opposed to “confocal”. They come in two configurations:
-  upright or inverted (see Fig. 5
+  **upright or inverted** (see Fig. 5
   [here](https://www.leica-microsystems.com/science-lab/microscopy-basics/introduction-to-widefield-microscopy/)).
   In other words, it is the type of microscope archaeologists refer to
   as “metallographic” or “metallurgical” (although metallographists use
   inverted microscopes and do not know the term “metallographic
   microscope”).  
-- Zoom microscope: in my understanding, a zoom microscope is a light
+- **Zoom microscope**: in my understanding, a zoom microscope is a light
   microscope equipped with low magnification but high resolution
   objectives made to document large areas quickly (= without stitching).
   It is also possible to zoom seamlessly (rather than having predifined
