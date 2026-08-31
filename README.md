@@ -1,6 +1,6 @@
 # publish-micro-image
 Ivan Calandra
-, 2026-08-17, 13:56:26
+, 2026-08-31, 14:50:19
 
 - [Introduction](#introduction)
 - [Scale of observation](#scale-of-observation)
@@ -938,47 +938,55 @@ microscope, metallographic microscope, etc. I could not find a good and
 clear terminology on that, so I suggest some thing here. Again, feel
 free to [contribute](#how-to-contribute).
 
+- **Compound microscopes**: light microscope with several lenses (see
+  [Nikon
+  MicroscopyU](https://www.microscopyu.com/glossary/compound-microscope)).
+  All light microscopes except digital microscopes are compound
+  microscopes; digital microscopes can be, but are not necessarily,
+  compound microscopes.  
 - **Confocal microscope**: microscope with “scanned illumination with a
   fine pattern (e.g., diffraction-limited point) and detection through
   an aperture mask matching the illumination pattern in a conjugate
   field plane, which rejects out-of-focus light.” ([Nikon
   MicroscopyU](https://www.microscopyu.com/glossary/confocal-microscopy)).
-  There are various types: laser-scanning confocal microscope (LSCM,
-  e.g. [Olympus/Evident
+  While the definition is a bit complex, what matters is that the
+  out-of-focus light is “mechanically” filtered out. There are various
+  types: laser-scanning confocal microscope (LSCM, e.g. [Olympus/Evident
   LEXT](https://evidentscientific.com/en/products/3d-optical-profilometers/lext-ols5500)
   or [Zeiss
   LSM](https://www.zeiss.com/microscopy/en/products/light-microscopes/confocal-microscopes/lsm-910-for-materials.html)),
-  disc-scanning confocal microscope (DSCM, e.g. [MarSurf3D CM
-  Mobile](https://metrology.mahr.com/en-int/products/article/6350020-flaechenhafte-3d-messung-marsurf3d-cm-mobile/),
-  also called [spinning disk confocal
-  microscopy](https://www.microscopyu.com/glossary/spinning-disk-confocal-microscopy))
+  disc-scanning confocal microscope (DSCM) also called [spinning disk
+  confocal
+  microscopy](https://www.microscopyu.com/glossary/spinning-disk-confocal-microscopy)
+  (e.g. [MarSurf3D CM
+  Mobile](https://metrology.mahr.com/en-int/products/article/6350020-flaechenhafte-3d-messung-marsurf3d-cm-mobile/)),
   and programmable array scanning confocal microscope (PACM,
   e.g. [Sensofar S
   neox](https://www.sensofar.com/metrology/industry-research/sneox/))
-  (see [Artigas 2011](#ref-artigas2011)).
+  (see [Artigas 2011](#ref-artigas2011) and ISO 25178-607:2019).
 - **Digital microscope**: a light microscope on which observations are
   made exclusively digitally, i.e. on the screen without eyepieces (see
   definition on
   [Wikipedia](https://en.wikipedia.org/wiki/Digital_microscope)).
   Examples are
   [Dino-Lites](https://www.dino-lite.eu/en/products/microscopes), and
-  [Keyence](https://www.keyence.co.uk/products/microscope/digital-microscope/vhx-x1/),
-  [Hirox](https://hirox-europe.com/products/3d-digital-microscope/hrx-02/),
-  [Zeiss](https://www.zeiss.com/metrology/en/systems/industrial-microscopy/light-and-digital-microscopes/smartzoom-5.html),
-  [Leica](https://www.leica-microsystems.com/products/digital-microscopes/p/leica-dvm6/)
-  and
-  [Olympus/Evident](https://evidentscientific.com/en/products/digital/dsx2000)
+  [Keyence
+  VHX](https://www.keyence.co.uk/products/microscope/digital-microscope/vhx-x1/),
+  [Hirox
+  HRX](https://hirox-europe.com/products/3d-digital-microscope/hrx-02/),
+  [Zeiss
+  Smartzoom](https://www.zeiss.com/metrology/en/systems/industrial-microscopy/light-and-digital-microscopes/smartzoom-5.html),
+  [Leica
+  DVM](https://www.leica-microsystems.com/products/digital-microscopes/p/leica-dvm6/)
+  and [Olympus/Evident
+  DSX](https://evidentscientific.com/en/products/digital/dsx2000)
   microscopes.  
 - **Light microscope**: microscope that uses (visible) light; synonym of
   **optical microscope** (see [Nikon
   MicroscopyU](https://www.microscopyu.com/glossary/light-microscope)
   and [Wikipedia](https://en.wikipedia.org/wiki/Optical_microscope)).
   According to this definition, stereo, digital, wide-field, zoom and
-  confocal microscopes are all light microscopes. All but digital
-  microscopes are **compound microscopes** (see [Nikon
-  MicroscopyU](https://www.microscopyu.com/glossary/compound-microscope));
-  digital microscopes can be, but are not necessarily, compound
-  microscopes.  
+  confocal microscopes are all light microscopes.  
 - **Scanning electron microscope** (SEM): this is not a light microscope
   because it uses a beam of focused electrons to image the sample/object
   (see
@@ -999,11 +1007,11 @@ free to [contribute](#how-to-contribute).
   inverted microscopes and do not know the term “metallographic
   microscope”).  
 - **Zoom microscope**: in my understanding, a zoom microscope is a light
-  microscope equipped with low magnification but high resolution
-  objectives made to document large areas quickly (= without stitching).
-  It is also possible to zoom seamlessly (rather than having predifined
-  magnification/zoom steps). It has a single optical path, so it does
-  not produce stereo observations, unlike the stereomicroscope.
+  microscope equipped with low magnification but high resolution (high
+  NA) objectives made to document large areas quickly (= without
+  stitching). It is also possible to zoom seamlessly (rather than having
+  predifined magnification/zoom steps). It has a single optical path, so
+  it does not produce stereo observations, unlike the stereomicroscope.
 
 ------------------------------------------------------------------------
 
