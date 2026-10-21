@@ -118,7 +118,11 @@ From formula (3) and the definition of the optical lateral resolution, it become
 The NOTE 3 of the FDS §2.2.8 states that "the optical [lateral] resolution can be achieved only under ideal conditions (including complete illumination of the pupil) on planar objects. This value is usually not reached on textured surfaces". In archaeology and paleontology, we usually deal with textured surfaces!
 
 ## Digital lateral resolution
-The digital lateral resolution, or *measuring point spacing*, is the "sampling interval of measuring points in the measuring volume, both in X and in Y direction" (FDS §2.2.7). This is also referred to as the *pixel size* (although *pixel size* or *pixel pitch* can also refer to the size of the photodiodes on the detector/camera, which is a fixed value independent of the field of view) or *spatial sampling*.
+The digital lateral resolution, or *measuring point spacing*, is the "sampling interval of measuring points in the measuring volume, both in X and in Y direction" (FDS §2.2.7). This is also referred to as the *pixel size*, *pixel pitch* or *spatial sampling*. 
+
+> In order not to confuse two meanings of "pixel", I use the definitions of the QUAREP-LiMi [@schroth-diez_elmi2026_2026] and distringuish between *pixel* and *dexel*:  
+> - A **pixel** (short for picture element) refers to the smallest non-divisible element of a **digital** image.  
+> - A **dexel** (short for detector element) refers to the smallest detecting element of a **physical** detector.
 
 The measuring point spacing is calculated by dividing the *measuring area* (FDS §2.2.1, also called *field of view*) by the *maximum number of measuring points in a single measurement* (FDS §2.1.2, also called *frame size* or *number of pixels*):
 
@@ -134,7 +138,7 @@ So what about the digital lateral resolution of the zoomed image? 0.1 µm, just 
 
 All this to say that the **digital zoom obviously changes the digital magnification but does not influence the digital lateral resolution**.
 
-Still, it seems that zooming in digitally helps to see more details. This is just because the details are displayed larger on the screen, not because they are better resolved. For a better digital resolution, a smaller field-of-view for the same number of pixels, or more pixels for the same field-of-view, is needed. This can be achieved by using a higher magnification objective and/or an optical zoom, or a camera with more pixels.
+Still, it seems that zooming in digitally helps to see more details. This is just because the details are displayed larger on the screen, not because they are better resolved. For a better digital resolution, a smaller field-of-view for the same number of pixels, or more pixels for the same field-of-view, is needed. This can be achieved by using a higher magnification objective and/or an optical zoom (reducing the field-of-view), or a camera with more dexels (increasing the number of pixels).
 
 ## Optical vertical resolution and depth of field
 The optical vertical, or axial, resolution is equal to the depth of field for a bright field (BF) microscope:
@@ -171,7 +175,7 @@ For example, if $\delta_L = 0.6 \ \mu m$, then the measuring point spacing shoul
 In case of the vertical resolution, the relationship is between the step size and the optical vertical resolution (*i.e* depth of field in widefield or optical slice thickness in confocal).  
 For example, if $\delta_A = 0.6 \ \mu m$, then the step size should be 0.2-0.3 µm, ideally 0.21 µm.
 
-If the digital resolution is more than 3 $\times$ smaller than the optical resolution, this will result in oversampling: adjacent pixels will have the same values, so the digital image will not contain more information but simply more data. This results in larger files than necessary and generally does not improve the quality of the image. On the contrary, it can even lead to worse images because each pixel will record less signal [i.e. lower signal-to-noise ratio or SNR, @pawley2006].  
+If the digital resolution is more than 3 $\times$ smaller than the optical resolution, this will result in oversampling: adjacent pixels will have the same values because adjacent dexels will receive the same signal, so the digital image will not contain more information but simply more data. This results in larger files than necessary and generally does not improve the quality of the image. On the contrary, it can even lead to worse images because each dexel will receive less signal [i.e. lower signal-to-noise ratio or SNR, @pawley2006].  
 If the digital resolution is less than 2 $\times$ smaller than the optical resolution, this will result in undersampling: the transition between features that are optically visible will not be visible on the digital image.
 
 There are many considerations to take into account in the analog to digital conversion process, but as @pawley2006 [p. 70] wrote: "**If you don't want to worry about any of this, stick to Nyquist!**"

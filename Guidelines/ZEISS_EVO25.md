@@ -57,7 +57,7 @@ Settings and their values can alternatively be presented as tables, either in th
 See [https://doi.org/10.1016/j.jasrep.2024.104572](https://doi.org/10.1016/j.jasrep.2024.104572) for an example. 
 
 ### Commons
-"[*Objects*] were documented by [*SEM* and/or *EDS*] at the IMPALA. The objects were [*uncoated* or *coated with...*].  
+"[*Objects*] were documented by [*SEM* and/or *EDS*] at the TraCEr lab. The objects were [*uncoated* or *coated with...*].  
 All data in original formats, together with their metadata (acquisition and analysis settings), can be found on Zenodo ([*DOI*])."
 
 All images must have a scale bar!

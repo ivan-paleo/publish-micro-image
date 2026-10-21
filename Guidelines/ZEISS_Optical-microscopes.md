@@ -20,7 +20,7 @@ By Ivan Calandra
         - [Widefield documentation](#widefield-documentation)
         - [Confocal topography](#confocal-topography)
         - [Correlative imaging](#correlative-imaging)
-        - [Pre-processing](#pre-processing)
+        - [(Pre-)processing](#pre-processing)
     - [Data & Metadata](#data--metadata)
         - [General](#general)
         - [Widefield images](#widefield-images)
@@ -62,8 +62,8 @@ I suggest to use the following text snippets. Parts in square brackets must be a
 Settings and their values can alternatively be presented as tables, either in the main text (recommended) or as supplementary material. The report(s), or parts of it (them), from the Shiny App [imaging-reports](https://github.com/ivan-paleo/imaging-reports) can be used for this. 
 
 ### Commons
-"[*Objects* or *Features*] were documented with a [*stereo-*, *light*, *digital* or *confocal*] microscope [manufacturer, model, upright/inverted] in [*reflected* or *transmitted*] light at the IMPALA, using the [objective(s) manufacturer and name(s) including nominal magnification(s) and numerical aperture(s), and potentially the working distance, if relevant].  
-Each image represents [field of view, e.g. *350 x 350*] µm for [e.g. *2048 x 2048*] pixels, leading to an effective image pixel size of [e.g. *0.17*] µm. The Nyquist criterion was therefore [*fulfilled* or *not fulfilled*; if the latter explain why not].  
+"[*Objects* or *Features*] were documented with a [*stereo-*, *light*, *digital* or *confocal*] microscope [manufacturer, model, upright/inverted] in [*reflected* or *transmitted*] light at the TraCEr lab, using the [objective(s) manufacturer and name(s) including nominal magnification(s) and numerical aperture(s), and potentially the working distance, if relevant].  
+Each image represents [field of view, e.g. *350 x 350*] µm for [e.g. *2048 x 2048*] pixels, leading to an effective image pixel size of [e.g. *0.17*] µm. The Nyquist criterion was therefore [*fulfilled* or *not fulfilled*; if not, explain why not].  
 The acquisitions were done using the software [name, manufacturer, verion, modules].  
 All data in original formats, together with their metadata (acquisition and analysis settings), can be found on Zenodo ([*DOI*])."
 

@@ -1,6 +1,6 @@
 # publish-micro-image
 Ivan Calandra
-, 2026-08-31, 14:50:19
+, 2026-10-21, 14:10:15
 
 - [Introduction](#introduction)
 - [Scale of observation](#scale-of-observation)
@@ -326,9 +326,16 @@ paleontology, we usually deal with textured surfaces!
 The digital lateral resolution, or *measuring point spacing*, is the
 “sampling interval of measuring points in the measuring volume, both in
 X and in Y direction” (FDS §2.2.7). This is also referred to as the
-*pixel size* (although *pixel size* or *pixel pitch* can also refer to
-the size of the photodiodes on the detector/camera, which is a fixed
-value independent of the field of view) or *spatial sampling*.
+*pixel size*, *pixel pitch* or *spatial sampling*.
+
+> In order not to confuse two meanings of “pixel”, I use the definitions
+> of the QUAREP-LiMi ([Schroth-Diez, Guilbert, and Strambio De Castillia
+> 2026](#ref-schroth-diez_elmi2026_2026)) and distringuish between
+> *pixel* and *dexel*:  
+> - A **pixel** (short for picture element) refers to the smallest
+> non-divisible element of a **digital** image.  
+> - A **dexel** (short for detector element) refers to the smallest
+> detecting element of a **physical** detector.
 
 The measuring point spacing is calculated by dividing the *measuring
 area* (FDS §2.2.1, also called *field of view*) by the *maximum number
@@ -368,8 +375,9 @@ This is just because the details are displayed larger on the screen, not
 because they are better resolved. For a better digital resolution, a
 smaller field-of-view for the same number of pixels, or more pixels for
 the same field-of-view, is needed. This can be achieved by using a
-higher magnification objective and/or an optical zoom, or a camera with
-more pixels.
+higher magnification objective and/or an optical zoom (reducing the
+field-of-view), or a camera with more dexels (increasing the number of
+pixels).
 
 ## Optical vertical resolution and depth of field
 
@@ -453,11 +461,12 @@ For example, if $\delta_A = 0.6 \ \mu m$, then the step size should be
 
 If the digital resolution is more than 3 $\times$ smaller than the
 optical resolution, this will result in oversampling: adjacent pixels
-will have the same values, so the digital image will not contain more
-information but simply more data. This results in larger files than
-necessary and generally does not improve the quality of the image. On
-the contrary, it can even lead to worse images because each pixel will
-record less signal (i.e. lower signal-to-noise ratio or SNR, [Pawley
+will have the same values because adjacent dexels will receive the same
+signal, so the digital image will not contain more information but
+simply more data. This results in larger files than necessary and
+generally does not improve the quality of the image. On the contrary, it
+can even lead to worse images because each dexel will receive less
+signal (i.e. lower signal-to-noise ratio or SNR, [Pawley
 2006](#ref-pawley2006)).  
 If the digital resolution is less than 2 $\times$ smaller than the
 optical resolution, this will result in undersampling: the transition
@@ -1259,6 +1268,15 @@ Cristina Bertocchi, Johanna Bischof, Ulrike Boehm, et al. 2023.
 “Community-Developed Checklists for Publishing Images and Image
 Analyses.” *Nature Methods*, September, 1–12.
 <https://doi.org/10.1038/s41592-023-01987-9>.
+
+</div>
+
+<div id="ref-schroth-diez_elmi2026_2026" class="csl-entry">
+
+Schroth-Diez, Britta, Thomas Guilbert, and Caterina Strambio De
+Castillia. 2026. “\[ELMI2026\] DEXEL Versus PIXEL in Imaging – a Clear
+Definition for a Better Understanding of Light Microscopy Imaging
+Systems,” June. <https://doi.org/10.5281/zenodo.20820692>.
 
 </div>
 

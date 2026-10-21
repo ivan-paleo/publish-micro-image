@@ -51,7 +51,7 @@ I suggest to use the following text snippets. Parts in square brackets must be a
 
 Settings and their values can alternatively be presented as tables, either in the main text (recommended) or as supplementary material. The report(s), or parts of it (them), from the Shiny App [imaging-reports](https://github.com/ivan-paleo/imaging-reports) can be used for this. 
 
-"[*Objects* or *Features*] were documented with a ToolScan R360 (Laboratory Imaging, LIM) toolmarks document system at the IMPALA in [*flat*, *cylindrical* or *general*] objects mode. [Image types, e.g. *3D*, *textured*, *stitched*, *RTI*] images were acquired, with a 1.48x/0.093 objective, the [*laser*, *auto focus* or *manual*] focusing method and [*full (50 µm)* or *half (25 µm)*] focus steps.  
+"[*Objects* or *Features*] were documented with a ToolScan R360 (Laboratory Imaging, LIM) toolmarks document system in MONREPOS, LEIZA, in [*flat*, *cylindrical* or *general*] objects mode. [Image types, e.g. *3D*, *textured*, *stitched*, *RTI*] images were acquired, with a 1.48x/0.093 objective, the [*laser*, *auto focus* or *manual*] focusing method and [*full (50 µm)* or *half (25 µm)*] focus steps.  
 The acquisitions were done using the software LUCIA Forensic v. [*8.20b1428*] by LIM.  
 All data in original (ND2) and open ([*TIFF* or *PNG*]) formats, together with their metadata (acquisition settings), can be found on Zenodo ([*DOI*])."
 
