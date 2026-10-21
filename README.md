@@ -1,6 +1,6 @@
 # publish-micro-image
 Ivan Calandra
-, 2026-10-21, 14:10:15
+, 2026-10-21, 14:52:06
 
 - [Introduction](#introduction)
 - [Scale of observation](#scale-of-observation)
@@ -781,7 +781,7 @@ is incredible, but unfortunately, it concerns mostly life sciences and
 some aspects are not relevant to archaeology, while some others relevant
 to archaeology are not addressed.  
 Nevertheless, the Bare Minimal Microscopy Reporting Requirements
-Checklist by the QUAREP ([Montero Llopis et al.
+Checklist by the QUAREP-LiMi ([Montero Llopis et al.
 2025](#ref-monterollopisQUAREPBareMinimal2025)) offers a good starting
 point.
 
@@ -908,22 +908,23 @@ Zenodo](/How-tos/Zenodo.md).
 
 ## Instrument-specific guidelines
 
-I have tried to make it easy for the users of the **Im**aging
-**P**latform **a**t **L**EIZ**A**
-([IMPALA](https://www.leiza.de/forschung/infrastrukturen/labore/impala)):
-a [Shiny App](https://shiny.rstudio.com/) guides the users to fill in
-the required information and exports the report to an XLSX or ODS file
-that can be shared together with the images (see section
+I have tried to make it easy for the users of the [TraCEr lab at
+LEIZA](https://www.leiza.de/forschung/infrastrukturen/labore/tracer): a
+[Shiny App](https://shiny.rstudio.com/) guides the users to fill in the
+required information and exports the report to an XLSX or ODS file that
+can be shared together with the images (see section
 [Sharing](#sharing)). This App is still in development and is part of
 the repository
 [imaging-reports](https://github.com/ivan-paleo/imaging-reports) on
 GitHub.
 
 To complement this, I have prepared guidelines specific to the
-instruments we have at the IMPALA in the folder
-[Guidelines](/Guidelines/). The guidelines include text snippets that
-can be copy/pasted/edited for the method section of a publication and
-have been converted from Markdown to DOCX format using the extension
+instruments we have at the TraCEr and
+[VOXEL](https://www.leiza.de/forschung/infrastrukturen/labore/voxel-labor-fuer-volumetric-x-ray-examinations-at-leiza)
+labs at LEIZA in the folder [Guidelines](/Guidelines/). The guidelines
+include text snippets that can be copy/pasted/edited for the method
+section of a publication and have been converted from Markdown to DOCX
+format using the extension
 [vscode-pandoc](https://marketplace.visualstudio.com/items?itemName=DougFinke.vscode-pandoc).
 They also explain in details what type of data should be shared and
 how.  
@@ -1088,8 +1089,9 @@ Analysis?” *Journal of Cell Science* 134 (6): jcs254151.
 
 <div id="ref-artigas2011" class="csl-entry">
 
-Artigas, Roger. 2011. “Imaging Confocal Microscopy.” In, edited by R.
-Leach, 237–86. Berlin, Heidelberg: Springer Berlin Heidelberg.
+Artigas, Roger. 2011. “Imaging Confocal Microscopy.” In *Optical
+Measurement of Surface Topography*, edited by R. Leach, 237–86. Berlin,
+Heidelberg: Springer Berlin Heidelberg.
 <https://doi.org/10.1007/978-3-642-12012-1_11>.
 
 </div>
@@ -1108,17 +1110,19 @@ Reports* 9 (1): 6313. <https://doi.org/10.1038/s41598-019-42713-w>.
 
 Coelho, Jailton, and Marco Tulio Valente. 2017. “ESEC/FSE’17: Joint
 Meeting of the European Software Engineering Conference and the ACM
-SIGSOFT Symposium on the Foundations of Software Engineering.” In,
-186–96. Paderborn Germany. <https://doi.org/grmgjz>.
+SIGSOFT Symposium on the Foundations of Software Engineering.” In
+*Proceedings of the 2017 11th Joint Meeting on Foundations of Software
+Engineering and the ACM SIGSOFT Symposium on the Foundations of Software
+Engineering*, 186–96. Paderborn, Germany. <https://doi.org/grmgjz>.
 
 </div>
 
 <div id="ref-cromey2013" class="csl-entry">
 
 Cromey, Douglas W. 2013. “Digital Images Are Data: And Should Be Treated
-as Such.” In, edited by Douglas J. Taatjes and Jürgen Roth, 1–27.
-Methods in Molecular Biology. Totowa, NJ: Humana Press.
-<https://doi.org/10.1007/978-1-62703-056-4_1>.
+as Such.” In *Cell Imaging Techniques: Methods and Protocols*, edited by
+Douglas J. Taatjes and Jürgen Roth, 1–27. Methods in Molecular Biology.
+Totowa, NJ: Humana Press. <https://doi.org/10.1007/978-1-62703-056-4_1>.
 
 </div>
 
@@ -1165,8 +1169,7 @@ Clear and Informative Image-Based Figures for Scientific Publications.”
 <div id="ref-karoune2022" class="csl-entry">
 
 Karoune, Emma, and Esther Plomp. 2022. “Removing Barriers to
-Reproducible Research in Archaeology.” *Zenodo, ver. 5 peer-reviewed and
-recommended by Peer Community in Archaeology*, November.
+Reproducible Research in Archaeology (Version v5).” *Zenodo*.
 <https://doi.org/10.5281/zenodo.7320029>.
 
 </div>
@@ -1202,15 +1205,16 @@ Sharing.” *Advances in Archaeological Practice* 6 (2): 125–43.
 Montero Llopis, Paula, Chloë van Oostende-Triplet, Luis Acevedo, Sergiy
 Avilov, Cristina Bertocchi, Ulrike Boehm, Lisa Cameron, et al. 2025.
 “QUAREP - Bare Minimal Microscopy Reporting Requirements Checklist.”
-*Zenodo*, March. <https://doi.org/10.5281/zenodo.14977578>.
+*Zenodo*. <https://doi.org/10.5281/zenodo.14977578>.
 
 </div>
 
 <div id="ref-pawley2006" class="csl-entry">
 
 Pawley, James B. 2006. “Points, Pixels, and Gray Levels: Digitizing
-Image Data.” In, edited by James B. Pawley, 59–79. Boston, MA: Springer
-US. <https://doi.org/10.1007/978-0-387-45524-2_4>.
+Image Data.” In *Handbook Of Biological Confocal Microscopy*, edited by
+James B. Pawley, 59–79. Boston, MA: Springer US.
+<https://doi.org/10.1007/978-0-387-45524-2_4>.
 
 </div>
 
@@ -1276,7 +1280,7 @@ Analyses.” *Nature Methods*, September, 1–12.
 Schroth-Diez, Britta, Thomas Guilbert, and Caterina Strambio De
 Castillia. 2026. “\[ELMI2026\] DEXEL Versus PIXEL in Imaging – a Clear
 Definition for a Better Understanding of Light Microscopy Imaging
-Systems,” June. <https://doi.org/10.5281/zenodo.20820692>.
+Systems.” *Zenodo*. <https://doi.org/10.5281/zenodo.20820692>.
 
 </div>
 
